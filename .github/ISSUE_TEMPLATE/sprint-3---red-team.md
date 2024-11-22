@@ -1,5 +1,5 @@
 ---
-name: Sprint 2 – Red Team
+name: Sprint 3 – Red Team
 about: Exploit Server-Side Request Forgery (SSRF)
 title: Server-Side Request Forgery (SSRF)
 labels: red-team
