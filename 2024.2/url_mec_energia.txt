@@ -1,0 +1,184 @@
+SUB-GRUPO 4
+===========
+/api-auth/login/	django.contrib.auth.views.LoginView	rest_framework:login
+/api-auth/logout/	django.contrib.auth.views.LogoutView	rest_framework:logout
+/api/	rest_framework.routers.APIRootView	api-root
+/api/<drf_format_suffix:format>	rest_framework.routers.APIRootView	api-root
+/api/admin/	django.contrib.admin.sites.index	admin:index
+/api/admin/<app_label>/	django.contrib.admin.sites.app_index	admin:app_list
+/api/admin/<url>	django.contrib.admin.sites.catch_all_view
+/api/admin/auth/group/	django.contrib.admin.options.changelist_view	admin:auth_group_changelist
+/api/admin/auth/group/<path:object_id>/	django.views.generic.base.RedirectView
+/api/admin/auth/group/<path:object_id>/change/	django.contrib.admin.options.change_view	admin:auth_group_change
+/api/admin/auth/group/<path:object_id>/delete/	django.contrib.admin.options.delete_view	admin:auth_group_delete
+/api/admin/auth/group/<path:object_id>/history/	django.contrib.admin.options.history_view	admin:auth_group_history
+/api/admin/auth/group/add/	django.contrib.admin.options.add_view	admin:auth_group_add
+/api/admin/authtoken/tokenproxy/	django.contrib.admin.options.changelist_view	admin:authtoken_tokenproxy_changelist
+/api/admin/authtoken/tokenproxy/<path:object_id>/	django.views.generic.base.RedirectView
+/api/admin/authtoken/tokenproxy/<path:object_id>/change/	django.contrib.admin.options.change_view	admin:authtoken_tokenproxy_change
+/api/admin/authtoken/tokenproxy/<path:object_id>/delete/	django.contrib.admin.options.delete_view	admin:authtoken_tokenproxy_delete
+/api/admin/authtoken/tokenproxy/<path:object_id>/history/	django.contrib.admin.options.history_view	admin:authtoken_tokenproxy_history
+/api/admin/authtoken/tokenproxy/add/	django.contrib.admin.options.add_view	admin:authtoken_tokenproxy_add
+/api/admin/autocomplete/	django.contrib.admin.sites.autocomplete_view	admin:autocomplete
+/api/admin/contracts/contract/	django.contrib.admin.options.changelist_view	admin:contracts_contract_changelist
+/api/admin/contracts/contract/<path:object_id>/	django.views.generic.base.RedirectView
+/api/admin/contracts/contract/<path:object_id>/change/	django.contrib.admin.options.change_view	admin:contracts_contract_change
+/api/admin/contracts/contract/<path:object_id>/delete/	django.contrib.admin.options.delete_view	admin:contracts_contract_delete
+/api/admin/contracts/contract/<path:object_id>/history/	django.contrib.admin.options.history_view	admin:contracts_contract_history
+/api/admin/contracts/contract/add/	django.contrib.admin.options.add_view	admin:contracts_contract_add
+/api/admin/contracts/energybill/	django.contrib.admin.options.changelist_view	admin:contracts_energybill_changelist
+/api/admin/contracts/energybill/<path:object_id>/	django.views.generic.base.RedirectView
+/api/admin/contracts/energybill/<path:object_id>/change/	django.contrib.admin.options.change_view	admin:contracts_energybill_change
+/api/admin/contracts/energybill/<path:object_id>/delete/	django.contrib.admin.options.delete_view	admin:contracts_energybill_delete
+/api/admin/contracts/energybill/<path:object_id>/history/	django.contrib.admin.options.history_view	admin:contracts_energybill_history
+/api/admin/contracts/energybill/add/	django.contrib.admin.options.add_view	admin:contracts_energybill_add
+/api/admin/easyaudit/crudevent/	django.contrib.admin.options.changelist_view	admin:easyaudit_crudevent_changelist
+/api/admin/easyaudit/crudevent/<path:object_id>/	django.views.generic.base.RedirectView
+/api/admin/easyaudit/crudevent/<path:object_id>/change/	django.contrib.admin.options.change_view	admin:easyaudit_crudevent_change
+/api/admin/easyaudit/crudevent/<path:object_id>/delete/	django.contrib.admin.options.delete_view	admin:easyaudit_crudevent_delete
+/api/admin/easyaudit/crudevent/<path:object_id>/history/	django.contrib.admin.options.history_view	admin:easyaudit_crudevent_history
+/api/admin/easyaudit/crudevent/add/	django.contrib.admin.options.add_view	admin:easyaudit_crudevent_add
+/api/admin/easyaudit/crudevent/purge/	easyaudit.admin_helpers.purge	admin:easyaudit_crudevent_purge
+/api/admin/easyaudit/loginevent/	django.contrib.admin.options.changelist_view	admin:easyaudit_loginevent_changelist
+/api/admin/easyaudit/loginevent/<path:object_id>/	django.views.generic.base.RedirectView
+/api/admin/easyaudit/loginevent/<path:object_id>/change/	django.contrib.admin.options.change_view	admin:easyaudit_loginevent_change
+/api/admin/easyaudit/loginevent/<path:object_id>/delete/	django.contrib.admin.options.delete_view	admin:easyaudit_loginevent_delete
+/api/admin/easyaudit/loginevent/<path:object_id>/history/	django.contrib.admin.options.history_view	admin:easyaudit_loginevent_history
+/api/admin/easyaudit/loginevent/add/	django.contrib.admin.options.add_view	admin:easyaudit_loginevent_add
+/api/admin/easyaudit/loginevent/purge/	easyaudit.admin_helpers.purge	admin:easyaudit_loginevent_purge
+/api/admin/easyaudit/requestevent/	django.contrib.admin.options.changelist_view	admin:easyaudit_requestevent_changelist
+/api/admin/easyaudit/requestevent/<path:object_id>/	django.views.generic.base.RedirectView
+/api/admin/easyaudit/requestevent/<path:object_id>/change/	django.contrib.admin.options.change_view	admin:easyaudit_requestevent_change
+/api/admin/easyaudit/requestevent/<path:object_id>/delete/	django.contrib.admin.options.delete_view	admin:easyaudit_requestevent_delete
+/api/admin/easyaudit/requestevent/<path:object_id>/history/	django.contrib.admin.options.history_view	admin:easyaudit_requestevent_history
+/api/admin/easyaudit/requestevent/add/	django.contrib.admin.options.add_view	admin:easyaudit_requestevent_add
+/api/admin/easyaudit/requestevent/purge/	easyaudit.admin_helpers.purge	admin:easyaudit_requestevent_purge
+/api/admin/jsi18n/	django.contrib.admin.sites.i18n_javascript	admin:jsi18n
+==========
+SUB-GRUPO 3
+/api/admin/login/	django.contrib.admin.sites.login	admin:login
+/api/admin/logout/	django.contrib.admin.sites.logout	admin:logout
+/api/admin/password_change/	django.contrib.admin.sites.password_change	admin:password_change
+/api/admin/password_change/done/	django.contrib.admin.sites.password_change_done	admin:password_change_done
+/api/admin/r/<int:content_type_id>/<path:object_id>/	django.contrib.contenttypes.views.shortcut	admin:view_on_site
+/api/admin/tariffs/distributor/	django.contrib.admin.options.changelist_view	admin:tariffs_distributor_changelist
+/api/admin/tariffs/distributor/<path:object_id>/	django.views.generic.base.RedirectView
+/api/admin/tariffs/distributor/<path:object_id>/change/	django.contrib.admin.options.change_view	admin:tariffs_distributor_change
+/api/admin/tariffs/distributor/<path:object_id>/delete/	django.contrib.admin.options.delete_view	admin:tariffs_distributor_delete
+/api/admin/tariffs/distributor/<path:object_id>/history/	django.contrib.admin.options.history_view	admin:tariffs_distributor_history
+/api/admin/tariffs/distributor/add/	django.contrib.admin.options.add_view	admin:tariffs_distributor_add
+/api/admin/tariffs/tariff/	django.contrib.admin.options.changelist_view	admin:tariffs_tariff_changelist
+/api/admin/tariffs/tariff/<path:object_id>/	django.views.generic.base.RedirectView
+/api/admin/tariffs/tariff/<path:object_id>/change/	django.contrib.admin.options.change_view	admin:tariffs_tariff_change
+/api/admin/tariffs/tariff/<path:object_id>/delete/	django.contrib.admin.options.delete_view	admin:tariffs_tariff_delete
+/api/admin/tariffs/tariff/<path:object_id>/history/	django.contrib.admin.options.history_view	admin:tariffs_tariff_history
+/api/admin/tariffs/tariff/add/	django.contrib.admin.options.add_view	admin:tariffs_tariff_add
+/api/admin/universities/consumerunit/	django.contrib.admin.options.changelist_view	admin:universities_consumerunit_changelist
+/api/admin/universities/consumerunit/<path:object_id>/	django.views.generic.base.RedirectView
+/api/admin/universities/consumerunit/<path:object_id>/change/	django.contrib.admin.options.change_view	admin:universities_consumerunit_change
+/api/admin/universities/consumerunit/<path:object_id>/delete/	django.contrib.admin.options.delete_view	admin:universities_consumerunit_delete
+/api/admin/universities/consumerunit/<path:object_id>/history/	django.contrib.admin.options.history_view	admin:universities_consumerunit_history
+/api/admin/universities/consumerunit/add/	django.contrib.admin.options.add_view	admin:universities_consumerunit_add
+/api/admin/universities/university/	django.contrib.admin.options.changelist_view	admin:universities_university_changelist
+/api/admin/universities/university/<path:object_id>/	django.views.generic.base.RedirectView
+/api/admin/universities/university/<path:object_id>/change/	django.contrib.admin.options.change_view	admin:universities_university_change
+/api/admin/universities/university/<path:object_id>/delete/	django.contrib.admin.options.delete_view	admin:universities_university_delete
+/api/admin/universities/university/<path:object_id>/history/	django.contrib.admin.options.history_view	admin:universities_university_history
+/api/admin/universities/university/add/	django.contrib.admin.options.add_view	admin:universities_university_add
+/api/admin/users/customuser/	django.contrib.admin.options.changelist_view	admin:users_customuser_changelist
+/api/admin/users/customuser/<id>/password/	django.contrib.auth.admin.user_change_password	admin:auth_user_password_change
+/api/admin/users/customuser/<path:object_id>/	django.views.generic.base.RedirectView
+/api/admin/users/customuser/<path:object_id>/change/	django.contrib.admin.options.change_view	admin:users_customuser_change
+/api/admin/users/customuser/<path:object_id>/delete/	django.contrib.admin.options.delete_view	admin:users_customuser_delete
+/api/admin/users/customuser/<path:object_id>/history/	django.contrib.admin.options.history_view	admin:users_customuser_history
+/api/admin/users/customuser/add/	django.contrib.auth.admin.add_view	admin:users_customuser_add
+/api/admin/users/universityuser/	django.contrib.admin.options.changelist_view	admin:users_universityuser_changelist
+/api/admin/users/universityuser/<id>/password/	django.contrib.auth.admin.user_change_password	admin:auth_user_password_change
+/api/admin/users/universityuser/<path:object_id>/	django.views.generic.base.RedirectView
+/api/admin/users/universityuser/<path:object_id>/change/	django.contrib.admin.options.change_view	admin:users_universityuser_change
+/api/admin/users/universityuser/<path:object_id>/delete/	django.contrib.admin.options.delete_view	admin:users_universityuser_delete
+/api/admin/users/universityuser/<path:object_id>/history/	django.contrib.admin.options.history_view	admin:users_universityuser_history
+/api/admin/users/universityuser/add/	django.contrib.auth.admin.add_view	admin:users_universityuser_add
+/api/clear-cache/	mec_energia.views.ClearCacheView	clear_cache
+=======================
+SUB-GRUPO 2
+/api/consumer-units/	universities.views.ConsumerUnitViewSet	consumerunit-list
+/api/consumer-units/<pk>/	universities.views.ConsumerUnitViewSet	consumerunit-detail
+/api/consumer-units/<pk>\.<format>/	universities.views.ConsumerUnitViewSet	consumerunit-detail
+/api/consumer-units/create_consumer_unit_and_contract/	universities.views.ConsumerUnitViewSet	consumerunit-create-consumer-unit-and-contract
+/api/consumer-units/create_consumer_unit_and_contract\.<format>/	universities.views.ConsumerUnitViewSet	consumerunit-create-consumer-unit-and-contract
+/api/consumer-units/edit_consumer_unit_and_contract/	universities.views.ConsumerUnitViewSet	consumerunit-edit-consumer-unit-and-contract
+/api/consumer-units/edit_consumer_unit_and_contract\.<format>/	universities.views.ConsumerUnitViewSet	consumerunit-edit-consumer-unit-and-contract
+/api/consumer-units/edit_consumer_unit_code_and_create_contract/	universities.views.ConsumerUnitViewSet	consumerunit-edit-consumer-unit-code-and-create-contract
+/api/consumer-units/edit_consumer_unit_code_and_create_contract\.<format>/	universities.views.ConsumerUnitViewSet	consumerunit-edit-consumer-unit-code-and-create-contract
+/api/consumer-units\.<format>/	universities.views.ConsumerUnitViewSet	consumerunit-list
+/api/contracts/	contracts.views.ContractViewSet	contract-list
+/api/contracts/<pk>/	contracts.views.ContractViewSet	contract-detail
+/api/contracts/<pk>\.<format>/	contracts.views.ContractViewSet	contract-detail
+/api/contracts/get-current-contract-of-consumer-unit/	contracts.views.ContractViewSet	contract-get-current-contract-of-consumer-unit
+/api/contracts/get-current-contract-of-consumer-unit\.<format>/	contracts.views.ContractViewSet	contract-get-current-contract-of-consumer-unit
+/api/contracts/list-subgroups/	contracts.views.ContractViewSet	contract-list-subgroups
+/api/contracts/list-subgroups\.<format>/	contracts.views.ContractViewSet	contract-list-subgroups
+/api/contracts\.<format>/	contracts.views.ContractViewSet	contract-list
+/api/distributors/	tariffs.views.DistributorViewSet	distributor-list
+/api/distributors/<pk>/	tariffs.views.DistributorViewSet	distributor-detail
+/api/distributors/<pk>/consumer-units-by-subgroup/	tariffs.views.DistributorViewSet	distributor-consumer-units-separated-by-subgroup
+/api/distributors/<pk>/consumer-units-by-subgroup\.<format>/	tariffs.views.DistributorViewSet	distributor-consumer-units-separated-by-subgroup
+/api/distributors/<pk>/get-tariffs/	tariffs.views.DistributorViewSet	distributor-get-blue-and-green-tariffs
+/api/distributors/<pk>/get-tariffs\.<format>/	tariffs.views.DistributorViewSet	distributor-get-blue-and-green-tariffs
+/api/distributors/<pk>\.<format>/	tariffs.views.DistributorViewSet	distributor-detail
+/api/distributors\.<format>/	tariffs.views.DistributorViewSet	distributor-list
+/api/download-step-by-step-pdf/	tariffs.views.DownloadPDFViewSet	download-pdf-list
+/api/download-step-by-step-pdf\.<format>/	tariffs.views.DownloadPDFViewSet	download-pdf-list
+/api/energy-bills/	contracts.views.EnergyBillViewSet	energybill-list
+/api/energy-bills/<pk>/	contracts.views.EnergyBillViewSet	energybill-detail
+/api/energy-bills/<pk>\.<format>/	contracts.views.EnergyBillViewSet	energybill-detail
+/api/energy-bills/download-csv-model/	contracts.views.EnergyBillViewSet	energybill-download-csv-model
+/api/energy-bills/download-csv-model\.<format>/	contracts.views.EnergyBillViewSet	energybill-download-csv-model
+/api/energy-bills/download-xlsx-model/	contracts.views.EnergyBillViewSet	energybill-download-xlsx-model
+/api/energy-bills/download-xlsx-model\.<format>/	contracts.views.EnergyBillViewSet	energybill-download-xlsx-model
+/api/energy-bills/multiple_create/	contracts.views.EnergyBillViewSet	energybill-multiple-create
+/api/energy-bills/multiple_create\.<format>/	contracts.views.EnergyBillViewSet	energybill-multiple-create
+/api/energy-bills/plot-graph/	contracts.views.EnergyBillViewSet	energybill-plot-graph
+/api/energy-bills/plot-graph\.<format>/	contracts.views.EnergyBillViewSet	energybill-plot-graph
+/api/energy-bills/upload/	contracts.views.EnergyBillViewSet	energybill-upload-csv
+/api/energy-bills/upload\.<format>/	contracts.views.EnergyBillViewSet	energybill-upload-csv
+/api/energy-bills\.<format>/	contracts.views.EnergyBillViewSet	energybill-list
+/api/global-search-recommendation/<pk>/	global_search_recommendation.views.GlobalSearchRecommendationViewSet	global-search-recommendation-detail
+/api/global-search-recommendation/<pk>\.<format>/	global_search_recommendation.views.GlobalSearchRecommendationViewSet	global-search-recommendation-detail
+/api/percentile-recommendation/<pk>/	recommendation.views.RecommendationViewSet	percentile-recommendation-detail
+/api/percentile-recommendation/<pk>\.<format>/	recommendation.views.RecommendationViewSet	percentile-recommendation-detail
+/api/recommendation-settings/	recommendation_commons.recommendation_settings.RecommendationSettings	recommendation-settings-list
+/api/recommendation-settings\.<format>/	recommendation_commons.recommendation_settings.RecommendationSettings	recommendation-settings-list
+/api/recommendation/<pk>/	recommendation.views.RecommendationViewSet	recommendation-detail
+/api/recommendation/<pk>\.<format>/	recommendation.views.RecommendationViewSet	recommendation-detail
+/api/reset-password-admin/	users.authentications.ResetPasswordByAdmin
+/api/reset-password/	users.authentications.ResetPassword
+/api/reset-password/confirm	users.authentications.ConfirmResetPassword
+/api/swagger/schema/	drf_yasg.views.SchemaView
+/api/tariffs/	tariffs.views.TariffViewSet	tariff-list
+/api/tariffs/<pk>/	tariffs.views.TariffViewSet	tariff-detail
+/api/tariffs/<pk>\.<format>/	tariffs.views.TariffViewSet	tariff-detail
+/api/tariffs\.<format>/	tariffs.views.TariffViewSet	tariff-list
+/api/token/	users.authentications.Authentication
+/api/token/logout/	users.authentications.Logout
+===
+SUB-GRUPO 1 
+/api/universities/	universities.views.UniversityViewSet	university-list
+/api/universities/<pk>/	universities.views.UniversityViewSet	university-detail
+/api/universities/<pk>\.<format>/	universities.views.UniversityViewSet	university-detail
+/api/universities\.<format>/	universities.views.UniversityViewSet	university-list
+/api/university-user/	users.views.UniversityUsersViewSet	universityuser-list
+/api/university-user/<pk>/	users.views.UniversityUsersViewSet	universityuser-detail
+/api/university-user/<pk>/favorite-consumer-units/	users.views.UniversityUsersViewSet	universityuser-add-or-remove-favorite-consumer-unit
+/api/university-user/<pk>/favorite-consumer-units\.<format>/	users.views.UniversityUsersViewSet	universityuser-add-or-remove-favorite-consumer-unit
+/api/university-user/<pk>\.<format>/	users.views.UniversityUsersViewSet	universityuser-detail
+/api/university-user/change-university-user-type/	users.views.UniversityUsersViewSet	universityuser-change-university-user-type
+/api/university-user/change-university-user-type\.<format>/	users.views.UniversityUsersViewSet	universityuser-change-university-user-type
+/api/university-user\.<format>/	users.views.UniversityUsersViewSet	universityuser-list
+/api/users/	users.views.CustomUserViewSet	customuser-list
+/api/users/<pk>/	users.views.CustomUserViewSet	customuser-detail
+/api/users/<pk>\.<format>/	users.views.CustomUserViewSet	customuser-detail
+/api/users/change-user-password/	users.views.CustomUserViewSet	customuser-change-user-password
+/api/users/change-user-password\.<format>/	users.views.CustomUserViewSet	customuser-change-user-password
+/api/users\.<format>/	users.views.CustomUserViewSet	customuser-list
