@@ -1,5 +1,14 @@
 # Relatório Sprint 1 - SQL Injections
 
+## Membros
+
+| Nome | Matrícula |
+| :--: | :-------: |
+| [Mateus Fidelis](https://github.com/MatsFidelis) | |
+| [Pablo Guilherme](https://github.com/PabloGJBS) | |
+| [Pedro Lucas](https://github.com/AlefMemTav) | |
+| [Rafael Bosi](https://github.com/strangeunit28) | 211029559 |
+
 ## Sobre 
 Este relatório é destinado a documentar as descobertas do subgrupo em relação a vunerabilidades ou a inexistência delas em relação a ataques de SQL Injection na aplicação MEC Energia API. Primeiro foi necessário subir o ambiente de desenvolvimento da aplicação, passo esse que todos os membros conseguiram executar com exito. Logo após cada membro possuir uma estância local do projeto, começaram os testes em algumas das rotas da API (As rotas testadas pelo grupo podem ser encontradas [aqui](../../url_mec_energia.txt)).
 
