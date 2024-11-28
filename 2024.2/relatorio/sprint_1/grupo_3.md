@@ -79,7 +79,9 @@ sqlmap -u "URL_ALVO" --level 3 --risk 2 --batch
 ```
 Neste exemplo:
 - --level define o nível de profundidade dos testes, com valores de 1 a 5.
-- --risk especifica o nível de risco dos testes, com valores de 1 a 3. Níveis mais altos implicam testes mais detalhados e complexos.Em nossos testes utilizamos majoritariamente as flags --level e --risk setadas em 1 devido ao tempo de resposta da ferramenta, uma vez que ao selecionar os parametros mais altos os testes demoravam entre 10 a 15 minutos enquanto com os parametros mais baixos os testes demoravam cerca de 1 a 2 minutos possibilitando a realização dos testes em todas as URL's necessárias.### Experiência com os testes
+- --risk especifica o nível de risco dos testes, com valores de 1 a 3. Níveis mais altos implicam testes mais detalhados e complexos.Em nossos testes utilizamos majoritariamente as flags --level e --risk setadas em 1 devido ao tempo de resposta da ferramenta, uma vez que ao selecionar os parametros mais altos os testes demoravam entre 10 a 15 minutos enquanto com os parametros mais baixos os testes demoravam cerca de 1 a 2 minutos possibilitando a realização dos testes em todas as URL's necessárias.
+
+### Experiência com os testes
 
 Em nossos testes, utilizamos principalmente os valores --level 1 e --risk 1, priorizando a rapidez nos resultados.
 
@@ -111,5 +113,16 @@ Abaixo é possível ver um screenshot de alguns dos testes realizados em cima da
 ![Screenshot](../imagens/sql_grupo3.png)
 Imagem 1 - Explorando algumas rotas com SQLmap
 
+## Referências
+
+- [OWASP Proactive Controls: Secure Database Access](https://owasp.org/www-project-proactive-controls/)
+- [OWASP ASVS: V5 Input Validation and Encoding](https://owasp.org/www-project-application-security-verification-standard/)
+- [OWASP Testing Guide: SQL Injection, Command Injection, and ORM Injection](https://owasp.org/www-project-web-security-testing-guide/)
+- [OWASP Cheat Sheet: Injection Prevention](https://owasp.org/www-project-cheat-sheets/)
+- [OWASP Cheat Sheet: SQL Injection Prevention](https://owasp.org/www-project-cheat-sheets/)
+- [OWASP Cheat Sheet: Injection Prevention in Java](https://owasp.org/www-project-cheat-sheets/)
+- [OWASP Cheat Sheet: Query Parameterization](https://owasp.org/www-project-cheat-sheets/)
+- [OWASP Automated Threats to Web Applications – OAT-014](https://owasp.org/www-project-automated-threats-to-web-applications/)
+- [PortSwigger: Server-side template injection](https://portswigger.net/web-security/server-side-template-injection)
 
 
