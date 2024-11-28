@@ -6,7 +6,7 @@
 | :--: | :-------: |
 | [Mateus Fidelis](https://github.com/MatsFidelis) | |
 | [Pablo Guilherme](https://github.com/PabloGJBS) | 200025791 |
-| [Pedro Lucas](https://github.com/AlefMemTav) | |
+| [Pedro Lucas](https://github.com/AlefMemTav) | 190115548 |
 | [Rafael Bosi](https://github.com/strangeunit28) | 211029559 |
 
 ## Sobre 
@@ -107,6 +107,8 @@ Essa abordagem balanceou o tempo de resposta com a eficácia dos testes.
 - A maior dificuldade foi em subir o ambiente devido a um conflito de versões do docker que ocorreu ao instalar a VM do Kali Linux, para corrigir este erro eu alterei os arquivos de Makefile com o objetivo de substituir os comandos docker compose por docker-compose
 
 ### Pedro Lucas
+
+- Eu instalei a Oracle Virtual Box [(O lugar mais correto para se baixar é pelo site oficial)](https://www.virtualbox.org/wiki/Linux_Downloads) e o Kali Linux. A princípio tive dificuldades de configurar o Kali na Virtual Box, mas ao seguir o tutorial do site oficial [Kali inside VirtualBox (Guest VM)](https://www.kali.org/docs/virtualization/install-virtualbox-guest-vm/) eu consegui o resultado. Além disso, eu subi os ambientes da MEC-Energia (Api e Web), tendo dificuldade de subir a parte da Web por algum problema que ainda não solucionei. Também criei uma conta no Hack The Box e comecei a estudar os cursos. É um site muito completo, com a única dificuldade de ser pago quase todo o material. No geral, acho que pela primeria Sprint, já deu para se ambientar no que vamos fazer durante o semestre na área de segurança. 
 
 ### Rafael Bosi
 
