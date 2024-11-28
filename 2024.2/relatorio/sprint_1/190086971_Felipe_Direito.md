@@ -11,8 +11,15 @@ Os estudos foram baseados nos módulos do Hack The Box. A seguir tenho o andamen
 ![Modulos estudados](image.png)
 
 
+## Ambiente MEC-Energia
+
+Os primeiros testes serão realizados no MEC-Energia, o clone do repositório e subir a aplicação da API localmente funcionou.
+
+
 ## Problemas encontrados
 
+- Docker-compose desatualizado o Makefile não funcionava devido ao comando (docker compose - sem hífen) não funcionar.
+    - O problema já foi solucionado, graças à ajuda do Rodolfo =)
 - VirtualBox não inicia a VM. Apenas re-instalar o VirtualBox não solucionou.
 
 ![Erro VM](image-1.png)
