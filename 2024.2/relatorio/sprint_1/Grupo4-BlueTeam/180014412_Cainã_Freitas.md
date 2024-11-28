@@ -67,6 +67,8 @@ Certifique-se de que o Python e o Bandit estão instalados no ambiente local:
 #### Teste do comando:  
 ![][running]
 
+---
+
 ### Resultados e Benefícios
 
 - Detectou vulnerabilidades iniciais: Foi possível identificar funções e bibliotecas que precisavam de ajustes para segurança.
