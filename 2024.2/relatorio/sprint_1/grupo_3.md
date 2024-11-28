@@ -4,7 +4,7 @@
 
 | Nome | Matrícula |
 | :--: | :-------: |
-| [Mateus Fidelis](https://github.com/MatsFidelis) | |
+| [Mateus Fidelis](https://github.com/MatsFidelis) | 200073184 |
 | [Pablo Guilherme](https://github.com/PabloGJBS) | 200025791 |
 | [Pedro Lucas](https://github.com/AlefMemTav) | 190115548 |
 | [Rafael Bosi](https://github.com/strangeunit28) | 211029559 |
@@ -101,6 +101,8 @@ Essa abordagem balanceou o tempo de resposta com a eficácia dos testes.
 ## Dificuldades encontradas
 
 ### Mateus Fidelis
+
+- Nesta primeira sprint, minha maior dificuldade com o projeto foi corrigir e trabalhar com pequenos erros que apareciam ao tentar rodar o trabalho, desde peuenas atualizações que precisei fazer no Kali Linux para conseguir rodar os testes, até memo na própria aplicação enquanto rodava os testes durante o estudo sobre SQLi.
 
 ### Pablo Guilherme
 
