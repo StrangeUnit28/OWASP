@@ -12,6 +12,11 @@
 ## Sobre 
 Este relatório é destinado a documentar as descobertas...
 
+## O que é Broken Authentication
+
+## Exemplo de Broken Authetication
+
+## Teste de Broken Authentication na API do MEC Energia
 
 ## Dificuldades encontradas
 
