@@ -6,6 +6,7 @@
 | :--: | :-------: |
 | [Mateus Fidelis](https://github.com/MatsFidelis) | 200073184 |
 | [Pablo Guilherme](https://github.com/PabloGJBS) | 200025791 |
+| [Pedro Lucas](https://github.com/AlefMemTav)     | 190115548 |
 | [Rafael Bosi](https://github.com/strangeunit28) | 211029559 |
 
 ## Sobre 
@@ -141,6 +142,8 @@ Ao comparar o módulo de SQL Injection com o módulo atual, percebi uma diferen�
 Além disso, a ausência de uma ferramenta tão específica quanto o SQLMap, amplamente utilizado no módulo anterior, tornou o processo mais desafiador. No módulo atual, as vulnerabilidades eram mais variadas, exigindo um entendimento mais abrangente e uma análise detalhada para explorar eventuais falhas.  
 
 Apesar das dificuldades, o aprendizado adquirido e a aplicação prática do conhecimento foram extremamente recompensadores, proporcionando um senso de realização e ampliando minha capacidade de lidar com cenários mais complexos de segurança.
+
+### Pedro Lucas
 
 ### Rafael Bosi
 
