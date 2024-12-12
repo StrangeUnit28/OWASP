@@ -116,12 +116,12 @@ Exemplo com Postman:
 
 Na imagem abaixo, após configurar o Proxy do Postman, toda requisição feita será enviada automáticamente para o OWASP ZAP.
 
-![Screenshot](../imagens/postmanproxy.png.png)
+![Screenshot](../imagens/postmanproxy.png)
 **Imagem 3** - Configurando o Proxy do Postman escutar na porta 8080, **_Fonte_** [Pedro Lucas Garcia](https://github.com/AlefMemTav/)
 
 Agora é necessário configurar o corpo da requisição. No caso do Postman, este foi o corpo de a API exigia receber para a rota de login:
 
-![Screenshot](../imagens/postmanconfig.png)
+![Screenshot](../imagens/postmanpost.png)
 **Imagem 4** - Configurando o Postman para envio da requisição, **_Fonte_** [Pedro Lucas Garcia](https://github.com/AlefMemTav/)
 
 Por fim, no OWASP ZAP é possível ver as requisições sendo capturadas. Apesar da API do MEC-ENERGIA escutar na porta 8000, o OWASP consegue capturar toda a requisição feita na porta 8000 pelo cliente (no caso o Postman) e receber:
