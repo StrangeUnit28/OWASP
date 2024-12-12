@@ -10,36 +10,33 @@
 | [Rafael Bosi](https://github.com/strangeunit28) | 211029559 |
 
 ## Sobre 
-Este relatório é destinado a documentar as descobertas e o progresso realizado durante a Sprint 2, com foco na vulnerabilidade de **Broken Authentication**. O objetivo foi explorar como essa falha ocorre, exemplos práticos e sua identificação em sistemas, além de registrar desafios enfrentados pelos membros e aprendizados adquiridos.
-
+Este relatório tem como objetivo documentar as descobertas e o progresso alcançado durante a Sprint 2, com foco na vulnerabilidade conhecida como **Broken Authentication**. A análise abrange a natureza dessa falha,  exemplos práticos de como ela ocorre , métodos de identificação em sistemas reais, além de registrar os desafios enfrentados pela equipe e os aprendizados adquiridos ao longo do processo.
 
 ## O que é Broken Authentication
 
-Broken Authentication é uma classe de vulnerabilidades que ocorre quando os mecanismos de autenticação de um sistema não são implementados de forma segura, permitindo que atacantes se façam passar por usuários legítimos. Algumas das formas mais comuns de exploração incluem:
+Broken Authentication é uma categoria de vulnerabilidade que surge quando os mecanismos de autenticação de um sistema não são projetados ou implementados adequadamente, permitindo que atacantes assumam a identidade de usuários legítimos. Algumas das formas mais comuns de exploração incluem:
 
-- **Weak password policies:** Senhas fracas ou facilmente adivinháveis permitem que atacantes acessem contas através de ataques de força bruta ou dicionário.
-- **Session fixation:** Ataques que forçam um usuário a utilizar uma sessão específica, permitindo que o atacante assuma o controle da sessão.
-- **CSRF (Cross-Site Request Forgery):** Ataques que forçam um usuário autenticado a executar ações indesejadas em um aplicativo web.
-- **Brute force attacks:** Tentativas exaustivas de adivinhar credenciais de login.
+- **Políticas de senhas fracas:** Uso de senhas vulneráveis ou previsíveis, que facilitam ataques de força bruta ou baseados em dicionários.
+- **Fixação de sessão (Session Fixation):** Ataques que manipulam um usuário para utilizar uma sessão controlada pelo invasor, permitindo que este a assuma posteriormente.
+- **CSRF (Cross-Site Request Forgery):** Ataques que induzem usuários autenticados a realizar ações indesejadas em uma aplicação web sem o seu consentimento.
+- **Ataques de força bruta (Brute Force):** Tentativas sistemáticas de adivinhar credenciais por meio de combinações exaustivas de nome de usuário e senha.
 
 ## Exemplo de Broken Authentication
 
 ### 1. Força bruta em endpoints de login
 
 **Cenário:**
-Um sistema permite múltiplas tentativas de login sem limitar o número de requisições ou bloquear temporariamente o usuário após falhas consecutivas. 
+Um sistema não limita o número de tentativas de login, permitindo múltiplas requisições sem bloqueio temporário após falhas consecutivas.
 
 **Exploração:**
 1. O atacante coleta uma lista de credenciais comuns (por exemplo, `rockyou.txt`).
-2. Utiliza ferramentas como `Hydra` ou `Burp Suite` para tentar combinações até encontrar credenciais válidas.
+2. Utiliza ferramentas como `Hydra`, `Burp Suite` ou `FFuF` para tentar combinações até encontrar credenciais válidas.
 3. Após a autenticação, o atacante obtém acesso a dados ou funcionalidades do usuário.
 
 **Prevenção:**
-- Implementar bloqueio temporário após múltiplas tentativas de login.
-- Adicionar autenticação multifator (MFA).
-- Monitorar atividades suspeitas, como picos de tentativas de login.
-
----
+- Implementar bloqueios temporários após múltiplas falhas de login consecutivas.
+- Adotar autenticação multifator (MFA) para fortalecer a segurança.
+- Monitorar e alertar sobre padrões de login suspeitos, como um alto volume de tentativas em curto período.
 
 ### 2. Reutilização de Credenciais (Credential Stuffing)
 
@@ -54,21 +51,24 @@ Uma empresa não implementa autenticação multifator (MFA). Um atacante obtém 
 - Verificar credenciais contra bancos de dados de vazamentos conhecidos, como o serviço `Have I Been Pwned`.  
 - Implementar autenticação multifator (MFA) para reduzir o impacto de credenciais reutilizadas.
 
----
-
 ### 3. Sessões Expostas (Session Hijacking)
 
 **Como funciona:**  
-O atacante rouba uma sessão válida de um usuário para acessar seu sistema, geralmente explorando cookies de sessão que não estão devidamente protegidos. Ataques `Man-in-the-Middle` (MITM) ou scripts maliciosos podem ser usados para capturar esses cookies.
+Sessões expostas ocorrem quando um atacante rouba uma sessão válida de um usuário para acessar o sistema, explorando vulnerabilidades nos cookies de sessão ou na comunicação entre o cliente e o servidor. Esse roubo pode ser realizado por meio de ataques como **Man-in-the-Middle (MITM)**, em que o tráfego é interceptado, ou por meio de scripts maliciosos que capturam cookies desprotegidos.
 
 **Exemplo prático:**  
 Um site não marca seus cookies de sessão com as flags `HttpOnly` ou `Secure`. Um atacante intercepta o tráfego HTTP de uma vítima, por exemplo, usando um ataque MITM em uma rede Wi-Fi pública, e consegue roubar os cookies de sessão. Com esses cookies, o atacante se passa pelo usuário, obtendo acesso à conta sem precisar das credenciais.
 
 **Mitigação:**  
-- Usar HTTPS para garantir que o tráfego seja criptografado, impedindo sua interceptação.  
-- Configurar cookies com as flags `HttpOnly` (para impedir acesso por scripts) e `Secure` (para transmitir apenas via HTTPS).  
+- Utilizar HTTPS: Assegurar que todo o tráfego entre o cliente e o servidor seja criptografado, impedindo que dados sensíveis sejam interceptados.
+- 
+- Configurar cookies com as flags de segurança:
+  - `HttpOnly` (para impedir acesso por scripts)
+  - `Secure` (para transmitir apenas via HTTPS).
+  
 - Implementar expiração de sessão e invalidação de tokens após o logout.  
 - Utilizar tokens de sessão que mudam periodicamente (revalidação contínua).
+- Proteção contra XSS: Prevenir a execução de scripts maliciosos que possam roubar cookies utilizando boas práticas como validação de entradas e o uso de Content Security Policy (CSP).
 
 ## Teste de Broken Authentication na API do MEC Energia
 
@@ -83,13 +83,19 @@ Utilizando a ferramenta FFUF, conseguimos realizar testes de força-bruta para t
 
 ### Teste com o **_burpSuite_**
 
-Uma vez que os testes focados nas rotas da API não tenham evidenciado vulnerabilidades significativas, decidimos expandir nossa análise para a aplicação web como um todo. Utilizando a ferramenta Burp Suite, interceptamos a requisição HTTP da página de login com o objetivo de manipular o token de autenticação e elevar os privilégios de um usuário comum para um perfil de administrador. No entanto, após diversas tentativas de adulteração do token, não conseguimos obter sucesso. Essa resistência pode indicar que a aplicação implementa mecanismos robustos de autenticação e autorização, como validação do lado do servidor, assinatura de tokens e controle de acesso baseado em papéis.
+Após concluir os testes iniciais focados nas rotas da API, que não evidenciaram vulnerabilidades significativas, decidimos ampliar o escopo da análise para a aplicação web como um todo. Com a ferramenta Burp Suite, interceptamos as requisições HTTP da página de login para manipular o token de autenticação, com o objetivo de explorar possíveis falhas que permitissem elevar os privilégios de um usuário comum para o perfil de administrador.
+
+Apesar de diversas tentativas de adulteração do token, todas as investidas falharam. Esse resultado sugere que a aplicação utiliza mecanismos robustos de autenticação e autorização, como:
+
+Validação do lado do servidor: Garantindo que os tokens sejam verificados adequadamente em cada requisição.
+Assinatura de tokens: Tornando os tokens difíceis de adulterar sem a chave correta.
+Controle de acesso baseado em papéis (RBAC): Limitando as permissões de cada usuário de acordo com seu nível de acesso.
+Essa resistência demonstra uma atenção significativa à segurança na implementação da autenticação e autorização da aplicação.
 
 <br></br>
 
 ![Screenshot](../imagens/imagemTesteBurpSuite.png)
 **Imagem 1** - Explorando a aplicação web com _BurpSuite_
-
 
 ## Dificuldades encontradas
 
@@ -99,7 +105,11 @@ Nesta sprint, as dificuldades em encontrar vulnerabilidades na aplicação se es
 
 ### Pablo Guilherme
 
-Comparando o módulo de mysql injection com o módulo atual, notei uma diferença significativa em termos de complexidade. Enquanto o primeiro se concentrava em falhas mais simples de input, o segundo exigiu uma compreensão mais profunda de possiveis vulnerabilizades da aplicação tal qual um entendimento maior de como procurar um ponto fraco. A ausência de uma ferramenta tão específica quanto a sqlmap do modulo anterior para o módulo atual tornou o processo de aprendizado mais desafiador, uma vez que as eventuais falhas poderiam ser variadas, mas no final o aprendizado e a aplicação do conhecimento foi mais gratificante.
+Ao comparar o módulo de SQL Injection com o módulo atual, percebi uma diferença significativa no nível de complexidade. Enquanto o primeiro módulo se concentrava em falhas mais diretas e específicas de entrada de dados, o atual demandou uma compreensão mais profunda das possíveis vulnerabilidades da aplicação e uma abordagem mais analítica para identificar potenciais pontos fracos.  
+
+Além disso, a ausência de uma ferramenta tão específica quanto o SQLMap, amplamente utilizado no módulo anterior, tornou o processo mais desafiador. No módulo atual, as vulnerabilidades eram mais variadas, exigindo um entendimento mais abrangente e uma análise detalhada para explorar eventuais falhas.  
+
+Apesar das dificuldades, o aprendizado adquirido e a aplicação prática do conhecimento foram extremamente recompensadores, proporcionando um senso de realização e ampliando minha capacidade de lidar com cenários mais complexos de segurança.
 
 ### Pedro Lucas
 
