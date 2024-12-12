@@ -6,7 +6,6 @@
 | :--: | :-------: |
 | [Mateus Fidelis](https://github.com/MatsFidelis) | 200073184 |
 | [Pablo Guilherme](https://github.com/PabloGJBS) | 200025791 |
-| [Pedro Lucas](https://github.com/AlefMemTav) | 190115548 |
 | [Rafael Bosi](https://github.com/strangeunit28) | 211029559 |
 
 ## Sobre 
@@ -143,8 +142,14 @@ Além disso, a ausência de uma ferramenta tão específica quanto o SQLMap, amp
 
 Apesar das dificuldades, o aprendizado adquirido e a aplicação prática do conhecimento foram extremamente recompensadores, proporcionando um senso de realização e ampliando minha capacidade de lidar com cenários mais complexos de segurança.
 
-### Pedro Lucas
-
 ### Rafael Bosi
 
+Nesta sprint, aprendi sobre Broken Authentication e os modelos de teste para identificar vulnerabilidades, como brute force. Tive dificuldades para configurar o navegador interno do Burp Suite, mas consegui resolver após ajustes. Os testes não apontaram falhas críticas, apenas a recomendação de limitar tentativas de login para prevenir ataques de força bruta, reforçando a segurança da aplicação.
+
 ## Referências
+
+- OWASP. [Top 10 Vulnerabilities](https://owasp.org/www-project-top-ten/).
+- PortSwigger. [Authentication vulnerabilities](https://portswigger.net/web-security/authentication).
+- The MITRE Corporation. [CWE-287: Improper Authentication](https://cwe.mitre.org/data/definitions/287.html).
+- Tools: Burp Suite, Hydra, OWASP ZAP.
+
