@@ -134,7 +134,7 @@ Por fim, no OWASP ZAP é possível ver as requisições sendo capturadas. Apesar
 Durante os testes realizados na aplicação MEC Energia com OWASP ZAP, foram gerados alguns alertas importantes, como demonstrado na imagem abaixo:
 
 ![Screenshot](../imagens/alerts_metadados.png)
-**Imagem 3** - Alerts gerados com o _ZAP_, **_Fonte_** [Rafael Bosi](https://github.com/strangeunit28)
+**Imagem 6** - Alerts gerados com o _ZAP_, **_Fonte_** [Rafael Bosi](https://github.com/strangeunit28)
 
 Dentre os alerts, os que são mais preocupantes são:
 
@@ -147,7 +147,7 @@ Foi detectada uma possível vulnerabilidade relacionada à exposição de metada
 O cabeçalho HTTP "X-Powered-By" revelou informações sobre a tecnologia usada no servidor. Embora as informações expostas não fossem críticas, em um cenário mais grave, isso poderia facilitar ataques baseados em versões específicas de frameworks ou servidores.
 
 ![Screenshot](../imagens/alerts_xpower.png)
-**Imagem 4** - Alert sobre X-Powered-By gerados com o _ZAP_, **_Fonte_** [Rafael Bosi](https://github.com/strangeunit28)
+**Imagem 7** - Alert sobre X-Powered-By gerados com o _ZAP_, **_Fonte_** [Rafael Bosi](https://github.com/strangeunit28)
 
 3. Missing Anti-clickjacking Header - Medium risk
 
