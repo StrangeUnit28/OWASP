@@ -129,6 +129,30 @@ Por fim, no OWASP ZAP é possível ver as requisições sendo capturadas. Apesar
 ![Screenshot](../imagens/owaspzap.png)
 **Imagem 5** - Configurando o Postman para envio da requisição, **_Fonte_** [Pedro Lucas Garcia](https://github.com/AlefMemTav/)
 
+### Alets gerados no MEC Energia
+
+Durante os testes realizados na aplicação MEC Energia com OWASP ZAP, foram gerados alguns alertas importantes, como demonstrado na imagem abaixo:
+
+![Screenshot](../imagens/alerts_metadados.png)
+**Imagem 6** - Alerts gerados com o _ZAP_, **_Fonte_** [Rafael Bosi](https://github.com/strangeunit28)
+
+Dentre os alerts, os que são mais preocupantes são:
+
+1. Exposição de Metadados de Nuvem - High risk
+
+Foi detectada uma possível vulnerabilidade relacionada à exposição de metadados da nuvem, onde um servidor NGINX mal configurado poderia permitir acesso ao IP interno 169.254.169.254. Caso isso ocorra, dados sensíveis da nuvem podem ser acessados por um atacante, incluindo credenciais temporárias.
+
+2. Vazamento de Informações no Cabeçalho "X-Powered-By" - Medium risk
+
+O cabeçalho HTTP "X-Powered-By" revelou informações sobre a tecnologia usada no servidor. Embora as informações expostas não fossem críticas, em um cenário mais grave, isso poderia facilitar ataques baseados em versões específicas de frameworks ou servidores.
+
+![Screenshot](../imagens/alerts_xpower.png)
+**Imagem 7** - Alert sobre X-Powered-By gerados com o _ZAP_, **_Fonte_** [Rafael Bosi](https://github.com/strangeunit28)
+
+3. Missing Anti-clickjacking Header - Medium risk
+
+A aplicação não incluiu cabeçalhos de proteção contra Clickjacking. A falta de X-Frame-Options ou a diretiva Content-Security-Policy (frame-ancestors) pode permitir que a aplicação seja carregada em um iframe, facilitando ataques onde o usuário é enganado a clicar em elementos invisíveis ou falsificados.
+
 ## Dificuldades encontradas
 
 ### Mateus Fidelis
