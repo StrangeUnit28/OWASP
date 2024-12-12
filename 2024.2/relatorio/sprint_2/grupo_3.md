@@ -95,7 +95,7 @@ Essa resistência demonstra uma atenção significativa à segurança na impleme
 <br></br>
 
 ![Screenshot](../imagens/imagemTesteBurpSuite.png)
-**Imagem 1** - Explorando a aplicação web com _BurpSuite_
+**Imagem 1** - Explorando a aplicação web com _BurpSuite_, **_Fonte_** [Pablo Silva](https://github.com/PabloGJBS/)
 
 ## Dificuldades encontradas
 
