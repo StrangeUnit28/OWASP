@@ -129,12 +129,25 @@ Por fim, no OWASP ZAP é possível ver as requisições sendo capturadas. Apesar
 ![Screenshot](../imagens/owaspzap.png)
 **Imagem 5** - Configurando o Postman para envio da requisição, **_Fonte_** [Pedro Lucas Garcia](https://github.com/AlefMemTav/)
 
+#### Testes de força bruta
+
+Com o uso do Active Scan do Zap, foi executar mais de 1000 requisições examinando o endpoint de login e encontrar alguns alertas de segurança, mas nenhum deles sendo de alta prioridade:
+
+![Screenshot](../imagens/zapactivescan.png)
+**Imagem 6** - Alertas de segurança em login, **_Fonte_** [Pedro Lucas Garcia](https://github.com/AlefMemTav/)
+
+Com o uso do Fuzz, foi configurado dois arquivos que substituíssem as credenciais pelos valores dos arquivos e assim testasse o ataque de força bruta na tela de login:
+
+![Screenshot](../imagens/fuzzerzap.png)
+**Imagem 7** - Ataque de força bruta, **_Fonte_** [Pedro Lucas Garcia](https://github.com/AlefMemTav/)
+
+
 ### Alets gerados no MEC Energia
 
 Durante os testes realizados na aplicação MEC Energia com OWASP ZAP, foram gerados alguns alertas importantes, como demonstrado na imagem abaixo:
 
 ![Screenshot](../imagens/alerts_metadados.png)
-**Imagem 6** - Alerts gerados com o _ZAP_, **_Fonte_** [Rafael Bosi](https://github.com/strangeunit28)
+**Imagem 8** - Alerts gerados com o _ZAP_, **_Fonte_** [Rafael Bosi](https://github.com/strangeunit28)
 
 Dentre os alerts, os que são mais preocupantes são:
 
@@ -147,7 +160,7 @@ Foi detectada uma possível vulnerabilidade relacionada à exposição de metada
 O cabeçalho HTTP "X-Powered-By" revelou informações sobre a tecnologia usada no servidor. Embora as informações expostas não fossem críticas, em um cenário mais grave, isso poderia facilitar ataques baseados em versões específicas de frameworks ou servidores.
 
 ![Screenshot](../imagens/alerts_xpower.png)
-**Imagem 7** - Alert sobre X-Powered-By gerados com o _ZAP_, **_Fonte_** [Rafael Bosi](https://github.com/strangeunit28)
+**Imagem 9** - Alert sobre X-Powered-By gerados com o _ZAP_, **_Fonte_** [Rafael Bosi](https://github.com/strangeunit28)
 
 3. Missing Anti-clickjacking Header - Medium risk
 
@@ -168,6 +181,12 @@ Além disso, a ausência de uma ferramenta tão específica quanto o SQLMap, amp
 Apesar das dificuldades, o aprendizado adquirido e a aplicação prática do conhecimento foram extremamente recompensadores, proporcionando um senso de realização e ampliando minha capacidade de lidar com cenários mais complexos de segurança.
 
 ### Pedro Lucas
+
+Eu realizei a verificação da rota de login e ataquei a rota com força bruta por meio de dois arquivos de senhas e usuários comuns. Para isso precisei estudar e entender como configurar o ZAP, combinar com algumas ferramentas auxiliares como o Postman.
+
+No geral, houve alguns alertas de segurança na rota de login, mas nenhum ataque de força bruta conseguiu invadir a API. 
+
+Até o presente momento ela tem uma segurança eficaz e usa medidas como csrftoken para proteger ainda mais cada requisição entre o backend e o frontend. 
 
 ### Rafael Bosi
 
