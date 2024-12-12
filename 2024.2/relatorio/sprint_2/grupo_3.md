@@ -9,9 +9,9 @@
 | [Pedro Lucas](https://github.com/AlefMemTav) | 190115548 |
 | [Rafael Bosi](https://github.com/strangeunit28) | 211029559 |
 
-## Sobre
+## Sobre 
+Este relatório é destinado a documentar as descobertas e o progresso realizado durante a Sprint 2, com foco na vulnerabilidade de **Broken Authentication**. O objetivo foi explorar como essa falha ocorre, exemplos práticos e sua identificação em sistemas, além de registrar desafios enfrentados pelos membros e aprendizados adquiridos.
 
-Este relatório é destinado a documentar as descobertas...
 
 ## O que é Broken Authentication
 
@@ -22,11 +22,53 @@ Broken Authentication é uma classe de vulnerabilidades que ocorre quando os mec
 - **CSRF (Cross-Site Request Forgery):** Ataques que forçam um usuário autenticado a executar ações indesejadas em um aplicativo web.
 - **Brute force attacks:** Tentativas exaustivas de adivinhar credenciais de login.
 
-## Exemplo de Broken Authetication
+## Exemplo de Broken Authentication
 
-Exemplo: Falha de autenticação por força bruta
+### 1. Força bruta em endpoints de login
 
-- No módulo 80 do Hack The Box, uma das vulnerabilidades encontradas envolvia a possibilidade de realizar ataques de força bruta contra o mecanismo de autenticação. A ausência de uma política de bloqueio de tentativas de login após um número específico de falhas permitiu que os atacantes adivinhassem as credenciais de login de forma relativamente rápida. O mesmo podendo ser aplicado a aplicações que utilizam tokens previsiveis de digitos simples.
+**Cenário:**
+Um sistema permite múltiplas tentativas de login sem limitar o número de requisições ou bloquear temporariamente o usuário após falhas consecutivas. 
+
+**Exploração:**
+1. O atacante coleta uma lista de credenciais comuns (por exemplo, `rockyou.txt`).
+2. Utiliza ferramentas como `Hydra` ou `Burp Suite` para tentar combinações até encontrar credenciais válidas.
+3. Após a autenticação, o atacante obtém acesso a dados ou funcionalidades do usuário.
+
+**Prevenção:**
+- Implementar bloqueio temporário após múltiplas tentativas de login.
+- Adicionar autenticação multifator (MFA).
+- Monitorar atividades suspeitas, como picos de tentativas de login.
+
+---
+
+### 2. Reutilização de Credenciais (Credential Stuffing)
+
+**Como funciona:**  
+O atacante utiliza listas de credenciais vazadas de outras plataformas para testar combinações de nome de usuário e senha em um sistema-alvo. Essa técnica explora o fato de muitos usuários reutilizarem as mesmas credenciais em diferentes serviços.
+
+**Exemplo prático:**  
+Uma empresa não implementa autenticação multifator (MFA). Um atacante obtém credenciais de um vazamento público e tenta usá-las para acessar o sistema. Como vários usuários reutilizam as mesmas senhas em vários serviços, o atacante consegue invadir algumas contas sem esforço significativo.
+
+**Mitigação:**  
+- Incentivar o uso de senhas únicas para cada sistema.  
+- Verificar credenciais contra bancos de dados de vazamentos conhecidos, como o serviço `Have I Been Pwned`.  
+- Implementar autenticação multifator (MFA) para reduzir o impacto de credenciais reutilizadas.
+
+---
+
+### 3. Sessões Expostas (Session Hijacking)
+
+**Como funciona:**  
+O atacante rouba uma sessão válida de um usuário para acessar seu sistema, geralmente explorando cookies de sessão que não estão devidamente protegidos. Ataques `Man-in-the-Middle` (MITM) ou scripts maliciosos podem ser usados para capturar esses cookies.
+
+**Exemplo prático:**  
+Um site não marca seus cookies de sessão com as flags `HttpOnly` ou `Secure`. Um atacante intercepta o tráfego HTTP de uma vítima, por exemplo, usando um ataque MITM em uma rede Wi-Fi pública, e consegue roubar os cookies de sessão. Com esses cookies, o atacante se passa pelo usuário, obtendo acesso à conta sem precisar das credenciais.
+
+**Mitigação:**  
+- Usar HTTPS para garantir que o tráfego seja criptografado, impedindo sua interceptação.  
+- Configurar cookies com as flags `HttpOnly` (para impedir acesso por scripts) e `Secure` (para transmitir apenas via HTTPS).  
+- Implementar expiração de sessão e invalidação de tokens após o logout.  
+- Utilizar tokens de sessão que mudam periodicamente (revalidação contínua).
 
 ## Teste de Broken Authentication na API do MEC Energia
 
