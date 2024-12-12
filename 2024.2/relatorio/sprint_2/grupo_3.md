@@ -106,7 +106,28 @@ Essa resistência demonstra uma atenção significativa à segurança na impleme
 <br></br>
 
 ![Screenshot](../imagens/imagemTesteBurpSuite.png)
-**Imagem 1** - Explorando a aplicação web com _BurpSuite_, **_Fonte_** [Pablo Silva](https://github.com/PabloGJBS/)
+**Imagem 2** - Explorando a aplicação web com _BurpSuite_, **_Fonte_** [Pablo Silva](https://github.com/PabloGJBS/)
+
+### Test com OWASP ZAP
+
+O OWASP Zap permite diversas técnicas para testar um site. Por padrão, ele escuta na porta 8080, então é necessário configurar o cliente da requisição (como o Firefox ou o Postman por exemplo) para usar o Proxy na porta 8080. 
+
+Exemplo com Postman:
+
+Na imagem abaixo, após configurar o Proxy do Postman, toda requisição feita será enviada automáticamente para o OWASP ZAP.
+
+![Screenshot](../imagens/postmanproxy.png.png)
+**Imagem 3** - Configurando o Proxy do Postman escutar na porta 8080, **_Fonte_** [Pedro Lucas Garcia](https://github.com/AlefMemTav/)
+
+Agora é necessário configurar o corpo da requisição. No caso do Postman, este foi o corpo de a API exigia receber para a rota de login:
+
+![Screenshot](../imagens/postmanconfig.png)
+**Imagem 4** - Configurando o Postman para envio da requisição, **_Fonte_** [Pedro Lucas Garcia](https://github.com/AlefMemTav/)
+
+Por fim, no OWASP ZAP é possível ver as requisições sendo capturadas. Apesar da API do MEC-ENERGIA escutar na porta 8000, o OWASP consegue capturar toda a requisição feita na porta 8000 pelo cliente (no caso o Postman) e receber:
+
+![Screenshot](../imagens/owaspzap.png)
+**Imagem 5** - Configurando o Postman para envio da requisição, **_Fonte_** [Pedro Lucas Garcia](https://github.com/AlefMemTav/)
 
 ## Dificuldades encontradas
 
