@@ -21,6 +21,17 @@ Broken Authentication é uma categoria de vulnerabilidade que surge quando os me
 - **CSRF (Cross-Site Request Forgery):** Ataques que induzem usuários autenticados a realizar ações indesejadas em uma aplicação web sem o seu consentimento.
 - **Ataques de força bruta (Brute Force):** Tentativas sistemáticas de adivinhar credenciais por meio de combinações exaustivas de nome de usuário e senha.
 
+## Principais Indicadores de Broken Authentication
+
+- Logins fora do padrão geográfico: Detecção de tentativas de login vindas de locais geograficamente distantes em curto período.
+- Sessões simultâneas em dispositivos suspeitos: Atividade simultânea de uma mesma conta em dispositivos ou IPs distintos.
+- Falhas consecutivas de login por diferentes contas no mesmo IP: Indicativo de ataque de força bruta ou credential stuffing.
+
+## Ferramentas para Identificação e Mitigação
+- OWASP ZAP e Burp Suite: Ferramentas que auxiliam na identificação de vulnerabilidades relacionadas à autenticação.
+- Autenticação adaptativa: Sistema que aumenta os requisitos de autenticação com base em riscos detectados, como logins de dispositivos desconhecidos.
+- Auditorias regulares de segurança: Revisão contínua de logs e práticas de autenticação.
+
 ## Exemplo de Broken Authentication
 
 ### 1. Força bruta em endpoints de login
