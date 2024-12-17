@@ -1,85 +1,51 @@
-<div class="body">
-    <h1 class="title">OWASP - Projeto de Testes de Vulnerabilidades</h1>
-    <p>
-        Esta página é destinada a ser um display dos relatórios que iremos gerar em cima de aplicações 
-        para testarmos suas vulnerabilidades enquanto aprendemos mais sobre cibersegurança e sobre o OWASP.
-    </p>
-    <h2 class="title">Contribuidores</h2>
-    <h3 class="title">Red Team</h3>
-    <div class="wrapper">
-        <h4>Sub-grupo 1</h4>
-        <div class="team">
-            <div class="card">
-                <h3>Taynara Cristina Ribeiro Marcellos</h3>
-                <p>211031833 - <a href="https://github.com/TaynaraCris">TaynaraCris</a></p>
-            </div>
-            <div class="card">
-                <h3>Alex Gabriel</h3>
-                <p>200056603 - <a href="https://github.com/Gabriel-Axl">Gabriel-Axl</a></p>
-            </div>
-            <div class="card">
-                <h3>Arthur de Melo Viana</h3>
-                <p>211029147 - <a href="https://github.com/arthurmlv">arthurmlv</a></p>
-            </div>
-            <div class="card">
-                <h3>Arthur Grandão de Mello</h3>
-                <p>211039250 - <a href="https://github.com/arthurgrandao">arthurgrandao</a></p>
-            </div>
-        </div>
-        <h4>Sub-grupo 2</h4>
-        <div class="team">
-            <div class="card">
-                <h3>Felipe Direito C. Macedo</h3>
-                <p>190086971 - <a href="https://github.com/felipedireito">felipedireito</a></p>
-            </div>
-            <div class="card">
-                <h3>Gabriel Campello Marques</h3>
-                <p>211039439 - <a href="https://github.com/G16C">G16C</a></p>
-            </div>
-            <div class="card">
-                <h3>Gustavo Roberto Silva de Melo</h3>
-                <p>211039457 - <a href="https://github.com/gusrberto">gusrberto</a></p>
-            </div>
-            <div class="card">
-                <h3>Matheus Henrique Dos Santos</h3>
-                <p>211029666 - <a href="https://github.com/mathonaut">mathonaut</a></p>
-            </div>
-        </div>
-        <h4>Sub-grupo 3</h4>
-        <div class="team">
-            <div class="card">
-                <h3>Mateus Fidelis Marinho Maia</h3>
-                <p>200073184 - <a href="https://github.com/MatsFidelis">MatsFidelis</a></p>
-            </div>
-            <div class="card">
-                <h3>Pedro Lucas Garcia</h3>
-                <p>190115548 - <a href="https://github.com/AlefMemTav">AlefMemTav</a></p>
-            </div>
-            <div class="card">
-                <h3>Pablo Guilherme de Jesus Batista Silva</h3>
-                <p>200025791 - <a href="https://github.com/PabloGJBS">PabloGJBS</a></p>
-            </div>
-            <div class="card">
-                <h3>Rafael Brito Bosi Rodrigues</h3>
-                <p>211029559 - <a href="https://github.com/strangeunit28">strangeunit28</a></p>
-            </div>
-        </div>
-    </div>
-    <h3 class="title">Blue Team</h3>
-    <div class="wrapper">
-        <div class="team">
-            <div class="card">
-                <h3>Larissa Stéfane Barboza Santos</h3>
-                <p>211039573</p>
-            </div>
-            <div class="card">
-                <h3>Milena Beatriz Aires de Santana Dias</h3>
-                <p>190093625 - <a href="https://github.com/miilenaaires">miilenaaires</a></p>
-            </div>
-            <div class="card">
-                <h3>Cainã Valença de Freitas</h3>
-                <p>180014412 - <a href="https://github.com/freitasc">freitasc</a></p>
-            </div>
-        </div>
-    </div>
-</div>
+# OWASP - Projeto de Testes de Vulnerabilidades
+
+Esta página é destinada a ser um display dos relatórios que iremos gerar em cima de aplicações para testarmos suas vulnerabilidades enquanto aprendemos mais sobre cibersegurança e sobre o OWASP.
+
+## Contribuidores
+
+### Red Team
+
+#### Sub-grupo 1
+
+- **Taynara Cristina Ribeiro Marcellos**  
+  211031833 - [TaynaraCris](https://github.com/TaynaraCris)
+- **Alex Gabriel**  
+  200056603 - [Gabriel-Axl](https://github.com/Gabriel-Axl)
+- **Arthur de Melo Viana**  
+  211029147 - [arthurmlv](https://github.com/arthurmlv)
+- **Arthur Grandão de Mello**  
+  211039250 - [arthurgrandao](https://github.com/arthurgrandao)
+
+#### Sub-grupo 2
+
+- **Felipe Direito C. Macedo**  
+  190086971 - [felipedireito](https://github.com/felipedireito)
+- **Gabriel Campello Marques**  
+  211039439 - [G16C](https://github.com/G16C)
+- **Gustavo Roberto Silva de Melo**  
+  211039457 - [gusrberto](https://github.com/gusrberto)
+- **Matheus Henrique Dos Santos**  
+  211029666 - [mathonaut](https://github.com/mathonaut)
+
+#### Sub-grupo 3
+
+- **Mateus Fidelis Marinho Maia**  
+  200073184 - [MatsFidelis](https://github.com/MatsFidelis)
+- **Pedro Lucas Garcia**  
+  190115548 - [AlefMemTav](https://github.com/AlefMemTav)
+- **Pablo Guilherme de Jesus Batista Silva**  
+  200025791 - [PabloGJBS](https://github.com/PabloGJBS)
+- **Rafael Brito Bosi Rodrigues**  
+  211029559 - [strangeunit28](https://github.com/strangeunit28)
+
+---
+
+### Blue Team
+
+- **Larissa Stéfane Barboza Santos**  
+  211039573
+- **Milena Beatriz Aires de Santana Dias**  
+  190093625 - [miilenaaires](https://github.com/miilenaaires)
+- **Cainã Valença de Freitas**  
+  180014412 - [freitasc](https://github.com/freitasc)
