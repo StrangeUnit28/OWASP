@@ -1,0 +1,1998 @@
+ID,Req. Timestamp,Resp. Timestamp,Method,URL,Code,Reason,RTT,Size Resp. Header,Size Resp. Body
+
+2798,Wed Dec 11 18:58:48 EST 2024,Wed Dec 11 18:58:48 EST 2024,GET,http://localhost:3000/api/auth?class.module.classLoader.DefaultAssertionStatus=nonsense,404,Not Found,64,260,3417
+
+2799,Wed Dec 11 18:58:48 EST 2024,Wed Dec 11 18:58:48 EST 2024,GET,http://localhost:3000/api/auth/csrf?class.module.classLoader.DefaultAssertionStatus=nonsense,200,OK,29,216,80
+
+2800,Wed Dec 11 18:58:48 EST 2024,Wed Dec 11 18:58:48 EST 2024,GET,http://localhost:3000/api/auth/providers?class.module.classLoader.DefaultAssertionStatus=nonsense,200,OK,31,216,218
+
+2801,Wed Dec 11 18:58:48 EST 2024,Wed Dec 11 18:58:48 EST 2024,POST,http://localhost:3000/api/auth,404,Not Found,38,260,3357
+
+2802,Wed Dec 11 18:58:48 EST 2024,Wed Dec 11 18:58:48 EST 2024,POST,http://localhost:3000/api/auth/csrf,400,Bad Request,26,154,65
+
+2803,Wed Dec 11 18:58:48 EST 2024,Wed Dec 11 18:58:48 EST 2024,POST,http://localhost:3000/api/auth/providers,400,Bad Request,28,154,65
+
+2804,Wed Dec 11 18:58:48 EST 2024,Wed Dec 11 18:58:48 EST 2024,POST,http://localhost:3000/api/auth/csrf,400,Bad Request,15,154,65
+
+2805,Wed Dec 11 18:58:48 EST 2024,Wed Dec 11 18:58:48 EST 2024,POST,http://localhost:3000/api/auth/providers,400,Bad Request,21,154,65
+
+2806,Wed Dec 11 18:58:48 EST 2024,Wed Dec 11 18:58:48 EST 2024,GET,http://localhost:3000/api/auth/session?class.module.classLoader.DefaultAssertionStatus=nonsense,200,OK,9,746,212
+
+2807,Wed Dec 11 18:58:48 EST 2024,Wed Dec 11 18:58:48 EST 2024,POST,http://localhost:3000/api/auth/session,400,Bad Request,16,154,65
+
+2808,Wed Dec 11 18:58:48 EST 2024,Wed Dec 11 18:58:48 EST 2024,POST,http://localhost:3000/api/auth/session,400,Bad Request,19,154,65
+
+2809,Wed Dec 11 18:58:48 EST 2024,Wed Dec 11 18:58:49 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,879,745,31
+
+2810,Wed Dec 11 18:58:49 EST 2024,Wed Dec 11 18:58:49 EST 2024,GET,http://localhost:3000/api/auth,404,Not Found,37,260,3357
+
+2811,Wed Dec 11 18:58:49 EST 2024,Wed Dec 11 18:58:49 EST 2024,GET,http://localhost:3000/api/auth/callback,400,Bad Request,7,154,64
+
+2812,Wed Dec 11 18:58:49 EST 2024,Wed Dec 11 18:58:50 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,663,225,91
+
+2813,Wed Dec 11 18:58:50 EST 2024,Wed Dec 11 18:58:50 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,615,225,91
+
+2814,Wed Dec 11 18:58:50 EST 2024,Wed Dec 11 18:58:51 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,607,225,91
+
+2815,Wed Dec 11 18:58:51 EST 2024,Wed Dec 11 18:58:52 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,645,225,91
+
+2816,Wed Dec 11 18:58:52 EST 2024,Wed Dec 11 18:58:52 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,627,225,91
+
+2817,Wed Dec 11 18:58:52 EST 2024,Wed Dec 11 18:58:53 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,623,225,91
+
+2818,Wed Dec 11 18:58:53 EST 2024,Wed Dec 11 18:58:53 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,622,225,91
+
+2819,Wed Dec 11 18:58:53 EST 2024,Wed Dec 11 18:58:54 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,572,225,91
+
+2820,Wed Dec 11 18:58:54 EST 2024,Wed Dec 11 18:58:55 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,675,225,91
+
+2821,Wed Dec 11 18:58:55 EST 2024,Wed Dec 11 18:58:55 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,658,225,91
+
+2822,Wed Dec 11 18:58:55 EST 2024,Wed Dec 11 18:58:56 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,651,225,91
+
+2823,Wed Dec 11 18:58:56 EST 2024,Wed Dec 11 18:58:57 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,652,225,91
+
+2824,Wed Dec 11 18:58:57 EST 2024,Wed Dec 11 18:58:57 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,627,225,91
+
+2825,Wed Dec 11 18:58:57 EST 2024,Wed Dec 11 18:58:58 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,623,225,91
+
+2826,Wed Dec 11 18:58:58 EST 2024,Wed Dec 11 18:58:59 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,703,225,91
+
+2827,Wed Dec 11 18:58:59 EST 2024,Wed Dec 11 18:58:59 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,663,225,91
+
+2828,Wed Dec 11 18:58:59 EST 2024,Wed Dec 11 18:59:00 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,664,745,31
+
+2829,Wed Dec 11 18:59:00 EST 2024,Wed Dec 11 18:59:01 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,635,745,31
+
+2830,Wed Dec 11 18:59:01 EST 2024,Wed Dec 11 18:59:01 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,635,745,31
+
+2831,Wed Dec 11 18:59:01 EST 2024,Wed Dec 11 18:59:02 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,952,745,31
+
+2832,Wed Dec 11 18:59:02 EST 2024,Wed Dec 11 18:59:03 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,723,745,31
+
+2833,Wed Dec 11 18:59:03 EST 2024,Wed Dec 11 18:59:04 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,698,745,31
+
+2834,Wed Dec 11 18:59:04 EST 2024,Wed Dec 11 18:59:04 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,619,745,31
+
+2835,Wed Dec 11 18:59:04 EST 2024,Wed Dec 11 18:59:05 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,695,745,31
+
+2836,Wed Dec 11 18:59:05 EST 2024,Wed Dec 11 18:59:05 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,14,215,57
+
+2837,Wed Dec 11 18:59:05 EST 2024,Wed Dec 11 18:59:05 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,15,215,57
+
+2838,Wed Dec 11 18:59:05 EST 2024,Wed Dec 11 18:59:05 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,10,215,57
+
+2839,Wed Dec 11 18:59:05 EST 2024,Wed Dec 11 18:59:05 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,16,215,57
+
+2840,Wed Dec 11 18:59:05 EST 2024,Wed Dec 11 18:59:05 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,15,215,57
+
+2841,Wed Dec 11 18:59:05 EST 2024,Wed Dec 11 18:59:05 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,8,215,57
+
+2842,Wed Dec 11 18:59:05 EST 2024,Wed Dec 11 18:59:05 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,4,215,57
+
+2843,Wed Dec 11 18:59:05 EST 2024,Wed Dec 11 18:59:05 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,9,215,57
+
+2844,Wed Dec 11 18:59:05 EST 2024,Wed Dec 11 18:59:06 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,814,688,0
+
+2845,Wed Dec 11 18:59:06 EST 2024,Wed Dec 11 18:59:07 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,811,688,0
+
+2846,Wed Dec 11 18:59:07 EST 2024,Wed Dec 11 18:59:07 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,693,688,0
+
+2847,Wed Dec 11 18:59:07 EST 2024,Wed Dec 11 18:59:08 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,652,688,0
+
+2848,Wed Dec 11 18:59:08 EST 2024,Wed Dec 11 18:59:09 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,666,688,0
+
+2849,Wed Dec 11 18:59:09 EST 2024,Wed Dec 11 18:59:09 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,645,688,0
+
+2850,Wed Dec 11 18:59:09 EST 2024,Wed Dec 11 18:59:10 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,653,688,0
+
+2851,Wed Dec 11 18:59:10 EST 2024,Wed Dec 11 18:59:11 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,687,688,0
+
+2852,Wed Dec 11 18:59:11 EST 2024,Wed Dec 11 18:59:11 EST 2024,GET,http://localhost:3000/api/auth,404,Not Found,28,260,3357
+
+2853,Wed Dec 11 18:59:11 EST 2024,Wed Dec 11 18:59:11 EST 2024,GET,http://localhost:3000/api/auth/callback,400,Bad Request,20,154,64
+
+2854,Wed Dec 11 18:59:11 EST 2024,Wed Dec 11 18:59:11 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,714,225,91
+
+2855,Wed Dec 11 18:59:11 EST 2024,Wed Dec 11 18:59:12 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,552,225,91
+
+2856,Wed Dec 11 18:59:12 EST 2024,Wed Dec 11 18:59:13 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,665,225,91
+
+2857,Wed Dec 11 18:59:13 EST 2024,Wed Dec 11 18:59:13 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,625,225,91
+
+2858,Wed Dec 11 18:59:13 EST 2024,Wed Dec 11 18:59:14 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,574,225,91
+
+2859,Wed Dec 11 18:59:14 EST 2024,Wed Dec 11 18:59:14 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,682,225,91
+
+2860,Wed Dec 11 18:59:14 EST 2024,Wed Dec 11 18:59:15 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,569,225,91
+
+2861,Wed Dec 11 18:59:15 EST 2024,Wed Dec 11 18:59:16 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,574,225,91
+
+2862,Wed Dec 11 18:59:16 EST 2024,Wed Dec 11 18:59:16 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,550,225,91
+
+2863,Wed Dec 11 18:59:16 EST 2024,Wed Dec 11 18:59:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,612,225,91
+
+2864,Wed Dec 11 18:59:17 EST 2024,Wed Dec 11 18:59:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,596,225,91
+
+2865,Wed Dec 11 18:59:17 EST 2024,Wed Dec 11 18:59:18 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,569,225,91
+
+2866,Wed Dec 11 18:59:18 EST 2024,Wed Dec 11 18:59:19 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,661,225,91
+
+2867,Wed Dec 11 18:59:19 EST 2024,Wed Dec 11 18:59:19 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,612,225,91
+
+2868,Wed Dec 11 18:59:19 EST 2024,Wed Dec 11 18:59:20 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,600,225,91
+
+2869,Wed Dec 11 18:59:20 EST 2024,Wed Dec 11 18:59:20 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,582,225,91
+
+2870,Wed Dec 11 18:59:20 EST 2024,Wed Dec 11 18:59:21 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,577,225,91
+
+2871,Wed Dec 11 18:59:21 EST 2024,Wed Dec 11 18:59:22 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,626,225,91
+
+2872,Wed Dec 11 18:59:22 EST 2024,Wed Dec 11 18:59:22 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,600,225,91
+
+2873,Wed Dec 11 18:59:22 EST 2024,Wed Dec 11 18:59:23 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,569,225,91
+
+2874,Wed Dec 11 18:59:23 EST 2024,Wed Dec 11 18:59:23 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,605,225,91
+
+2875,Wed Dec 11 18:59:23 EST 2024,Wed Dec 11 18:59:24 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,574,225,91
+
+2876,Wed Dec 11 18:59:24 EST 2024,Wed Dec 11 18:59:25 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,585,225,91
+
+2877,Wed Dec 11 18:59:25 EST 2024,Wed Dec 11 18:59:25 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,550,225,91
+
+2878,Wed Dec 11 18:59:25 EST 2024,Wed Dec 11 18:59:26 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,587,225,91
+
+2879,Wed Dec 11 18:59:26 EST 2024,Wed Dec 11 18:59:26 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,591,225,91
+
+2880,Wed Dec 11 18:59:26 EST 2024,Wed Dec 11 18:59:27 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,565,225,91
+
+2881,Wed Dec 11 18:59:27 EST 2024,Wed Dec 11 18:59:27 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,605,225,91
+
+2882,Wed Dec 11 18:59:27 EST 2024,Wed Dec 11 18:59:28 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,546,225,91
+
+2883,Wed Dec 11 18:59:28 EST 2024,Wed Dec 11 18:59:29 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,571,225,91
+
+2884,Wed Dec 11 18:59:29 EST 2024,Wed Dec 11 18:59:29 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,579,225,91
+
+2885,Wed Dec 11 18:59:29 EST 2024,Wed Dec 11 18:59:30 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,559,225,91
+
+2886,Wed Dec 11 18:59:30 EST 2024,Wed Dec 11 18:59:30 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,641,225,91
+
+2887,Wed Dec 11 18:59:30 EST 2024,Wed Dec 11 18:59:31 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,627,225,91
+
+2888,Wed Dec 11 18:59:31 EST 2024,Wed Dec 11 18:59:32 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,627,225,91
+
+2889,Wed Dec 11 18:59:32 EST 2024,Wed Dec 11 18:59:32 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,640,225,91
+
+2890,Wed Dec 11 18:59:32 EST 2024,Wed Dec 11 18:59:33 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,710,225,91
+
+2891,Wed Dec 11 18:59:33 EST 2024,Wed Dec 11 18:59:34 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,646,225,91
+
+2892,Wed Dec 11 18:59:34 EST 2024,Wed Dec 11 18:59:34 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,608,225,91
+
+2893,Wed Dec 11 18:59:34 EST 2024,Wed Dec 11 18:59:35 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,562,225,91
+
+2894,Wed Dec 11 18:59:35 EST 2024,Wed Dec 11 18:59:35 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,630,225,91
+
+2895,Wed Dec 11 18:59:35 EST 2024,Wed Dec 11 18:59:36 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,594,225,91
+
+2896,Wed Dec 11 18:59:36 EST 2024,Wed Dec 11 18:59:37 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,586,225,91
+
+2897,Wed Dec 11 18:59:37 EST 2024,Wed Dec 11 18:59:37 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,619,225,91
+
+2898,Wed Dec 11 18:59:37 EST 2024,Wed Dec 11 18:59:38 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,625,225,91
+
+2899,Wed Dec 11 18:59:38 EST 2024,Wed Dec 11 18:59:38 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,643,225,91
+
+2900,Wed Dec 11 18:59:38 EST 2024,Wed Dec 11 18:59:39 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,636,225,91
+
+2901,Wed Dec 11 18:59:39 EST 2024,Wed Dec 11 18:59:40 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,595,225,91
+
+2902,Wed Dec 11 18:59:40 EST 2024,Wed Dec 11 18:59:40 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,617,225,91
+
+2903,Wed Dec 11 18:59:40 EST 2024,Wed Dec 11 18:59:41 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,530,225,91
+
+2904,Wed Dec 11 18:59:41 EST 2024,Wed Dec 11 18:59:41 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,626,225,91
+
+2905,Wed Dec 11 18:59:41 EST 2024,Wed Dec 11 18:59:42 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,632,225,91
+
+2906,Wed Dec 11 18:59:42 EST 2024,Wed Dec 11 18:59:43 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,594,225,91
+
+2907,Wed Dec 11 18:59:43 EST 2024,Wed Dec 11 18:59:43 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,623,225,91
+
+2908,Wed Dec 11 18:59:43 EST 2024,Wed Dec 11 18:59:44 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,628,225,91
+
+2909,Wed Dec 11 18:59:44 EST 2024,Wed Dec 11 18:59:45 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,607,225,91
+
+2910,Wed Dec 11 18:59:45 EST 2024,Wed Dec 11 18:59:45 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,573,225,91
+
+2911,Wed Dec 11 18:59:45 EST 2024,Wed Dec 11 18:59:46 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,599,225,91
+
+2912,Wed Dec 11 18:59:46 EST 2024,Wed Dec 11 18:59:46 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,613,225,91
+
+2913,Wed Dec 11 18:59:46 EST 2024,Wed Dec 11 18:59:47 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,567,225,91
+
+2914,Wed Dec 11 18:59:47 EST 2024,Wed Dec 11 18:59:47 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,549,225,91
+
+2915,Wed Dec 11 18:59:47 EST 2024,Wed Dec 11 18:59:48 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,565,225,91
+
+2916,Wed Dec 11 18:59:48 EST 2024,Wed Dec 11 18:59:49 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,570,225,91
+
+2917,Wed Dec 11 18:59:49 EST 2024,Wed Dec 11 18:59:49 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,687,225,91
+
+2918,Wed Dec 11 18:59:49 EST 2024,Wed Dec 11 18:59:50 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,695,225,91
+
+2919,Wed Dec 11 18:59:50 EST 2024,Wed Dec 11 18:59:51 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,722,225,91
+
+2920,Wed Dec 11 18:59:51 EST 2024,Wed Dec 11 18:59:51 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,653,225,91
+
+2921,Wed Dec 11 18:59:51 EST 2024,Wed Dec 11 18:59:52 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,647,225,91
+
+2922,Wed Dec 11 18:59:52 EST 2024,Wed Dec 11 18:59:53 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,563,225,91
+
+2923,Wed Dec 11 18:59:53 EST 2024,Wed Dec 11 18:59:53 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,605,225,91
+
+2924,Wed Dec 11 18:59:53 EST 2024,Wed Dec 11 18:59:54 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,770,745,31
+
+2925,Wed Dec 11 18:59:54 EST 2024,Wed Dec 11 18:59:55 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,634,745,31
+
+2926,Wed Dec 11 18:59:55 EST 2024,Wed Dec 11 18:59:55 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,655,745,31
+
+2927,Wed Dec 11 18:59:55 EST 2024,Wed Dec 11 18:59:56 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,633,745,31
+
+2928,Wed Dec 11 18:59:56 EST 2024,Wed Dec 11 18:59:56 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,603,745,31
+
+2929,Wed Dec 11 18:59:56 EST 2024,Wed Dec 11 18:59:57 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,627,745,31
+
+2930,Wed Dec 11 18:59:57 EST 2024,Wed Dec 11 18:59:58 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,644,745,31
+
+2931,Wed Dec 11 18:59:58 EST 2024,Wed Dec 11 18:59:58 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,625,745,31
+
+2932,Wed Dec 11 18:59:58 EST 2024,Wed Dec 11 18:59:59 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,628,745,31
+
+2933,Wed Dec 11 18:59:59 EST 2024,Wed Dec 11 19:00:00 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,622,745,31
+
+2934,Wed Dec 11 19:00:00 EST 2024,Wed Dec 11 19:00:00 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,650,745,31
+
+2935,Wed Dec 11 19:00:00 EST 2024,Wed Dec 11 19:00:01 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,644,745,31
+
+2936,Wed Dec 11 19:00:01 EST 2024,Wed Dec 11 19:00:02 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,1099,745,31
+
+2937,Wed Dec 11 19:00:02 EST 2024,Wed Dec 11 19:00:03 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,1183,745,31
+
+2938,Wed Dec 11 19:00:03 EST 2024,Wed Dec 11 19:00:04 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,801,745,31
+
+2939,Wed Dec 11 19:00:04 EST 2024,Wed Dec 11 19:00:05 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,654,745,31
+
+2940,Wed Dec 11 19:00:05 EST 2024,Wed Dec 11 19:00:05 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,633,745,31
+
+2941,Wed Dec 11 19:00:05 EST 2024,Wed Dec 11 19:00:06 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,622,745,31
+
+2942,Wed Dec 11 19:00:06 EST 2024,Wed Dec 11 19:00:07 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,703,745,31
+
+2943,Wed Dec 11 19:00:07 EST 2024,Wed Dec 11 19:00:07 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,663,745,31
+
+2944,Wed Dec 11 19:00:07 EST 2024,Wed Dec 11 19:00:08 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,632,745,31
+
+2945,Wed Dec 11 19:00:08 EST 2024,Wed Dec 11 19:00:09 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,643,745,31
+
+2946,Wed Dec 11 19:00:09 EST 2024,Wed Dec 11 19:00:09 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,618,745,31
+
+2947,Wed Dec 11 19:00:09 EST 2024,Wed Dec 11 19:00:10 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,617,745,31
+
+2948,Wed Dec 11 19:00:10 EST 2024,Wed Dec 11 19:00:10 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,666,745,31
+
+2949,Wed Dec 11 19:00:10 EST 2024,Wed Dec 11 19:00:11 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,606,745,31
+
+2950,Wed Dec 11 19:00:11 EST 2024,Wed Dec 11 19:00:12 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,682,745,31
+
+2951,Wed Dec 11 19:00:12 EST 2024,Wed Dec 11 19:00:12 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,637,745,31
+
+2952,Wed Dec 11 19:00:12 EST 2024,Wed Dec 11 19:00:13 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,639,745,31
+
+2953,Wed Dec 11 19:00:13 EST 2024,Wed Dec 11 19:00:14 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,631,745,31
+
+2954,Wed Dec 11 19:00:14 EST 2024,Wed Dec 11 19:00:14 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,828,745,31
+
+2955,Wed Dec 11 19:00:14 EST 2024,Wed Dec 11 19:00:15 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,697,745,31
+
+2956,Wed Dec 11 19:00:15 EST 2024,Wed Dec 11 19:00:16 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,693,745,31
+
+2957,Wed Dec 11 19:00:16 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,615,745,31
+
+2958,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,637,745,31
+
+2959,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,5,215,57
+
+2960,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,7,215,57
+
+2961,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,8,215,57
+
+2962,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,24,215,57
+
+2963,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,9,215,57
+
+2964,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,6,215,57
+
+2965,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,25,215,57
+
+2966,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,15,215,57
+
+2967,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,4,215,57
+
+2968,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,6,215,57
+
+2969,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,8,215,57
+
+2970,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,6,215,57
+
+2971,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,5,215,57
+
+2972,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,6,215,57
+
+2973,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,10,215,57
+
+2974,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,3,215,57
+
+2975,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,5,215,57
+
+2976,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,6,215,57
+
+2977,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,3,215,57
+
+2978,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,4,215,57
+
+2979,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,3,215,57
+
+2980,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,6,215,57
+
+2981,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,3,215,57
+
+2982,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,3,215,57
+
+2983,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,4,215,57
+
+2984,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,3,215,57
+
+2985,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,2,215,57
+
+2986,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,4,215,57
+
+2987,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,5,215,57
+
+2988,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,3,215,57
+
+2989,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,3,215,57
+
+2990,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,3,215,57
+
+2991,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,3,215,57
+
+2992,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,3,215,57
+
+2993,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,2,215,57
+
+2994,Wed Dec 11 19:00:17 EST 2024,Wed Dec 11 19:00:18 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,598,688,0
+
+2995,Wed Dec 11 19:00:18 EST 2024,Wed Dec 11 19:00:19 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,677,688,0
+
+2996,Wed Dec 11 19:00:19 EST 2024,Wed Dec 11 19:00:19 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,643,688,0
+
+2997,Wed Dec 11 19:00:19 EST 2024,Wed Dec 11 19:00:20 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,640,688,0
+
+2998,Wed Dec 11 19:00:20 EST 2024,Wed Dec 11 19:00:21 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,630,688,0
+
+2999,Wed Dec 11 19:00:21 EST 2024,Wed Dec 11 19:00:21 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,609,688,0
+
+3000,Wed Dec 11 19:00:21 EST 2024,Wed Dec 11 19:00:22 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,638,688,0
+
+3001,Wed Dec 11 19:00:22 EST 2024,Wed Dec 11 19:00:22 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,651,688,0
+
+3002,Wed Dec 11 19:00:22 EST 2024,Wed Dec 11 19:00:23 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,607,688,0
+
+3003,Wed Dec 11 19:00:23 EST 2024,Wed Dec 11 19:00:24 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,644,688,0
+
+3004,Wed Dec 11 19:00:24 EST 2024,Wed Dec 11 19:00:24 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,642,688,0
+
+3005,Wed Dec 11 19:00:24 EST 2024,Wed Dec 11 19:00:25 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,696,688,0
+
+3006,Wed Dec 11 19:00:25 EST 2024,Wed Dec 11 19:00:26 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,663,688,0
+
+3007,Wed Dec 11 19:00:26 EST 2024,Wed Dec 11 19:00:26 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,670,688,0
+
+3008,Wed Dec 11 19:00:26 EST 2024,Wed Dec 11 19:00:27 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,648,688,0
+
+3009,Wed Dec 11 19:00:27 EST 2024,Wed Dec 11 19:00:28 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,687,688,0
+
+3010,Wed Dec 11 19:00:28 EST 2024,Wed Dec 11 19:00:28 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,625,688,0
+
+3011,Wed Dec 11 19:00:28 EST 2024,Wed Dec 11 19:00:29 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,744,688,0
+
+3012,Wed Dec 11 19:00:29 EST 2024,Wed Dec 11 19:00:30 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,676,688,0
+
+3013,Wed Dec 11 19:00:30 EST 2024,Wed Dec 11 19:00:30 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,656,688,0
+
+3014,Wed Dec 11 19:00:30 EST 2024,Wed Dec 11 19:00:31 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,664,688,0
+
+3015,Wed Dec 11 19:00:31 EST 2024,Wed Dec 11 19:00:32 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,667,688,0
+
+3016,Wed Dec 11 19:00:32 EST 2024,Wed Dec 11 19:00:32 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,679,688,0
+
+3017,Wed Dec 11 19:00:32 EST 2024,Wed Dec 11 19:00:33 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,668,688,0
+
+3018,Wed Dec 11 19:00:33 EST 2024,Wed Dec 11 19:00:34 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,635,688,0
+
+3019,Wed Dec 11 19:00:34 EST 2024,Wed Dec 11 19:00:34 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,635,688,0
+
+3020,Wed Dec 11 19:00:34 EST 2024,Wed Dec 11 19:00:35 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,630,688,0
+
+3021,Wed Dec 11 19:00:35 EST 2024,Wed Dec 11 19:00:36 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,669,688,0
+
+3022,Wed Dec 11 19:00:36 EST 2024,Wed Dec 11 19:00:36 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,687,688,0
+
+3023,Wed Dec 11 19:00:36 EST 2024,Wed Dec 11 19:00:37 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,682,688,0
+
+3024,Wed Dec 11 19:00:37 EST 2024,Wed Dec 11 19:00:38 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,614,688,0
+
+3025,Wed Dec 11 19:00:38 EST 2024,Wed Dec 11 19:00:38 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,721,688,0
+
+3026,Wed Dec 11 19:00:38 EST 2024,Wed Dec 11 19:00:39 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,639,688,0
+
+3027,Wed Dec 11 19:00:39 EST 2024,Wed Dec 11 19:00:40 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,720,688,0
+
+3028,Wed Dec 11 19:00:40 EST 2024,Wed Dec 11 19:00:40 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,654,688,0
+
+3029,Wed Dec 11 19:00:40 EST 2024,Wed Dec 11 19:00:40 EST 2024,GET,http://localhost:3000/api/auth,404,Not Found,35,260,3357
+
+3030,Wed Dec 11 19:00:40 EST 2024,Wed Dec 11 19:00:41 EST 2024,GET,http://localhost:3000/api/auth/callback,400,Bad Request,49,154,64
+
+3031,Wed Dec 11 19:00:40 EST 2024,Wed Dec 11 19:00:41 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,662,225,91
+
+3032,Wed Dec 11 19:00:41 EST 2024,Wed Dec 11 19:00:42 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,571,225,91
+
+3033,Wed Dec 11 19:00:42 EST 2024,Wed Dec 11 19:00:42 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,561,225,91
+
+3034,Wed Dec 11 19:00:42 EST 2024,Wed Dec 11 19:00:43 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,623,225,91
+
+3035,Wed Dec 11 19:00:43 EST 2024,Wed Dec 11 19:00:43 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,550,225,91
+
+3036,Wed Dec 11 19:00:43 EST 2024,Wed Dec 11 19:00:44 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,543,225,91
+
+3037,Wed Dec 11 19:00:44 EST 2024,Wed Dec 11 19:00:45 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,640,745,31
+
+3038,Wed Dec 11 19:00:45 EST 2024,Wed Dec 11 19:00:45 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,664,745,31
+
+3039,Wed Dec 11 19:00:45 EST 2024,Wed Dec 11 19:00:46 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,671,745,31
+
+3040,Wed Dec 11 19:00:46 EST 2024,Wed Dec 11 19:00:46 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,6,215,57
+
+3041,Wed Dec 11 19:00:46 EST 2024,Wed Dec 11 19:00:46 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,6,215,57
+
+3042,Wed Dec 11 19:00:46 EST 2024,Wed Dec 11 19:00:46 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,5,215,57
+
+3043,Wed Dec 11 19:00:46 EST 2024,Wed Dec 11 19:00:47 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,660,688,0
+
+3044,Wed Dec 11 19:00:47 EST 2024,Wed Dec 11 19:00:47 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,625,688,0
+
+3045,Wed Dec 11 19:00:47 EST 2024,Wed Dec 11 19:00:48 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,636,688,0
+
+3046,Wed Dec 11 19:00:48 EST 2024,Wed Dec 11 19:00:48 EST 2024,GET,http://localhost:3000/api/auth,404,Not Found,21,260,3357
+
+3047,Wed Dec 11 19:00:48 EST 2024,Wed Dec 11 19:00:48 EST 2024,GET,http://localhost:3000/api/auth/callback,400,Bad Request,12,154,64
+
+3048,Wed Dec 11 19:00:48 EST 2024,Wed Dec 11 19:00:48 EST 2024,GET,http://localhost:3000/api/auth,404,Not Found,21,260,3357
+
+3049,Wed Dec 11 19:00:48 EST 2024,Wed Dec 11 19:00:48 EST 2024,GET,http://localhost:3000/api/auth/callback,400,Bad Request,6,154,64
+
+3050,Wed Dec 11 19:00:48 EST 2024,Wed Dec 11 19:00:49 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,642,745,31
+
+3051,Wed Dec 11 19:00:49 EST 2024,Wed Dec 11 19:00:49 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,3,215,57
+
+3052,Wed Dec 11 19:00:49 EST 2024,Wed Dec 11 19:00:49 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,6,215,57
+
+3053,Wed Dec 11 19:00:49 EST 2024,Wed Dec 11 19:00:49 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,633,745,31
+
+3054,Wed Dec 11 19:00:49 EST 2024,Wed Dec 11 19:00:49 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,3,215,57
+
+3055,Wed Dec 11 19:00:49 EST 2024,Wed Dec 11 19:00:49 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,6,215,57
+
+3056,Wed Dec 11 19:00:49 EST 2024,Wed Dec 11 19:00:49 EST 2024,POST,http://localhost:3000/latest/meta-data/,308,Permanent Redirect,12,202,17
+
+3057,Wed Dec 11 19:00:49 EST 2024,Wed Dec 11 19:00:49 EST 2024,POST,http://localhost:3000/latest/meta-data/,308,Permanent Redirect,7,202,17
+
+3058,Wed Dec 11 19:00:49 EST 2024,Wed Dec 11 19:00:49 EST 2024,POST,http://localhost:3000/latest/meta-data/,308,Permanent Redirect,5,202,17
+
+3059,Wed Dec 11 19:00:49 EST 2024,Wed Dec 11 19:00:49 EST 2024,GET,http://localhost:3000/api/auth,404,Not Found,42,260,3357
+
+3060,Wed Dec 11 19:00:49 EST 2024,Wed Dec 11 19:00:49 EST 2024,POST,http://localhost:3000/latest/meta-data/,308,Permanent Redirect,18,202,17
+
+3061,Wed Dec 11 19:00:49 EST 2024,Wed Dec 11 19:00:49 EST 2024,GET,http://localhost:3000/api/auth/callback,400,Bad Request,10,154,64
+
+3062,Wed Dec 11 19:00:49 EST 2024,Wed Dec 11 19:00:50 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,612,225,91
+
+3063,Wed Dec 11 19:00:50 EST 2024,Wed Dec 11 19:00:51 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,639,225,91
+
+3064,Wed Dec 11 19:00:51 EST 2024,Wed Dec 11 19:00:51 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,603,225,91
+
+3065,Wed Dec 11 19:00:51 EST 2024,Wed Dec 11 19:00:52 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,584,225,91
+
+3066,Wed Dec 11 19:00:52 EST 2024,Wed Dec 11 19:00:52 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,627,225,91
+
+3067,Wed Dec 11 19:00:52 EST 2024,Wed Dec 11 19:00:53 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,579,225,91
+
+3068,Wed Dec 11 19:00:53 EST 2024,Wed Dec 11 19:00:54 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,642,225,91
+
+3069,Wed Dec 11 19:00:54 EST 2024,Wed Dec 11 19:00:54 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,562,225,91
+
+3070,Wed Dec 11 19:00:54 EST 2024,Wed Dec 11 19:00:55 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,564,225,91
+
+3071,Wed Dec 11 19:00:55 EST 2024,Wed Dec 11 19:00:55 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,560,225,91
+
+3072,Wed Dec 11 19:00:55 EST 2024,Wed Dec 11 19:00:56 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,597,225,91
+
+3073,Wed Dec 11 19:00:56 EST 2024,Wed Dec 11 19:00:56 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,626,225,91
+
+3074,Wed Dec 11 19:00:56 EST 2024,Wed Dec 11 19:00:57 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,599,225,91
+
+3075,Wed Dec 11 19:00:57 EST 2024,Wed Dec 11 19:00:58 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,564,225,91
+
+3076,Wed Dec 11 19:00:58 EST 2024,Wed Dec 11 19:00:58 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,598,225,91
+
+3077,Wed Dec 11 19:00:58 EST 2024,Wed Dec 11 19:00:59 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,564,225,91
+
+3078,Wed Dec 11 19:00:59 EST 2024,Wed Dec 11 19:00:59 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,577,225,91
+
+3079,Wed Dec 11 19:00:59 EST 2024,Wed Dec 11 19:01:00 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,559,225,91
+
+3080,Wed Dec 11 19:01:00 EST 2024,Wed Dec 11 19:01:01 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,636,225,91
+
+3081,Wed Dec 11 19:01:01 EST 2024,Wed Dec 11 19:01:01 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,739,225,91
+
+3082,Wed Dec 11 19:01:01 EST 2024,Wed Dec 11 19:01:03 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,1279,225,91
+
+3083,Wed Dec 11 19:01:03 EST 2024,Wed Dec 11 19:01:03 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,641,225,91
+
+3084,Wed Dec 11 19:01:03 EST 2024,Wed Dec 11 19:01:04 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,836,225,91
+
+3085,Wed Dec 11 19:01:04 EST 2024,Wed Dec 11 19:01:05 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,631,225,91
+
+3086,Wed Dec 11 19:01:05 EST 2024,Wed Dec 11 19:01:05 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,607,225,91
+
+3087,Wed Dec 11 19:01:05 EST 2024,Wed Dec 11 19:01:06 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,606,225,91
+
+3088,Wed Dec 11 19:01:06 EST 2024,Wed Dec 11 19:01:07 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,599,225,91
+
+3089,Wed Dec 11 19:01:07 EST 2024,Wed Dec 11 19:01:07 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,615,225,91
+
+3090,Wed Dec 11 19:01:07 EST 2024,Wed Dec 11 19:01:08 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,668,745,31
+
+3091,Wed Dec 11 19:01:08 EST 2024,Wed Dec 11 19:01:08 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,650,745,31
+
+3092,Wed Dec 11 19:01:08 EST 2024,Wed Dec 11 19:01:09 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,633,745,31
+
+3093,Wed Dec 11 19:01:09 EST 2024,Wed Dec 11 19:01:10 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,646,745,31
+
+3094,Wed Dec 11 19:01:10 EST 2024,Wed Dec 11 19:01:10 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,643,745,31
+
+3095,Wed Dec 11 19:01:10 EST 2024,Wed Dec 11 19:01:11 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,638,745,31
+
+3096,Wed Dec 11 19:01:11 EST 2024,Wed Dec 11 19:01:12 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,1144,745,31
+
+3097,Wed Dec 11 19:01:12 EST 2024,Wed Dec 11 19:01:13 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,950,745,31
+
+3098,Wed Dec 11 19:01:13 EST 2024,Wed Dec 11 19:01:14 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,646,745,31
+
+3099,Wed Dec 11 19:01:14 EST 2024,Wed Dec 11 19:01:15 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,1014,745,31
+
+3100,Wed Dec 11 19:01:15 EST 2024,Wed Dec 11 19:01:15 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,674,745,31
+
+3101,Wed Dec 11 19:01:15 EST 2024,Wed Dec 11 19:01:16 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,625,745,31
+
+3102,Wed Dec 11 19:01:16 EST 2024,Wed Dec 11 19:01:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,666,745,31
+
+3103,Wed Dec 11 19:01:17 EST 2024,Wed Dec 11 19:01:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,696,745,31
+
+3104,Wed Dec 11 19:01:17 EST 2024,Wed Dec 11 19:01:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,7,215,57
+
+3105,Wed Dec 11 19:01:17 EST 2024,Wed Dec 11 19:01:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,5,215,57
+
+3106,Wed Dec 11 19:01:17 EST 2024,Wed Dec 11 19:01:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,8,215,57
+
+3107,Wed Dec 11 19:01:18 EST 2024,Wed Dec 11 19:01:18 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,14,215,57
+
+3108,Wed Dec 11 19:01:18 EST 2024,Wed Dec 11 19:01:18 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,13,215,57
+
+3109,Wed Dec 11 19:01:18 EST 2024,Wed Dec 11 19:01:18 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,7,215,57
+
+3110,Wed Dec 11 19:01:18 EST 2024,Wed Dec 11 19:01:18 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,10,215,57
+
+3111,Wed Dec 11 19:01:18 EST 2024,Wed Dec 11 19:01:18 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,9,215,57
+
+3112,Wed Dec 11 19:01:18 EST 2024,Wed Dec 11 19:01:18 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,17,215,57
+
+3113,Wed Dec 11 19:01:18 EST 2024,Wed Dec 11 19:01:18 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,4,215,57
+
+3114,Wed Dec 11 19:01:18 EST 2024,Wed Dec 11 19:01:18 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,3,215,57
+
+3115,Wed Dec 11 19:01:18 EST 2024,Wed Dec 11 19:01:18 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,4,215,57
+
+3116,Wed Dec 11 19:01:18 EST 2024,Wed Dec 11 19:01:18 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,12,215,57
+
+3117,Wed Dec 11 19:01:18 EST 2024,Wed Dec 11 19:01:18 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,4,215,57
+
+3118,Wed Dec 11 19:01:18 EST 2024,Wed Dec 11 19:01:18 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,636,688,0
+
+3119,Wed Dec 11 19:01:18 EST 2024,Wed Dec 11 19:01:19 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,680,688,0
+
+3120,Wed Dec 11 19:01:19 EST 2024,Wed Dec 11 19:01:20 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,1355,688,0
+
+3121,Wed Dec 11 19:01:20 EST 2024,Wed Dec 11 19:01:21 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,649,688,0
+
+3122,Wed Dec 11 19:01:21 EST 2024,Wed Dec 11 19:01:22 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,619,688,0
+
+3123,Wed Dec 11 19:01:22 EST 2024,Wed Dec 11 19:01:22 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,632,688,0
+
+3124,Wed Dec 11 19:01:22 EST 2024,Wed Dec 11 19:01:23 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,639,688,0
+
+3125,Wed Dec 11 19:01:23 EST 2024,Wed Dec 11 19:01:23 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,618,688,0
+
+3126,Wed Dec 11 19:01:23 EST 2024,Wed Dec 11 19:01:24 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,623,688,0
+
+3127,Wed Dec 11 19:01:24 EST 2024,Wed Dec 11 19:01:25 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,654,688,0
+
+3128,Wed Dec 11 19:01:25 EST 2024,Wed Dec 11 19:01:25 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,632,688,0
+
+3129,Wed Dec 11 19:01:25 EST 2024,Wed Dec 11 19:01:26 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,627,688,0
+
+3130,Wed Dec 11 19:01:26 EST 2024,Wed Dec 11 19:01:27 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,643,688,0
+
+3131,Wed Dec 11 19:01:27 EST 2024,Wed Dec 11 19:01:27 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,659,688,0
+
+3132,Wed Dec 11 19:01:27 EST 2024,Wed Dec 11 19:01:27 EST 2024,GET,http://localhost:3000/api/auth,404,Not Found,41,260,3357
+
+3133,Wed Dec 11 19:01:27 EST 2024,Wed Dec 11 19:01:27 EST 2024,GET,http://localhost:3000/api/auth/callback,400,Bad Request,40,154,64
+
+3134,Wed Dec 11 19:01:27 EST 2024,Wed Dec 11 19:01:28 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,662,225,91
+
+3135,Wed Dec 11 19:01:28 EST 2024,Wed Dec 11 19:01:29 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,619,225,91
+
+3136,Wed Dec 11 19:01:29 EST 2024,Wed Dec 11 19:01:29 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,586,225,91
+
+3137,Wed Dec 11 19:01:29 EST 2024,Wed Dec 11 19:01:30 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,667,225,91
+
+3138,Wed Dec 11 19:01:30 EST 2024,Wed Dec 11 19:01:30 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,562,225,91
+
+3139,Wed Dec 11 19:01:30 EST 2024,Wed Dec 11 19:01:31 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,542,225,91
+
+3140,Wed Dec 11 19:01:31 EST 2024,Wed Dec 11 19:01:32 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,565,225,91
+
+3141,Wed Dec 11 19:01:32 EST 2024,Wed Dec 11 19:01:32 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,623,225,91
+
+3142,Wed Dec 11 19:01:32 EST 2024,Wed Dec 11 19:01:33 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,603,225,91
+
+3143,Wed Dec 11 19:01:33 EST 2024,Wed Dec 11 19:01:33 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,655,225,91
+
+3144,Wed Dec 11 19:01:33 EST 2024,Wed Dec 11 19:01:34 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,655,225,91
+
+3145,Wed Dec 11 19:01:34 EST 2024,Wed Dec 11 19:01:35 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,606,225,91
+
+3146,Wed Dec 11 19:01:35 EST 2024,Wed Dec 11 19:01:35 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,554,225,91
+
+3147,Wed Dec 11 19:01:35 EST 2024,Wed Dec 11 19:01:36 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,571,225,91
+
+3148,Wed Dec 11 19:01:36 EST 2024,Wed Dec 11 19:01:36 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,690,225,91
+
+3149,Wed Dec 11 19:01:36 EST 2024,Wed Dec 11 19:01:37 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,551,225,91
+
+3150,Wed Dec 11 19:01:37 EST 2024,Wed Dec 11 19:01:38 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,572,225,91
+
+3151,Wed Dec 11 19:01:38 EST 2024,Wed Dec 11 19:01:38 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,550,225,91
+
+3152,Wed Dec 11 19:01:38 EST 2024,Wed Dec 11 19:01:39 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,575,225,91
+
+3153,Wed Dec 11 19:01:39 EST 2024,Wed Dec 11 19:01:39 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,635,225,91
+
+3154,Wed Dec 11 19:01:39 EST 2024,Wed Dec 11 19:01:40 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,550,225,91
+
+3155,Wed Dec 11 19:01:40 EST 2024,Wed Dec 11 19:01:40 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,563,225,91
+
+3156,Wed Dec 11 19:01:40 EST 2024,Wed Dec 11 19:01:41 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,568,225,91
+
+3157,Wed Dec 11 19:01:41 EST 2024,Wed Dec 11 19:01:42 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,644,225,91
+
+3158,Wed Dec 11 19:01:42 EST 2024,Wed Dec 11 19:01:42 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,653,745,31
+
+3159,Wed Dec 11 19:01:42 EST 2024,Wed Dec 11 19:01:43 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,728,745,31
+
+3160,Wed Dec 11 19:01:43 EST 2024,Wed Dec 11 19:01:44 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,640,745,31
+
+3161,Wed Dec 11 19:01:44 EST 2024,Wed Dec 11 19:01:44 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,660,745,31
+
+3162,Wed Dec 11 19:01:44 EST 2024,Wed Dec 11 19:01:45 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,635,745,31
+
+3163,Wed Dec 11 19:01:45 EST 2024,Wed Dec 11 19:01:46 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,616,745,31
+
+3164,Wed Dec 11 19:01:46 EST 2024,Wed Dec 11 19:01:46 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,667,745,31
+
+3165,Wed Dec 11 19:01:46 EST 2024,Wed Dec 11 19:01:47 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,681,745,31
+
+3166,Wed Dec 11 19:01:47 EST 2024,Wed Dec 11 19:01:48 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,643,745,31
+
+3167,Wed Dec 11 19:01:48 EST 2024,Wed Dec 11 19:01:48 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,639,745,31
+
+3168,Wed Dec 11 19:01:48 EST 2024,Wed Dec 11 19:01:49 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,648,745,31
+
+3169,Wed Dec 11 19:01:49 EST 2024,Wed Dec 11 19:01:50 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,635,745,31
+
+3170,Wed Dec 11 19:01:50 EST 2024,Wed Dec 11 19:01:50 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,11,215,57
+
+3171,Wed Dec 11 19:01:50 EST 2024,Wed Dec 11 19:01:50 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,9,215,57
+
+3172,Wed Dec 11 19:01:50 EST 2024,Wed Dec 11 19:01:50 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,8,215,57
+
+3173,Wed Dec 11 19:01:50 EST 2024,Wed Dec 11 19:01:50 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,12,215,57
+
+3174,Wed Dec 11 19:01:50 EST 2024,Wed Dec 11 19:01:50 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,8,215,57
+
+3175,Wed Dec 11 19:01:50 EST 2024,Wed Dec 11 19:01:50 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,16,215,57
+
+3176,Wed Dec 11 19:01:50 EST 2024,Wed Dec 11 19:01:50 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,20,215,57
+
+3177,Wed Dec 11 19:01:50 EST 2024,Wed Dec 11 19:01:50 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,37,215,57
+
+3178,Wed Dec 11 19:01:50 EST 2024,Wed Dec 11 19:01:50 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,15,215,57
+
+3179,Wed Dec 11 19:01:50 EST 2024,Wed Dec 11 19:01:50 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,9,215,57
+
+3180,Wed Dec 11 19:01:50 EST 2024,Wed Dec 11 19:01:50 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,6,215,57
+
+3181,Wed Dec 11 19:01:50 EST 2024,Wed Dec 11 19:01:50 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,13,215,57
+
+3182,Wed Dec 11 19:01:50 EST 2024,Wed Dec 11 19:01:50 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,673,688,0
+
+3183,Wed Dec 11 19:01:50 EST 2024,Wed Dec 11 19:01:51 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,662,688,0
+
+3184,Wed Dec 11 19:01:51 EST 2024,Wed Dec 11 19:01:52 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,716,688,0
+
+3185,Wed Dec 11 19:01:52 EST 2024,Wed Dec 11 19:01:52 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,649,688,0
+
+3186,Wed Dec 11 19:01:52 EST 2024,Wed Dec 11 19:01:53 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,691,688,0
+
+3187,Wed Dec 11 19:01:53 EST 2024,Wed Dec 11 19:01:54 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,694,688,0
+
+3188,Wed Dec 11 19:01:54 EST 2024,Wed Dec 11 19:01:55 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,730,688,0
+
+3189,Wed Dec 11 19:01:55 EST 2024,Wed Dec 11 19:01:55 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,685,688,0
+
+3190,Wed Dec 11 19:01:55 EST 2024,Wed Dec 11 19:01:56 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,678,688,0
+
+3191,Wed Dec 11 19:01:56 EST 2024,Wed Dec 11 19:01:57 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,657,688,0
+
+3192,Wed Dec 11 19:01:57 EST 2024,Wed Dec 11 19:01:57 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,668,688,0
+
+3193,Wed Dec 11 19:01:57 EST 2024,Wed Dec 11 19:01:58 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,687,688,0
+
+3194,Wed Dec 11 19:01:58 EST 2024,Wed Dec 11 19:01:58 EST 2024,GET,http://localhost:3000/api/auth,404,Not Found,23,260,3357
+
+3195,Wed Dec 11 19:01:58 EST 2024,Wed Dec 11 19:01:58 EST 2024,GET,http://localhost:3000/api/auth/callback,400,Bad Request,19,154,64
+
+3196,Wed Dec 11 19:01:58 EST 2024,Wed Dec 11 19:01:58 EST 2024,GET,http://localhost:3000/api/auth/,404,Not Found,9,260,3357
+
+3197,Wed Dec 11 19:01:58 EST 2024,Wed Dec 11 19:01:58 EST 2024,GET,http://localhost:3000/api/auth/callback/,400,Bad Request,16,154,64
+
+3198,Wed Dec 11 19:01:58 EST 2024,Wed Dec 11 19:01:58 EST 2024,GET,http://localhost:3000/api/auth/csrf/,200,OK,10,216,80
+
+3199,Wed Dec 11 19:01:58 EST 2024,Wed Dec 11 19:01:58 EST 2024,GET,http://localhost:3000/api/auth/providers/,200,OK,8,216,218
+
+3200,Wed Dec 11 19:01:59 EST 2024,Wed Dec 11 19:01:59 EST 2024,GET,http://localhost:3000/api/auth/session/,200,OK,6,746,212
+
+3201,Wed Dec 11 19:01:58 EST 2024,Wed Dec 11 19:01:58 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials/,200,OK,6,745,31
+
+3202,Wed Dec 11 19:01:59 EST 2024,Wed Dec 11 19:01:59 EST 2024,GET,http://localhost:3000/api/auth,404,Not Found,64,260,3357
+
+3203,Wed Dec 11 19:01:59 EST 2024,Wed Dec 11 19:01:59 EST 2024,GET,http://localhost:3000/api/auth/callback,400,Bad Request,21,154,64
+
+3204,Wed Dec 11 19:01:59 EST 2024,Wed Dec 11 19:01:59 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,653,225,91
+
+3205,Wed Dec 11 19:01:59 EST 2024,Wed Dec 11 19:02:00 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,587,225,91
+
+3206,Wed Dec 11 19:02:00 EST 2024,Wed Dec 11 19:02:01 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,599,745,31
+
+3207,Wed Dec 11 19:02:01 EST 2024,Wed Dec 11 19:02:01 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,5,215,57
+
+3208,Wed Dec 11 19:02:01 EST 2024,Wed Dec 11 19:02:01 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,685,254,26946
+
+3209,Wed Dec 11 19:02:01 EST 2024,Wed Dec 11 19:02:01 EST 2024,GET,http://localhost:3000/api/auth,404,Not Found,33,260,3357
+
+3210,Wed Dec 11 19:02:01 EST 2024,Wed Dec 11 19:02:01 EST 2024,GET,http://localhost:3000/api/auth/callback,400,Bad Request,16,154,64
+
+3211,Wed Dec 11 19:02:01 EST 2024,Wed Dec 11 19:02:02 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,725,225,91
+
+3212,Wed Dec 11 19:02:02 EST 2024,Wed Dec 11 19:02:03 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,722,225,91
+
+3213,Wed Dec 11 19:02:03 EST 2024,Wed Dec 11 19:02:03 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,647,225,91
+
+3214,Wed Dec 11 19:02:03 EST 2024,Wed Dec 11 19:02:04 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,626,225,91
+
+3215,Wed Dec 11 19:02:04 EST 2024,Wed Dec 11 19:02:05 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,569,225,91
+
+3216,Wed Dec 11 19:02:05 EST 2024,Wed Dec 11 19:02:05 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,557,225,91
+
+3217,Wed Dec 11 19:02:05 EST 2024,Wed Dec 11 19:02:06 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,617,745,31
+
+3218,Wed Dec 11 19:02:06 EST 2024,Wed Dec 11 19:02:06 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,628,745,31
+
+3219,Wed Dec 11 19:02:06 EST 2024,Wed Dec 11 19:02:07 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,644,745,31
+
+3220,Wed Dec 11 19:02:07 EST 2024,Wed Dec 11 19:02:07 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,3,215,57
+
+3221,Wed Dec 11 19:02:07 EST 2024,Wed Dec 11 19:02:07 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,3,215,57
+
+3222,Wed Dec 11 19:02:07 EST 2024,Wed Dec 11 19:02:07 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,4,215,57
+
+3223,Wed Dec 11 19:02:07 EST 2024,Wed Dec 11 19:02:08 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,643,254,26946
+
+3224,Wed Dec 11 19:02:08 EST 2024,Wed Dec 11 19:02:08 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,607,254,26946
+
+3225,Wed Dec 11 19:02:08 EST 2024,Wed Dec 11 19:02:09 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,616,254,26946
+
+3226,Wed Dec 11 19:02:09 EST 2024,Wed Dec 11 19:02:09 EST 2024,GET,http://localhost:3000/api/auth,404,Not Found,32,260,3357
+
+3227,Wed Dec 11 19:02:09 EST 2024,Wed Dec 11 19:02:09 EST 2024,GET,http://localhost:3000/api/auth/callback,400,Bad Request,7,154,64
+
+3228,Wed Dec 11 19:02:09 EST 2024,Wed Dec 11 19:02:10 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,608,225,91
+
+3229,Wed Dec 11 19:02:10 EST 2024,Wed Dec 11 19:02:10 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,615,225,91
+
+3230,Wed Dec 11 19:02:10 EST 2024,Wed Dec 11 19:02:11 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,663,225,91
+
+3231,Wed Dec 11 19:02:11 EST 2024,Wed Dec 11 19:02:12 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,648,225,91
+
+3232,Wed Dec 11 19:02:12 EST 2024,Wed Dec 11 19:02:12 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,572,225,91
+
+3233,Wed Dec 11 19:02:12 EST 2024,Wed Dec 11 19:02:13 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,549,225,91
+
+3234,Wed Dec 11 19:02:13 EST 2024,Wed Dec 11 19:02:13 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,558,225,91
+
+3235,Wed Dec 11 19:02:13 EST 2024,Wed Dec 11 19:02:14 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,600,225,91
+
+3236,Wed Dec 11 19:02:14 EST 2024,Wed Dec 11 19:02:14 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,576,225,91
+
+3237,Wed Dec 11 19:02:14 EST 2024,Wed Dec 11 19:02:15 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,587,225,91
+
+3238,Wed Dec 11 19:02:15 EST 2024,Wed Dec 11 19:02:16 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,572,225,91
+
+3239,Wed Dec 11 19:02:16 EST 2024,Wed Dec 11 19:02:16 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,596,225,91
+
+3240,Wed Dec 11 19:02:16 EST 2024,Wed Dec 11 19:02:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,581,225,91
+
+3241,Wed Dec 11 19:02:17 EST 2024,Wed Dec 11 19:02:17 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,594,225,91
+
+3242,Wed Dec 11 19:02:17 EST 2024,Wed Dec 11 19:02:18 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,651,745,31
+
+3243,Wed Dec 11 19:02:18 EST 2024,Wed Dec 11 19:02:19 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,616,745,31
+
+3244,Wed Dec 11 19:02:19 EST 2024,Wed Dec 11 19:02:19 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,694,745,31
+
+3245,Wed Dec 11 19:02:19 EST 2024,Wed Dec 11 19:02:20 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,676,745,31
+
+3246,Wed Dec 11 19:02:20 EST 2024,Wed Dec 11 19:02:21 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,640,745,31
+
+3247,Wed Dec 11 19:02:21 EST 2024,Wed Dec 11 19:02:21 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,642,745,31
+
+3248,Wed Dec 11 19:02:21 EST 2024,Wed Dec 11 19:02:22 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,635,745,31
+
+3249,Wed Dec 11 19:02:22 EST 2024,Wed Dec 11 19:02:22 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,6,215,57
+
+3250,Wed Dec 11 19:02:22 EST 2024,Wed Dec 11 19:02:22 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,8,215,57
+
+3251,Wed Dec 11 19:02:22 EST 2024,Wed Dec 11 19:02:22 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,16,215,57
+
+3252,Wed Dec 11 19:02:22 EST 2024,Wed Dec 11 19:02:22 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,4,215,57
+
+3253,Wed Dec 11 19:02:22 EST 2024,Wed Dec 11 19:02:22 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,3,215,57
+
+3254,Wed Dec 11 19:02:22 EST 2024,Wed Dec 11 19:02:22 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,4,215,57
+
+3255,Wed Dec 11 19:02:22 EST 2024,Wed Dec 11 19:02:22 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,8,215,57
+
+3256,Wed Dec 11 19:02:22 EST 2024,Wed Dec 11 19:02:23 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,591,688,0
+
+3257,Wed Dec 11 19:02:23 EST 2024,Wed Dec 11 19:02:23 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,657,688,0
+
+3258,Wed Dec 11 19:02:23 EST 2024,Wed Dec 11 19:02:24 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,617,688,0
+
+3259,Wed Dec 11 19:02:24 EST 2024,Wed Dec 11 19:02:25 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,634,688,0
+
+3260,Wed Dec 11 19:02:25 EST 2024,Wed Dec 11 19:02:25 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,656,688,0
+
+3261,Wed Dec 11 19:02:25 EST 2024,Wed Dec 11 19:02:26 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,659,688,0
+
+3262,Wed Dec 11 19:02:26 EST 2024,Wed Dec 11 19:02:26 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,302,Found,640,688,0
+
+3263,Wed Dec 11 19:02:26 EST 2024,Wed Dec 11 19:02:27 EST 2024,GET,http://localhost:3000/api/auth,404,Not Found,26,260,3357
+
+3264,Wed Dec 11 19:02:27 EST 2024,Wed Dec 11 19:02:27 EST 2024,GET,http://localhost:3000/api/auth/callback,400,Bad Request,18,154,64
+
+3265,Wed Dec 11 19:02:26 EST 2024,Wed Dec 11 19:02:27 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,671,745,31
+
+3266,Wed Dec 11 19:02:27 EST 2024,Wed Dec 11 19:02:27 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,92,225,91
+
+3267,Wed Dec 11 19:02:27 EST 2024,Wed Dec 11 19:02:27 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,94,225,91
+
+3268,Wed Dec 11 19:02:27 EST 2024,Wed Dec 11 19:02:28 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,606,225,91
+
+3269,Wed Dec 11 19:02:28 EST 2024,Wed Dec 11 19:02:29 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,634,225,91
+
+3270,Wed Dec 11 19:02:29 EST 2024,Wed Dec 11 19:02:29 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,60,225,91
+
+3271,Wed Dec 11 19:02:29 EST 2024,Wed Dec 11 19:02:29 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,560,225,91
+
+3272,Wed Dec 11 19:02:29 EST 2024,Wed Dec 11 19:02:30 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,672,745,31
+
+3273,Wed Dec 11 19:02:30 EST 2024,Wed Dec 11 19:02:30 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,83,225,91
+
+3274,Wed Dec 11 19:02:30 EST 2024,Wed Dec 11 19:02:30 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,76,225,91
+
+3275,Wed Dec 11 19:02:30 EST 2024,Wed Dec 11 19:02:31 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,584,225,91
+
+3276,Wed Dec 11 19:02:31 EST 2024,Wed Dec 11 19:02:31 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,555,225,91
+
+3277,Wed Dec 11 19:02:31 EST 2024,Wed Dec 11 19:02:31 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,68,225,91
+
+3278,Wed Dec 11 19:02:31 EST 2024,Wed Dec 11 19:02:32 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,615,225,91
+
+3279,Wed Dec 11 19:02:32 EST 2024,Wed Dec 11 19:02:32 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,641,745,31
+
+3280,Wed Dec 11 19:02:32 EST 2024,Wed Dec 11 19:02:33 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,630,745,31
+
+3281,Wed Dec 11 19:02:33 EST 2024,Wed Dec 11 19:02:34 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,591,745,31
+
+3282,Wed Dec 11 19:02:34 EST 2024,Wed Dec 11 19:02:34 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,651,745,31
+
+3283,Wed Dec 11 19:02:34 EST 2024,Wed Dec 11 19:02:35 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,644,745,31
+
+3284,Wed Dec 11 19:02:35 EST 2024,Wed Dec 11 19:02:36 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,668,745,31
+
+3285,Wed Dec 11 19:02:36 EST 2024,Wed Dec 11 19:02:36 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,614,745,31
+
+3286,Wed Dec 11 19:02:36 EST 2024,Wed Dec 11 19:02:37 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,669,745,31
+
+3287,Wed Dec 11 19:02:37 EST 2024,Wed Dec 11 19:02:37 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,3,215,57
+
+3288,Wed Dec 11 19:02:37 EST 2024,Wed Dec 11 19:02:37 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,6,215,57
+
+3289,Wed Dec 11 19:02:37 EST 2024,Wed Dec 11 19:02:37 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,4,215,57
+
+3290,Wed Dec 11 19:02:37 EST 2024,Wed Dec 11 19:02:37 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,3,215,57
+
+3291,Wed Dec 11 19:02:37 EST 2024,Wed Dec 11 19:02:37 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,4,215,57
+
+3292,Wed Dec 11 19:02:37 EST 2024,Wed Dec 11 19:02:37 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,3,215,57
+
+3293,Wed Dec 11 19:02:37 EST 2024,Wed Dec 11 19:02:38 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,670,745,31
+
+3294,Wed Dec 11 19:02:38 EST 2024,Wed Dec 11 19:02:38 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,648,254,26946
+
+3295,Wed Dec 11 19:02:38 EST 2024,Wed Dec 11 19:02:39 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,584,254,26946
+
+3296,Wed Dec 11 19:02:39 EST 2024,Wed Dec 11 19:02:40 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,590,254,26946
+
+3297,Wed Dec 11 19:02:40 EST 2024,Wed Dec 11 19:02:40 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,608,254,26946
+
+3298,Wed Dec 11 19:02:40 EST 2024,Wed Dec 11 19:02:41 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,660,254,26946
+
+3299,Wed Dec 11 19:02:41 EST 2024,Wed Dec 11 19:02:42 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,637,254,26946
+
+3300,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/api/auth/callback/trace.axd,400,Bad Request,27,154,64
+
+3301,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/elmah.axd,404,Not Found,50,260,3357
+
+3302,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/api/auth,404,Not Found,64,260,3357
+
+3303,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/api/auth/callback,400,Bad Request,11,154,64
+
+3304,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/api/trace.axd,404,Not Found,26,260,3357
+
+3305,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/api/auth/trace.axd,400,Bad Request,15,154,64
+
+3306,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/api/auth,404,Not Found,16,260,3357
+
+3307,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/api/auth/callback/.htaccess,400,Bad Request,28,154,64
+
+3308,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/api/auth/callback,400,Bad Request,45,154,64
+
+3309,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/api/.htaccess,404,Not Found,46,260,3357
+
+3310,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/api/auth/.htaccess,400,Bad Request,17,154,64
+
+3311,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/api/auth/callback/.env,400,Bad Request,14,154,64
+
+3312,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/api/auth,404,Not Found,22,260,3357
+
+3313,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/api/.env,404,Not Found,23,260,3357
+
+3314,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/api/auth/callback,400,Bad Request,23,154,64
+
+3315,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/api/auth/.env,400,Bad Request,29,154,64
+
+3316,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/lfm.php,404,Not Found,40,260,3357
+
+3317,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/api/auth/callback/actuator/health,400,Bad Request,48,154,64
+
+3318,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/api/auth,404,Not Found,54,260,3357
+
+3319,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/.idea/WebServers.xml,404,Not Found,50,260,3357
+
+3320,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/api/auth/callback/actuator/health,400,Bad Request,33,154,64
+
+3321,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/api/auth/callback,400,Bad Request,19,154,64
+
+3322,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/config/databases.yml,404,Not Found,28,260,3357
+
+3323,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/config/database.yml,404,Not Found,17,260,3357
+
+3324,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/.git/config,404,Not Found,29,260,3357
+
+3325,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/.svn/entries,404,Not Found,49,260,3357
+
+3326,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/.svn/wc.db,404,Not Found,33,260,3357
+
+3327,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/CVS/root,404,Not Found,32,260,3357
+
+3328,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/server-status,404,Not Found,41,260,3357
+
+3329,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/core,404,Not Found,23,260,3357
+
+3330,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/sftp-config.json,404,Not Found,30,260,3357
+
+3331,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/WS_FTP.ini,404,Not Found,33,260,3357
+
+3332,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/ws_ftp.ini,404,Not Found,55,260,3357
+
+3333,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:42 EST 2024,GET,http://localhost:3000/WS_FTP.INI,404,Not Found,47,260,3357
+
+3334,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:43 EST 2024,GET,http://localhost:3000/filezilla.xml,404,Not Found,63,260,3357
+
+3335,Wed Dec 11 19:02:43 EST 2024,Wed Dec 11 19:02:43 EST 2024,GET,http://localhost:3000/sitemanager.xml,404,Not Found,53,260,3357
+
+3336,Wed Dec 11 19:02:43 EST 2024,Wed Dec 11 19:02:43 EST 2024,GET,http://localhost:3000/FileZilla.xml,404,Not Found,33,260,3357
+
+3337,Wed Dec 11 19:02:43 EST 2024,Wed Dec 11 19:02:43 EST 2024,GET,http://localhost:3000/winscp.ini,404,Not Found,37,260,3357
+
+3338,Wed Dec 11 19:02:43 EST 2024,Wed Dec 11 19:02:43 EST 2024,GET,http://localhost:3000/WinSCP.ini,404,Not Found,35,260,3357
+
+3339,Wed Dec 11 19:02:43 EST 2024,Wed Dec 11 19:02:43 EST 2024,GET,http://localhost:3000/.DS_Store,404,Not Found,22,260,3357
+
+3340,Wed Dec 11 19:02:43 EST 2024,Wed Dec 11 19:02:43 EST 2024,GET,http://localhost:3000/.php_cs.cache,404,Not Found,35,260,3357
+
+3341,Wed Dec 11 19:02:43 EST 2024,Wed Dec 11 19:02:43 EST 2024,GET,http://localhost:3000/DEADJOE,404,Not Found,21,260,3357
+
+3342,Wed Dec 11 19:02:43 EST 2024,Wed Dec 11 19:02:43 EST 2024,GET,http://localhost:3000/sites/default/private/files/backup_migrate/scheduled/test.txt,404,Not Found,41,260,3357
+
+3343,Wed Dec 11 19:02:43 EST 2024,Wed Dec 11 19:02:43 EST 2024,GET,http://localhost:3000/app/etc/local.xml,404,Not Found,39,260,3357
+
+3344,Wed Dec 11 19:02:42 EST 2024,Wed Dec 11 19:02:43 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,916,225,91
+
+3345,Wed Dec 11 19:02:43 EST 2024,Wed Dec 11 19:02:43 EST 2024,GET,http://localhost:3000/server.key,404,Not Found,32,260,3357
+
+3346,Wed Dec 11 19:02:43 EST 2024,Wed Dec 11 19:02:43 EST 2024,GET,http://localhost:3000/privatekey.key,404,Not Found,38,260,3357
+
+3347,Wed Dec 11 19:02:43 EST 2024,Wed Dec 11 19:02:43 EST 2024,GET,http://localhost:3000/myserver.key,404,Not Found,12,260,3357
+
+3348,Wed Dec 11 19:02:43 EST 2024,Wed Dec 11 19:02:43 EST 2024,GET,http://localhost:3000/key.pem,404,Not Found,10,260,3357
+
+3349,Wed Dec 11 19:02:43 EST 2024,Wed Dec 11 19:02:43 EST 2024,GET,http://localhost:3000/id_rsa,404,Not Found,17,260,3357
+
+3350,Wed Dec 11 19:02:43 EST 2024,Wed Dec 11 19:02:43 EST 2024,GET,http://localhost:3000/id_dsa,404,Not Found,54,260,3357
+
+3351,Wed Dec 11 19:02:43 EST 2024,Wed Dec 11 19:02:43 EST 2024,GET,http://localhost:3000/.ssh/id_rsa,404,Not Found,59,260,3357
+
+3352,Wed Dec 11 19:02:43 EST 2024,Wed Dec 11 19:02:43 EST 2024,GET,http://localhost:3000/.ssh/id_dsa,404,Not Found,44,260,3357
+
+3353,Wed Dec 11 19:02:43 EST 2024,Wed Dec 11 19:02:43 EST 2024,GET,http://localhost:3000/adminer.php,404,Not Found,74,260,3357
+
+3354,Wed Dec 11 19:02:43 EST 2024,Wed Dec 11 19:02:43 EST 2024,GET,http://localhost:3000/vb_test.php,404,Not Found,47,260,3357
+
+3355,Wed Dec 11 19:02:43 EST 2024,Wed Dec 11 19:02:43 EST 2024,GET,http://localhost:3000/CHANGELOG.txt,404,Not Found,83,260,3357
+
+3356,Wed Dec 11 19:02:43 EST 2024,Wed Dec 11 19:02:43 EST 2024,GET,http://localhost:3000/sites/default/files/.ht.sqlite,404,Not Found,28,260,3357
+
+3357,Wed Dec 11 19:02:43 EST 2024,Wed Dec 11 19:02:43 EST 2024,GET,http://localhost:3000/composer.json,404,Not Found,28,260,3357
+
+3358,Wed Dec 11 19:02:43 EST 2024,Wed Dec 11 19:02:43 EST 2024,GET,http://localhost:3000/composer.lock,404,Not Found,25,260,3357
+
+3359,Wed Dec 11 19:02:43 EST 2024,Wed Dec 11 19:02:43 EST 2024,GET,http://localhost:3000/vim_settings.xml,404,Not Found,38,260,3357
+
+3360,Wed Dec 11 19:02:43 EST 2024,Wed Dec 11 19:02:44 EST 2024,GET,http://localhost:3000/server-info,404,Not Found,36,260,3357
+
+3361,Wed Dec 11 19:02:44 EST 2024,Wed Dec 11 19:02:44 EST 2024,GET,http://localhost:3000/phpinfo.php,404,Not Found,32,260,3357
+
+3362,Wed Dec 11 19:02:44 EST 2024,Wed Dec 11 19:02:44 EST 2024,GET,http://localhost:3000/info.php,404,Not Found,31,260,3357
+
+3363,Wed Dec 11 19:02:44 EST 2024,Wed Dec 11 19:02:44 EST 2024,GET,http://localhost:3000/i.php,404,Not Found,18,260,3357
+
+3364,Wed Dec 11 19:02:44 EST 2024,Wed Dec 11 19:02:44 EST 2024,GET,http://localhost:3000/test.php,404,Not Found,32,260,3357
+
+3365,Wed Dec 11 19:02:44 EST 2024,Wed Dec 11 19:02:44 EST 2024,GET,http://localhost:3000/_wpeprivate/config.json,404,Not Found,10,260,3357
+
+3366,Wed Dec 11 19:02:44 EST 2024,Wed Dec 11 19:02:44 EST 2024,GET,http://localhost:3000/_framework/blazor.boot.json,404,Not Found,21,260,3357
+
+3367,Wed Dec 11 19:02:44 EST 2024,Wed Dec 11 19:02:44 EST 2024,GET,http://localhost:3000/.hg,404,Not Found,34,260,3357
+
+3368,Wed Dec 11 19:02:44 EST 2024,Wed Dec 11 19:02:44 EST 2024,GET,http://localhost:3000/.bzr,404,Not Found,33,260,3357
+
+3369,Wed Dec 11 19:02:44 EST 2024,Wed Dec 11 19:02:44 EST 2024,GET,http://localhost:3000/._darcs,404,Not Found,41,260,3357
+
+3370,Wed Dec 11 19:02:44 EST 2024,Wed Dec 11 19:02:44 EST 2024,GET,http://localhost:3000/BitKeeper,404,Not Found,33,260,3357
+
+3371,Wed Dec 11 19:02:43 EST 2024,Wed Dec 11 19:02:44 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,972,225,91
+
+3372,Wed Dec 11 19:02:44 EST 2024,Wed Dec 11 19:02:44 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,591,225,91
+
+3373,Wed Dec 11 19:02:44 EST 2024,Wed Dec 11 19:02:45 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,557,225,91
+
+3374,Wed Dec 11 19:02:45 EST 2024,Wed Dec 11 19:02:46 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,562,225,91
+
+3375,Wed Dec 11 19:02:46 EST 2024,Wed Dec 11 19:02:46 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,716,225,91
+
+3376,Wed Dec 11 19:02:46 EST 2024,Wed Dec 11 19:02:47 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,591,225,91
+
+3377,Wed Dec 11 19:02:47 EST 2024,Wed Dec 11 19:02:48 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,651,225,91
+
+3378,Wed Dec 11 19:02:48 EST 2024,Wed Dec 11 19:02:48 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,616,225,91
+
+3379,Wed Dec 11 19:02:48 EST 2024,Wed Dec 11 19:02:49 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,627,225,91
+
+3380,Wed Dec 11 19:02:49 EST 2024,Wed Dec 11 19:02:49 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,620,225,91
+
+3381,Wed Dec 11 19:02:49 EST 2024,Wed Dec 11 19:02:50 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,401,Unauthorized,608,225,91
+
+3382,Wed Dec 11 19:02:50 EST 2024,Wed Dec 11 19:02:50 EST 2024,GET,http://localhost:3000/api/auth,404,Not Found,18,260,3357
+
+3383,Wed Dec 11 19:02:50 EST 2024,Wed Dec 11 19:02:50 EST 2024,GET,http://localhost:3000/api/auth/callback/credentials?callbackUrl=/&csrfToken=5046b8e829c9dfa0d8e63551df7816ec910babb4f44d10558352a01eed8a17d9&json=true&password=unb&username=usuario@unb.br,500,Internal Server Error,20,165,59
+
+3384,Wed Dec 11 19:02:50 EST 2024,Wed Dec 11 19:02:50 EST 2024,GET,http://localhost:3000/api/auth/callback,400,Bad Request,9,154,64
+
+3385,Wed Dec 11 19:02:50 EST 2024,Wed Dec 11 19:02:50 EST 2024,GET,http://localhost:3000/api/auth,404,Not Found,47,260,3357
+
+3386,Wed Dec 11 19:02:50 EST 2024,Wed Dec 11 19:02:50 EST 2024,GET,http://localhost:3000/api/auth/callback,400,Bad Request,27,154,64
+
+3387,Wed Dec 11 19:02:50 EST 2024,Wed Dec 11 19:02:50 EST 2024,GET,http://localhost:3000/api/auth,404,Not Found,47,260,3357
+
+3389,Wed Dec 11 19:02:50 EST 2024,Wed Dec 11 19:02:50 EST 2024,GET,http://localhost:3000/api/auth/callback,400,Bad Request,37,154,64
+
+3390,Wed Dec 11 19:02:50 EST 2024,Wed Dec 11 19:02:50 EST 2024,GET,http://localhost:3000/api/auth/csrf,200,OK,46,216,80
+
+3391,Wed Dec 11 19:02:50 EST 2024,Wed Dec 11 19:02:50 EST 2024,GET,http://localhost:3000/api/auth/csrf,200,OK,9,216,80
+
+3392,Wed Dec 11 19:02:50 EST 2024,Wed Dec 11 19:02:50 EST 2024,GET,http://localhost:3000/api/auth/callback,400,Bad Request,10,154,64
+
+3393,Wed Dec 11 19:02:50 EST 2024,Wed Dec 11 19:02:50 EST 2024,GET,http://localhost:3000/api/auth/callback,400,Bad Request,4,154,64
+
+3394,Wed Dec 11 19:02:50 EST 2024,Wed Dec 11 19:02:50 EST 2024,GET,http://localhost:3000/api/auth/csrf,200,OK,9,216,80
+
+3395,Wed Dec 11 19:02:50 EST 2024,Wed Dec 11 19:02:50 EST 2024,GET,http://localhost:3000/api/auth/callback,400,Bad Request,14,154,64
+
+3396,Wed Dec 11 19:02:50 EST 2024,Wed Dec 11 19:02:50 EST 2024,GET,http://localhost:3000/api/auth/callback,400,Bad Request,4,154,64
+
+3397,Wed Dec 11 19:02:50 EST 2024,Wed Dec 11 19:02:50 EST 2024,GET,http://localhost:3000/api/auth/csrf,200,OK,14,216,80
+
+3398,Wed Dec 11 19:02:50 EST 2024,Wed Dec 11 19:02:50 EST 2024,GET,http://localhost:3000/api/auth/callback,400,Bad Request,13,154,64
+
+3399,Wed Dec 11 19:02:50 EST 2024,Wed Dec 11 19:02:50 EST 2024,GET,http://localhost:3000/api/auth/csrf,200,OK,9,216,80
+
+3400,Wed Dec 11 19:02:50 EST 2024,Wed Dec 11 19:02:50 EST 2024,GET,http://localhost:3000/api/auth/callback,400,Bad Request,16,154,64
+
+3401,Wed Dec 11 19:02:50 EST 2024,Wed Dec 11 19:02:50 EST 2024,GET,http://localhost:3000/api/auth/csrf,200,OK,35,216,80
+
+3402,Wed Dec 11 19:02:50 EST 2024,Wed Dec 11 19:02:50 EST 2024,GET,http://localhost:3000/api/auth/callback,400,Bad Request,52,154,64
+
+3403,Wed Dec 11 19:02:50 EST 2024,Wed Dec 11 19:02:50 EST 2024,GET,http://localhost:3000/api/auth,404,Not Found,65,260,3357
+
+3405,Wed Dec 11 19:02:50 EST 2024,Wed Dec 11 19:02:50 EST 2024,GET,http://localhost:3000/api/auth/csrf,200,OK,34,216,80
+
+3406,Wed Dec 11 19:02:50 EST 2024,Wed Dec 11 19:02:50 EST 2024,GET,http://localhost:3000/api/auth/callback,400,Bad Request,13,154,64
+
+3407,Wed Dec 11 19:02:50 EST 2024,Wed Dec 11 19:02:50 EST 2024,GET,http://localhost:3000/api/auth/csrf,200,OK,5,216,80
+
+3408,Wed Dec 11 19:02:50 EST 2024,Wed Dec 11 19:02:50 EST 2024,GET,http://localhost:3000/api/auth/csrf,200,OK,6,216,80
+
+3409,Wed Dec 11 19:02:50 EST 2024,Wed Dec 11 19:02:50 EST 2024,GET,http://localhost:3000/api/auth/callback,400,Bad Request,15,154,64
+
+3410,Wed Dec 11 19:02:50 EST 2024,Wed Dec 11 19:02:50 EST 2024,GET,http://localhost:3000/api/auth/csrf,200,OK,6,216,80
+
+3411,Wed Dec 11 19:02:50 EST 2024,Wed Dec 11 19:02:50 EST 2024,GET,http://localhost:3000/api/auth/csrf,200,OK,12,216,80
+
+3412,Wed Dec 11 19:02:50 EST 2024,Wed Dec 11 19:02:50 EST 2024,GET,http://localhost:3000/api/auth/callback,400,Bad Request,22,154,64
+
+3413,Wed Dec 11 19:02:50 EST 2024,Wed Dec 11 19:02:50 EST 2024,GET,http://localhost:3000/api/auth/csrf,200,OK,7,216,80
+
+3414,Wed Dec 11 19:02:50 EST 2024,Wed Dec 11 19:02:50 EST 2024,GET,http://localhost:3000/api/auth/callback,400,Bad Request,11,154,64
+
+3415,Wed Dec 11 19:02:51 EST 2024,Wed Dec 11 19:02:51 EST 2024,GET,http://localhost:3000/api/auth/providers,200,OK,35,216,218
+
+3416,Wed Dec 11 19:02:51 EST 2024,Wed Dec 11 19:02:51 EST 2024,GET,http://localhost:3000/api/auth/session,200,OK,56,746,212
+
+3418,Wed Dec 11 19:02:51 EST 2024,Wed Dec 11 19:02:51 EST 2024,GET,http://localhost:3000/api/auth/providers,200,OK,47,216,218
+
+3419,Wed Dec 11 19:02:51 EST 2024,Wed Dec 11 19:02:51 EST 2024,GET,http://localhost:3000/api/auth,404,Not Found,27,260,3357
+
+3421,Wed Dec 11 19:02:51 EST 2024,Wed Dec 11 19:02:51 EST 2024,GET,http://localhost:3000/api/auth/providers,200,OK,14,216,218
+
+3424,Wed Dec 11 19:02:51 EST 2024,Wed Dec 11 19:02:51 EST 2024,GET,http://localhost:3000/api/auth/providers,200,OK,8,216,218
+
+3425,Wed Dec 11 19:02:51 EST 2024,Wed Dec 11 19:02:51 EST 2024,GET,http://localhost:3000/api/auth/providers,200,OK,3,216,218
+
+3426,Wed Dec 11 19:02:51 EST 2024,Wed Dec 11 19:02:51 EST 2024,GET,http://localhost:3000/api/auth/providers,200,OK,4,216,218
+
+3427,Wed Dec 11 19:02:51 EST 2024,Wed Dec 11 19:02:51 EST 2024,GET,http://localhost:3000/api/auth/providers,200,OK,3,216,218
+
+3428,Wed Dec 11 19:02:51 EST 2024,Wed Dec 11 19:02:51 EST 2024,GET,http://localhost:3000/api/auth/providers,200,OK,6,216,218
+
+3431,Wed Dec 11 19:02:51 EST 2024,Wed Dec 11 19:02:51 EST 2024,GET,http://localhost:3000/api/auth/providers,200,OK,9,216,218
+
+3434,Wed Dec 11 19:02:51 EST 2024,Wed Dec 11 19:02:51 EST 2024,GET,http://localhost:3000/api/auth/providers,200,OK,21,216,218
+
+3435,Wed Dec 11 19:02:50 EST 2024,Wed Dec 11 19:02:51 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,938,745,31
+
+3436,Wed Dec 11 19:02:51 EST 2024,Wed Dec 11 19:02:51 EST 2024,GET,http://localhost:3000/api/auth/providers,200,OK,27,216,218
+
+3437,Wed Dec 11 19:02:51 EST 2024,Wed Dec 11 19:02:51 EST 2024,GET,http://localhost:3000/api/auth/providers,200,OK,23,216,218
+
+3438,Wed Dec 11 19:02:51 EST 2024,Wed Dec 11 19:02:51 EST 2024,GET,http://localhost:3000/api/auth/session,200,OK,42,746,212
+
+3440,Wed Dec 11 19:02:51 EST 2024,Wed Dec 11 19:02:51 EST 2024,GET,http://localhost:3000/api/auth,404,Not Found,23,260,3357
+
+3442,Wed Dec 11 19:02:51 EST 2024,Wed Dec 11 19:02:51 EST 2024,GET,http://localhost:3000/api/auth/session,200,OK,9,747,212
+
+3444,Wed Dec 11 19:02:51 EST 2024,Wed Dec 11 19:02:51 EST 2024,GET,http://localhost:3000/api/auth,404,Not Found,42,260,3357
+
+3446,Wed Dec 11 19:02:51 EST 2024,Wed Dec 11 19:02:51 EST 2024,GET,http://localhost:3000/api/auth/session,200,OK,31,747,212
+
+3448,Wed Dec 11 19:02:51 EST 2024,Wed Dec 11 19:02:51 EST 2024,GET,http://localhost:3000/api/auth,404,Not Found,17,283,3357
+
+3450,Wed Dec 11 19:02:51 EST 2024,Wed Dec 11 19:02:51 EST 2024,GET,http://localhost:3000/api/auth/session,200,OK,13,746,212
+
+3452,Wed Dec 11 19:02:51 EST 2024,Wed Dec 11 19:02:51 EST 2024,GET,http://localhost:3000/api/auth,404,Not Found,20,260,3357
+
+3454,Wed Dec 11 19:02:51 EST 2024,Wed Dec 11 19:02:52 EST 2024,GET,http://localhost:3000/api/auth/session,200,OK,33,746,212
+
+3456,Wed Dec 11 19:02:51 EST 2024,Wed Dec 11 19:02:52 EST 2024,GET,http://localhost:3000/api/auth,404,Not Found,53,284,3357
+
+3458,Wed Dec 11 19:02:52 EST 2024,Wed Dec 11 19:02:52 EST 2024,GET,http://localhost:3000/api/auth/session,200,OK,19,746,212
+
+3460,Wed Dec 11 19:02:52 EST 2024,Wed Dec 11 19:02:52 EST 2024,GET,http://localhost:3000/api/auth,404,Not Found,19,260,3357
+
+3462,Wed Dec 11 19:02:52 EST 2024,Wed Dec 11 19:02:52 EST 2024,GET,http://localhost:3000/api/auth/session,200,OK,28,746,212
+
+3464,Wed Dec 11 19:02:52 EST 2024,Wed Dec 11 19:02:52 EST 2024,GET,http://localhost:3000/api/auth,404,Not Found,12,260,3357
+
+3466,Wed Dec 11 19:02:51 EST 2024,Wed Dec 11 19:02:52 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,956,745,31
+
+3467,Wed Dec 11 19:02:52 EST 2024,Wed Dec 11 19:02:52 EST 2024,GET,http://localhost:3000/api/auth/session,200,OK,16,746,212
+
+3469,Wed Dec 11 19:02:52 EST 2024,Wed Dec 11 19:02:52 EST 2024,GET,http://localhost:3000/api/auth,404,Not Found,20,260,3357
+
+3471,Wed Dec 11 19:02:52 EST 2024,Wed Dec 11 19:02:52 EST 2024,GET,http://localhost:3000/api/auth/session,200,OK,8,747,212
+
+3473,Wed Dec 11 19:02:52 EST 2024,Wed Dec 11 19:02:53 EST 2024,GET,http://localhost:3000/api/auth,404,Not Found,309,260,3357
+
+3475,Wed Dec 11 19:02:52 EST 2024,Wed Dec 11 19:02:53 EST 2024,GET,http://localhost:3000/api/auth/session,200,OK,476,746,212
+
+3477,Wed Dec 11 19:02:52 EST 2024,Wed Dec 11 19:02:53 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,1002,745,31
+
+3478,Wed Dec 11 19:02:53 EST 2024,Wed Dec 11 19:02:53 EST 2024,GET,http://localhost:3000/api/auth/session,200,OK,138,746,212
+
+3480,Wed Dec 11 19:02:53 EST 2024,Wed Dec 11 19:02:54 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,851,745,31
+
+3481,Wed Dec 11 19:02:54 EST 2024,Wed Dec 11 19:02:55 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,877,745,31
+
+3482,Wed Dec 11 19:02:55 EST 2024,Wed Dec 11 19:02:55 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,668,745,31
+
+3483,Wed Dec 11 19:02:55 EST 2024,Wed Dec 11 19:02:56 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,671,745,31
+
+3484,Wed Dec 11 19:02:56 EST 2024,Wed Dec 11 19:02:57 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,667,745,31
+
+3485,Wed Dec 11 19:02:57 EST 2024,Wed Dec 11 19:02:57 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,644,745,31
+
+3486,Wed Dec 11 19:02:57 EST 2024,Wed Dec 11 19:02:58 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,671,745,31
+
+3487,Wed Dec 11 19:02:58 EST 2024,Wed Dec 11 19:02:59 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,639,745,31
+
+3488,Wed Dec 11 19:02:59 EST 2024,Wed Dec 11 19:02:59 EST 2024,POST,http://localhost:3000/api/auth/callback/credentials,200,OK,664,745,31
+
+3489,Wed Dec 11 19:02:59 EST 2024,Wed Dec 11 19:02:59 EST 2024,GET,http://localhost:3000/api/auth,404,Not Found,15,260,3357
+
+3490,Wed Dec 11 19:02:59 EST 2024,Wed Dec 11 19:02:59 EST 2024,GET,http://localhost:3000/api/auth/callback,400,Bad Request,11,154,64
+
+3491,Wed Dec 11 19:02:59 EST 2024,Wed Dec 11 19:02:59 EST 2024,GET,http://localhost:3000/api/auth,404,Not Found,18,260,3357
+
+3492,Wed Dec 11 19:02:59 EST 2024,Wed Dec 11 19:02:59 EST 2024,GET,http://localhost:3000/api/auth/callback,400,Bad Request,11,154,64
+
+4408,Wed Dec 11 19:54:24 EST 2024,Wed Dec 11 19:54:24 EST 2024,GET,http://localhost:8000/static/rest_framework/js/load-ajax-form.js,200,OK,62,258,59
+
+4409,Wed Dec 11 19:54:25 EST 2024,Wed Dec 11 19:54:25 EST 2024,GET,http://localhost:8000/favicon.ico,404,Not Found,55,680,17829
+
+4410,Wed Dec 11 19:54:26 EST 2024,Wed Dec 11 19:54:26 EST 2024,GET,http://localhost:8000/static/rest_framework/js/bootstrap.min.js,200,OK,2,260,39680
+
+4411,Wed Dec 11 19:54:26 EST 2024,Wed Dec 11 19:54:26 EST 2024,GET,http://localhost:8000/,401,Unauthorized,89,894,23518
+
+4412,Wed Dec 11 19:54:27 EST 2024,Wed Dec 11 19:54:27 EST 2024,GET,http://localhost:8000/favicon.ico,404,Not Found,39,695,17829
+
+4414,Wed Dec 11 19:54:28 EST 2024,Wed Dec 11 19:54:28 EST 2024,GET,http://localhost:8000/static/rest_framework/css/bootstrap-tweaks.css,200,OK,4,249,3426
+
+4413,Wed Dec 11 19:54:28 EST 2024,Wed Dec 11 19:54:28 EST 2024,GET,http://localhost:8000/static/rest_framework/css/bootstrap.min.css,200,OK,11,248,121457
+
+4415,Wed Dec 11 19:54:28 EST 2024,Wed Dec 11 19:54:28 EST 2024,GET,http://localhost:8000/static/rest_framework/css/default.css,200,OK,41,240,1152
+
+4416,Wed Dec 11 19:54:28 EST 2024,Wed Dec 11 19:54:28 EST 2024,GET,http://localhost:8000/static/rest_framework/js/bootstrap.min.js,200,OK,49,260,39680
+
+4417,Wed Dec 11 19:54:28 EST 2024,Wed Dec 11 19:54:28 EST 2024,GET,http://localhost:8000/static/debug_toolbar/js/toolbar.js,200,OK,61,254,14601
+
+4418,Wed Dec 11 19:54:28 EST 2024,Wed Dec 11 19:54:28 EST 2024,GET,http://localhost:8000/static/rest_framework/js/jquery-3.7.1.min.js,200,OK,57,263,87533
+
+4419,Wed Dec 11 19:54:28 EST 2024,Wed Dec 11 19:54:28 EST 2024,GET,http://localhost:8000/static/rest_framework/css/prettify.css,200,OK,58,240,817
+
+4420,Wed Dec 11 19:54:28 EST 2024,Wed Dec 11 19:54:28 EST 2024,GET,http://localhost:8000/static/rest_framework/js/default.js,200,OK,24,253,1268
+
+4421,Wed Dec 11 19:54:28 EST 2024,Wed Dec 11 19:54:28 EST 2024,GET,http://localhost:8000/static/rest_framework/js/prettify-min.js,200,OK,16,259,13632
+
+4422,Wed Dec 11 19:54:28 EST 2024,Wed Dec 11 19:54:28 EST 2024,GET,http://localhost:8000/static/rest_framework/js/ajax-form.js,200,OK,19,255,3796
+
+4423,Wed Dec 11 19:54:28 EST 2024,Wed Dec 11 19:54:28 EST 2024,GET,http://localhost:8000/static/debug_toolbar/css/toolbar.css,200,OK,132,241,16675
+
+4424,Wed Dec 11 19:54:28 EST 2024,Wed Dec 11 19:54:29 EST 2024,GET,http://localhost:8000/static/rest_framework/js/csrf.js,200,OK,49,250,1793
+
+4425,Wed Dec 11 19:54:28 EST 2024,Wed Dec 11 19:54:29 EST 2024,GET,http://localhost:8000/static/rest_framework/js/load-ajax-form.js,200,OK,23,258,59
+
+4426,Wed Dec 11 19:54:29 EST 2024,Wed Dec 11 19:54:29 EST 2024,GET,http://localhost:8000/static/rest_framework/js/load-ajax-form.js?name=abc,200,OK,2,258,59
+
+4427,Wed Dec 11 19:54:29 EST 2024,Wed Dec 11 19:54:29 EST 2024,GET,http://localhost:8000/static/rest_framework/img/grid.png,200,OK,9,238,1458
+
+4428,Wed Dec 11 19:54:29 EST 2024,Wed Dec 11 19:54:29 EST 2024,GET,http://localhost:8000/static/debug_toolbar/js/utils.js,200,OK,10,251,4742
+
+4429,Wed Dec 11 19:54:30 EST 2024,Wed Dec 11 19:54:30 EST 2024,GET,http://localhost:8000/static/debug_toolbar/css/print.css,200,OK,2,236,43
+
+4430,Wed Dec 11 19:54:30 EST 2024,Wed Dec 11 19:54:30 EST 2024,GET,http://localhost:8000/favicon.ico,404,Not Found,40,694,17829
+
+4431,Wed Dec 11 19:54:31 EST 2024,Wed Dec 11 19:54:31 EST 2024,GET,http://localhost:8000/static/rest_framework/js/bootstrap.min.js?name=abc,200,OK,5,260,39680
+
+4432,Wed Dec 11 19:54:31 EST 2024,Wed Dec 11 19:54:31 EST 2024,GET,http://localhost:8000/api/,401,Unauthorized,67,877,23518
+
+4434,Wed Dec 11 19:54:32 EST 2024,Wed Dec 11 19:54:32 EST 2024,GET,http://localhost:8000/static/rest_framework/js/prettify-min.js,200,OK,5,259,13632
+
+4435,Wed Dec 11 19:54:32 EST 2024,Wed Dec 11 19:54:32 EST 2024,GET,http://localhost:8000/static/rest_framework/css/default.css,200,OK,10,240,1152
+
+4436,Wed Dec 11 19:54:32 EST 2024,Wed Dec 11 19:54:32 EST 2024,GET,http://localhost:8000/static/rest_framework/js/csrf.js,200,OK,3,250,1793
+
+4437,Wed Dec 11 19:54:32 EST 2024,Wed Dec 11 19:54:32 EST 2024,GET,http://localhost:8000/static/rest_framework/css/bootstrap-tweaks.css,200,OK,1,249,3426
+
+4433,Wed Dec 11 19:54:32 EST 2024,Wed Dec 11 19:54:32 EST 2024,GET,http://localhost:8000/static/rest_framework/css/bootstrap.min.css,200,OK,15,248,121457
+
+4439,Wed Dec 11 19:54:32 EST 2024,Wed Dec 11 19:54:32 EST 2024,GET,http://localhost:8000/static/rest_framework/js/load-ajax-form.js,200,OK,49,258,59
+
+4438,Wed Dec 11 19:54:32 EST 2024,Wed Dec 11 19:54:32 EST 2024,GET,http://localhost:8000/static/rest_framework/js/jquery-3.7.1.min.js,200,OK,13,263,87533
+
+4440,Wed Dec 11 19:54:32 EST 2024,Wed Dec 11 19:54:32 EST 2024,GET,http://localhost:8000/static/rest_framework/js/ajax-form.js,200,OK,11,255,3796
+
+4441,Wed Dec 11 19:54:32 EST 2024,Wed Dec 11 19:54:32 EST 2024,GET,http://localhost:8000/static/rest_framework/js/default.js,200,OK,18,253,1268
+
+4442,Wed Dec 11 19:54:32 EST 2024,Wed Dec 11 19:54:32 EST 2024,GET,http://localhost:8000/static/debug_toolbar/js/toolbar.js,200,OK,9,254,14601
+
+4443,Wed Dec 11 19:54:32 EST 2024,Wed Dec 11 19:54:32 EST 2024,GET,http://localhost:8000/static/rest_framework/css/prettify.css,200,OK,51,240,817
+
+4444,Wed Dec 11 19:54:32 EST 2024,Wed Dec 11 19:54:32 EST 2024,GET,http://localhost:8000/static/rest_framework/js/bootstrap.min.js,200,OK,16,260,39680
+
+4445,Wed Dec 11 19:54:32 EST 2024,Wed Dec 11 19:54:32 EST 2024,GET,http://localhost:8000/static/debug_toolbar/css/toolbar.css,200,OK,73,241,16675
+
+4446,Wed Dec 11 19:54:33 EST 2024,Wed Dec 11 19:54:33 EST 2024,GET,http://localhost:8000/static/rest_framework/img/grid.png,200,OK,42,238,1458
+
+4447,Wed Dec 11 19:54:33 EST 2024,Wed Dec 11 19:54:33 EST 2024,GET,http://localhost:8000/static/debug_toolbar/js/utils.js,200,OK,77,251,4742
+
+4448,Wed Dec 11 19:54:33 EST 2024,Wed Dec 11 19:54:33 EST 2024,GET,http://localhost:8000/static/debug_toolbar/css/print.css,200,OK,81,236,43
+
+4449,Wed Dec 11 19:54:33 EST 2024,Wed Dec 11 19:54:33 EST 2024,GET,http://localhost:8000/favicon.ico,404,Not Found,121,694,17829
+
+4812,Wed Dec 11 19:55:06 EST 2024,Wed Dec 11 19:55:06 EST 2024,GET,http://localhost:8000/__debug__/render_panel/?store_id=4c682a67f29e46339332d06fe51af17a&panel_id=TemplatesPanel,200,OK,83,256,120
+
+4853,Wed Dec 11 19:55:09 EST 2024,Wed Dec 11 19:55:09 EST 2024,GET,http://localhost:8000/__debug__/render_panel/?store_id=6c058325e3cb4651a6a5d3a549326f4a&panel_id=TemplatesPanel,200,OK,86,256,120
+
+5083,Wed Dec 11 19:55:27 EST 2024,Wed Dec 11 19:55:27 EST 2024,GET,http://localhost:8000/static/rest_framework/js/jquery-3.7.1.min.js,200,OK,36,263,87533
+
+5094,Wed Dec 11 19:55:28 EST 2024,Wed Dec 11 19:55:28 EST 2024,GET,http://localhost:8000/favicon.ico,404,Not Found,92,694,17829
+
+5121,Wed Dec 11 19:55:31 EST 2024,Wed Dec 11 19:55:31 EST 2024,GET,http://localhost:8000/static/rest_framework/js/jquery-3.7.1.min.js?name=abc,200,OK,16,263,87533
+
+5168,Wed Dec 11 19:55:35 EST 2024,Wed Dec 11 19:55:35 EST 2024,GET,http://localhost:8000/static/rest_framework/js/csrf.js,200,OK,20,250,1793
+
+5178,Wed Dec 11 19:55:36 EST 2024,Wed Dec 11 19:55:36 EST 2024,GET,http://localhost:8000/favicon.ico,404,Not Found,59,695,17829
+
+5190,Wed Dec 11 19:55:37 EST 2024,Wed Dec 11 19:55:37 EST 2024,GET,http://localhost:8000/static/rest_framework/js/csrf.js?name=abc,200,OK,11,250,1793
+
+5197,Wed Dec 11 19:55:38 EST 2024,Wed Dec 11 19:55:38 EST 2024,GET,http://localhost:8000/__debug__/render_panel/?store_id=4c682a67f29e46339332d06fe51af17a&panel_id=StaticFilesPanel,200,OK,70,256,120
+
+5261,Wed Dec 11 19:55:42 EST 2024,Wed Dec 11 19:55:43 EST 2024,GET,http://localhost:8000/__debug__/render_panel/?store_id=6c058325e3cb4651a6a5d3a549326f4a&panel_id=StaticFilesPanel,200,OK,211,256,120
+
+5313,Wed Dec 11 19:55:46 EST 2024,Wed Dec 11 19:55:47 EST 2024,GET,http://localhost:8000/?name=abc,401,Unauthorized,239,878,23518
+
+5317,Wed Dec 11 19:55:47 EST 2024,Wed Dec 11 19:55:47 EST 2024,GET,http://localhost:8000/static/rest_framework/js/jquery-3.7.1.min.js,200,OK,68,263,87533
+
+5321,Wed Dec 11 19:55:47 EST 2024,Wed Dec 11 19:55:47 EST 2024,GET,http://localhost:8000/favicon.ico,404,Not Found,165,681,17830
+
+5387,Wed Dec 11 19:55:51 EST 2024,Wed Dec 11 19:55:52 EST 2024,GET,http://localhost:8000/api/?name=abc,401,Unauthorized,128,891,23571
+
+5393,Wed Dec 11 19:55:52 EST 2024,Wed Dec 11 19:55:52 EST 2024,GET,http://localhost:8000/static/rest_framework/js/prettify-min.js,200,OK,46,259,13632
+
+5394,Wed Dec 11 19:55:52 EST 2024,Wed Dec 11 19:55:52 EST 2024,GET,http://localhost:8000/static/rest_framework/js/bootstrap.min.js,200,OK,46,260,39680
+
+5396,Wed Dec 11 19:55:52 EST 2024,Wed Dec 11 19:55:52 EST 2024,GET,http://localhost:8000/static/rest_framework/js/jquery-3.7.1.min.js,200,OK,140,263,87533
+
+5397,Wed Dec 11 19:55:52 EST 2024,Wed Dec 11 19:55:52 EST 2024,GET,http://localhost:8000/static/rest_framework/js/default.js,200,OK,141,253,1268
+
+5398,Wed Dec 11 19:55:52 EST 2024,Wed Dec 11 19:55:52 EST 2024,GET,http://localhost:8000/static/rest_framework/js/ajax-form.js,200,OK,123,255,3796
+
+5399,Wed Dec 11 19:55:52 EST 2024,Wed Dec 11 19:55:52 EST 2024,GET,http://localhost:8000/static/rest_framework/js/csrf.js,200,OK,121,250,1793
+
+5404,Wed Dec 11 19:55:52 EST 2024,Wed Dec 11 19:55:52 EST 2024,GET,http://localhost:8000/static/debug_toolbar/js/utils.js,200,OK,69,251,4742
+
+5413,Wed Dec 11 19:55:52 EST 2024,Wed Dec 11 19:55:52 EST 2024,GET,http://localhost:8000/favicon.ico,404,Not Found,83,693,17829
+
+5602,Wed Dec 11 19:56:07 EST 2024,Wed Dec 11 19:56:07 EST 2024,GET,http://localhost:8000/api/universities/,401,Unauthorized,165,996,23916
+
+5606,Wed Dec 11 19:56:07 EST 2024,Wed Dec 11 19:56:07 EST 2024,GET,http://localhost:8000/api/universities,401,Unauthorized,234,995,23921
+
+5609,Wed Dec 11 19:56:07 EST 2024,Wed Dec 11 19:56:07 EST 2024,GET,http://localhost:8000/static/rest_framework/js/csrf.js,200,OK,47,250,1793
+
+5610,Wed Dec 11 19:56:07 EST 2024,Wed Dec 11 19:56:07 EST 2024,GET,http://localhost:8000/static/rest_framework/css/bootstrap-tweaks.css,200,OK,39,249,3426
+
+5611,Wed Dec 11 19:56:07 EST 2024,Wed Dec 11 19:56:07 EST 2024,GET,http://localhost:8000/static/rest_framework/js/load-ajax-form.js,200,OK,54,258,59
+
+5613,Wed Dec 11 19:56:07 EST 2024,Wed Dec 11 19:56:07 EST 2024,GET,http://localhost:8000/static/rest_framework/css/default.css,200,OK,89,240,1152
+
+5612,Wed Dec 11 19:56:07 EST 2024,Wed Dec 11 19:56:07 EST 2024,GET,http://localhost:8000/static/rest_framework/css/bootstrap.min.css,200,OK,117,248,121457
+
+5617,Wed Dec 11 19:56:07 EST 2024,Wed Dec 11 19:56:07 EST 2024,GET,http://localhost:8000/static/rest_framework/js/ajax-form.js,200,OK,83,255,3796
+
+5614,Wed Dec 11 19:56:07 EST 2024,Wed Dec 11 19:56:07 EST 2024,GET,http://localhost:8000/static/rest_framework/js/prettify-min.js,200,OK,106,259,13632
+
+5618,Wed Dec 11 19:56:07 EST 2024,Wed Dec 11 19:56:07 EST 2024,GET,http://localhost:8000/static/rest_framework/js/default.js,200,OK,86,253,1268
+
+5620,Wed Dec 11 19:56:07 EST 2024,Wed Dec 11 19:56:07 EST 2024,GET,http://localhost:8000/static/debug_toolbar/css/toolbar.css,200,OK,89,241,16675
+
+5619,Wed Dec 11 19:56:07 EST 2024,Wed Dec 11 19:56:07 EST 2024,GET,http://localhost:8000/static/rest_framework/js/bootstrap.min.js,200,OK,61,260,39680
+
+5622,Wed Dec 11 19:56:07 EST 2024,Wed Dec 11 19:56:07 EST 2024,GET,http://localhost:8000/static/debug_toolbar/js/toolbar.js,200,OK,71,254,14601
+
+5623,Wed Dec 11 19:56:07 EST 2024,Wed Dec 11 19:56:07 EST 2024,GET,http://localhost:8000/static/rest_framework/css/prettify.css,200,OK,108,240,817
+
+5621,Wed Dec 11 19:56:07 EST 2024,Wed Dec 11 19:56:07 EST 2024,GET,http://localhost:8000/static/rest_framework/js/jquery-3.7.1.min.js,200,OK,153,263,87533
+
+5629,Wed Dec 11 19:56:08 EST 2024,Wed Dec 11 19:56:08 EST 2024,GET,http://localhost:8000/static/rest_framework/img/grid.png,200,OK,62,238,1458
+
+5634,Wed Dec 11 19:56:08 EST 2024,Wed Dec 11 19:56:08 EST 2024,GET,http://localhost:8000/static/debug_toolbar/js/utils.js,200,OK,54,251,4742
+
+5639,Wed Dec 11 19:56:08 EST 2024,Wed Dec 11 19:56:08 EST 2024,GET,http://localhost:8000/static/rest_framework/css/bootstrap.min.css,200,OK,47,248,121457
+
+5643,Wed Dec 11 19:56:09 EST 2024,Wed Dec 11 19:56:09 EST 2024,GET,http://localhost:8000/static/rest_framework/css/bootstrap-tweaks.css,200,OK,33,249,3426
+
+5644,Wed Dec 11 19:56:09 EST 2024,Wed Dec 11 19:56:09 EST 2024,GET,http://localhost:8000/static/rest_framework/js/csrf.js,200,OK,17,250,1793
+
+5645,Wed Dec 11 19:56:09 EST 2024,Wed Dec 11 19:56:09 EST 2024,GET,http://localhost:8000/static/debug_toolbar/css/toolbar.css,200,OK,48,241,16675
+
+5646,Wed Dec 11 19:56:09 EST 2024,Wed Dec 11 19:56:09 EST 2024,GET,http://localhost:8000/static/rest_framework/js/ajax-form.js,200,OK,72,255,3796
+
+5647,Wed Dec 11 19:56:09 EST 2024,Wed Dec 11 19:56:09 EST 2024,GET,http://localhost:8000/static/rest_framework/js/load-ajax-form.js,200,OK,79,258,59
+
+5648,Wed Dec 11 19:56:09 EST 2024,Wed Dec 11 19:56:09 EST 2024,GET,http://localhost:8000/static/rest_framework/js/jquery-3.7.1.min.js,200,OK,54,263,87533
+
+5650,Wed Dec 11 19:56:09 EST 2024,Wed Dec 11 19:56:09 EST 2024,GET,http://localhost:8000/static/rest_framework/css/default.css,200,OK,131,240,1152
+
+5651,Wed Dec 11 19:56:09 EST 2024,Wed Dec 11 19:56:09 EST 2024,GET,http://localhost:8000/static/debug_toolbar/js/toolbar.js,200,OK,109,254,14601
+
+5652,Wed Dec 11 19:56:09 EST 2024,Wed Dec 11 19:56:09 EST 2024,GET,http://localhost:8000/static/rest_framework/js/default.js,200,OK,60,253,1268
+
+5655,Wed Dec 11 19:56:09 EST 2024,Wed Dec 11 19:56:09 EST 2024,GET,http://localhost:8000/static/rest_framework/css/prettify.css,200,OK,122,240,817
+
+5653,Wed Dec 11 19:56:09 EST 2024,Wed Dec 11 19:56:09 EST 2024,GET,http://localhost:8000/static/rest_framework/js/bootstrap.min.js,200,OK,138,260,39680
+
+5654,Wed Dec 11 19:56:09 EST 2024,Wed Dec 11 19:56:09 EST 2024,GET,http://localhost:8000/static/rest_framework/js/prettify-min.js,200,OK,137,259,13632
+
+5657,Wed Dec 11 19:56:09 EST 2024,Wed Dec 11 19:56:09 EST 2024,GET,http://localhost:8000/static/debug_toolbar/css/print.css,200,OK,61,236,43
+
+5661,Wed Dec 11 19:56:09 EST 2024,Wed Dec 11 19:56:09 EST 2024,GET,http://localhost:8000/favicon.ico,404,Not Found,98,680,17829
+
+5663,Wed Dec 11 19:56:09 EST 2024,Wed Dec 11 19:56:09 EST 2024,GET,http://localhost:8000/static/rest_framework/img/grid.png,200,OK,27,238,1458
+
+5671,Wed Dec 11 19:56:10 EST 2024,Wed Dec 11 19:56:10 EST 2024,GET,http://localhost:8000/static/debug_toolbar/css/print.css,200,OK,3,236,43
+
+5674,Wed Dec 11 19:56:10 EST 2024,Wed Dec 11 19:56:10 EST 2024,GET,http://localhost:8000/static/debug_toolbar/js/utils.js,200,OK,39,251,4742
+
+5677,Wed Dec 11 19:56:10 EST 2024,Wed Dec 11 19:56:10 EST 2024,GET,http://localhost:8000/favicon.ico,404,Not Found,97,694,17829
+
+5749,Wed Dec 11 19:56:16 EST 2024,Wed Dec 11 19:56:16 EST 2024,GET,http://localhost:8000/__debug__/render_panel/?store_id=3fd3231fff854763854f8f103a33984f&panel_id=StaticFilesPanel,200,OK,125,256,120
+
+5861,Wed Dec 11 19:56:27 EST 2024,Wed Dec 11 19:56:28 EST 2024,GET,http://localhost:8000/__debug__/render_panel/?store_id=9868823251924e7aa6c1ad654111cd29&panel_id=StaticFilesPanel,200,OK,141,256,120
+
+5933,Wed Dec 11 19:56:50 EST 2024,Wed Dec 11 19:56:50 EST 2024,GET,http://localhost:8000/static/rest_framework/js/prettify-min.js,200,OK,9,259,13632
+
+5936,Wed Dec 11 19:56:50 EST 2024,Wed Dec 11 19:56:50 EST 2024,GET,http://localhost:8000/static/rest_framework/js/default.js,200,OK,15,253,1268
+
+5937,Wed Dec 11 19:56:50 EST 2024,Wed Dec 11 19:56:50 EST 2024,GET,http://localhost:8000/favicon.ico,404,Not Found,39,693,17829
+
+5940,Wed Dec 11 19:56:51 EST 2024,Wed Dec 11 19:56:51 EST 2024,GET,http://localhost:8000/favicon.ico,404,Not Found,42,695,17829
+
+5943,Wed Dec 11 19:56:52 EST 2024,Wed Dec 11 19:56:52 EST 2024,GET,http://localhost:8000/static/rest_framework/js/prettify-min.js?name=abc,200,OK,11,259,13632
+
+5946,Wed Dec 11 19:56:53 EST 2024,Wed Dec 11 19:56:53 EST 2024,GET,http://localhost:8000/static/rest_framework/js/default.js?name=abc,200,OK,12,253,1268
+
+5993,Wed Dec 11 19:56:58 EST 2024,Wed Dec 11 19:56:59 EST 2024,GET,http://localhost:8000/__debug__/render_panel/?store_id=a0d3c6e038024a1bb79672216aef63ec&panel_id=TemplatesPanel,200,OK,221,256,120
+
+6001,Wed Dec 11 19:56:59 EST 2024,Wed Dec 11 19:56:59 EST 2024,GET,http://localhost:8000/__debug__/render_panel/?store_id=6fa1b13c4bf14f99b4a5a48667986f98&panel_id=TemplatesPanel,200,OK,240,256,120
+
+6394,Wed Dec 11 19:57:28 EST 2024,Wed Dec 11 19:57:28 EST 2024,GET,http://localhost:8000/__debug__/render_panel/?store_id=a0d3c6e038024a1bb79672216aef63ec&panel_id=StaticFilesPanel,200,OK,266,256,120
+
+6404,Wed Dec 11 19:57:29 EST 2024,Wed Dec 11 19:57:29 EST 2024,GET,http://localhost:8000/__debug__/render_panel/?store_id=6fa1b13c4bf14f99b4a5a48667986f98&panel_id=StaticFilesPanel,200,OK,266,256,120
+
+6503,Wed Dec 11 19:57:37 EST 2024,Wed Dec 11 19:57:37 EST 2024,GET,http://localhost:8000/api/universities/?name=abc,401,Unauthorized,493,994,23974
+
+6506,Wed Dec 11 19:57:38 EST 2024,Wed Dec 11 19:57:38 EST 2024,GET,http://localhost:8000/static/rest_framework/js/jquery-3.7.1.min.js,200,OK,102,263,87533
+
+6507,Wed Dec 11 19:57:38 EST 2024,Wed Dec 11 19:57:38 EST 2024,GET,http://localhost:8000/static/rest_framework/js/ajax-form.js,200,OK,139,255,3796
+
+6509,Wed Dec 11 19:57:38 EST 2024,Wed Dec 11 19:57:38 EST 2024,GET,http://localhost:8000/static/rest_framework/js/csrf.js,200,OK,199,250,1793
+
+6510,Wed Dec 11 19:57:38 EST 2024,Wed Dec 11 19:57:38 EST 2024,GET,http://localhost:8000/static/rest_framework/js/default.js,200,OK,214,253,1268
+
+6511,Wed Dec 11 19:57:38 EST 2024,Wed Dec 11 19:57:38 EST 2024,GET,http://localhost:8000/static/rest_framework/js/load-ajax-form.js,200,OK,231,258,59
+
+6513,Wed Dec 11 19:57:38 EST 2024,Wed Dec 11 19:57:38 EST 2024,GET,http://localhost:8000/static/rest_framework/js/bootstrap.min.js,200,OK,315,260,39680
+
+6515,Wed Dec 11 19:57:38 EST 2024,Wed Dec 11 19:57:38 EST 2024,GET,http://localhost:8000/static/rest_framework/js/prettify-min.js,200,OK,369,259,13632
+
+6517,Wed Dec 11 19:57:38 EST 2024,Wed Dec 11 19:57:38 EST 2024,GET,http://localhost:8000/favicon.ico,404,Not Found,139,680,17829
+
+6516,Wed Dec 11 19:57:38 EST 2024,Wed Dec 11 19:57:38 EST 2024,GET,http://localhost:8000/static/debug_toolbar/js/toolbar.js,200,OK,381,254,14601
+
+6523,Wed Dec 11 19:57:37 EST 2024,Wed Dec 11 19:57:38 EST 2024,GET,http://localhost:8000/api/universities?name=abc,401,Unauthorized,326,995,23971
+
+6525,Wed Dec 11 19:57:39 EST 2024,Wed Dec 11 19:57:39 EST 2024,GET,http://localhost:8000/static/rest_framework/js/jquery-3.7.1.min.js,200,OK,13,263,87533
+
+6527,Wed Dec 11 19:57:39 EST 2024,Wed Dec 11 19:57:39 EST 2024,GET,http://localhost:8000/static/rest_framework/js/ajax-form.js,200,OK,23,255,3796
+
+6528,Wed Dec 11 19:57:39 EST 2024,Wed Dec 11 19:57:39 EST 2024,GET,http://localhost:8000/static/rest_framework/js/csrf.js,200,OK,23,250,1793
+
+6529,Wed Dec 11 19:57:39 EST 2024,Wed Dec 11 19:57:39 EST 2024,GET,http://localhost:8000/static/rest_framework/js/bootstrap.min.js,200,OK,33,260,39680
+
+6533,Wed Dec 11 19:57:39 EST 2024,Wed Dec 11 19:57:39 EST 2024,GET,http://localhost:8000/favicon.ico,404,Not Found,232,695,17829
+
+6704,Wed Dec 11 19:57:53 EST 2024,Wed Dec 11 19:57:53 EST 2024,GET,http://localhost:8000/__debug__/render_panel/?store_id=603e8f7ffe5d4e38bf593a30098681bb&panel_id=StaticFilesPanel,200,OK,157,256,120
+
+6753,Wed Dec 11 19:57:57 EST 2024,Wed Dec 11 19:57:57 EST 2024,GET,http://localhost:8000/__debug__/render_panel/?store_id=8cb11a67fd9546ad8954ea7976341e20&panel_id=StaticFilesPanel,200,OK,359,256,120
+
+6818,Wed Dec 11 19:58:03 EST 2024,Wed Dec 11 19:58:03 EST 2024,GET,http://localhost:8000/static/rest_framework/js/ajax-form.js,200,OK,53,255,3796
+
+6831,Wed Dec 11 19:58:04 EST 2024,Wed Dec 11 19:58:05 EST 2024,GET,http://localhost:8000/favicon.ico,404,Not Found,382,694,17831
+
+6845,Wed Dec 11 19:58:06 EST 2024,Wed Dec 11 19:58:06 EST 2024,GET,http://localhost:8000/static/rest_framework/js/ajax-form.js?name=abc,200,OK,42,255,3796
+
+7036,Wed Dec 11 19:58:21 EST 2024,Wed Dec 11 19:58:22 EST 2024,GET,http://localhost:8000/api/universities/,401,Unauthorized,224,996,23919
+
+7041,Wed Dec 11 19:58:22 EST 2024,Wed Dec 11 19:58:22 EST 2024,GET,http://localhost:8000/static/rest_framework/js/csrf.js,200,OK,68,250,1793
+
+7040,Wed Dec 11 19:58:22 EST 2024,Wed Dec 11 19:58:22 EST 2024,GET,http://localhost:8000/static/rest_framework/css/bootstrap-tweaks.css,200,OK,62,249,3426
+
+7042,Wed Dec 11 19:58:22 EST 2024,Wed Dec 11 19:58:22 EST 2024,GET,http://localhost:8000/static/rest_framework/js/jquery-3.7.1.min.js,200,OK,69,263,87533
+
+7044,Wed Dec 11 19:58:22 EST 2024,Wed Dec 11 19:58:22 EST 2024,GET,http://localhost:8000/static/debug_toolbar/css/toolbar.css,200,OK,103,241,16675
+
+7045,Wed Dec 11 19:58:22 EST 2024,Wed Dec 11 19:58:22 EST 2024,GET,http://localhost:8000/static/rest_framework/js/prettify-min.js,200,OK,142,259,13632
+
+7046,Wed Dec 11 19:58:22 EST 2024,Wed Dec 11 19:58:22 EST 2024,GET,http://localhost:8000/static/rest_framework/css/prettify.css,200,OK,69,240,817
+
+7047,Wed Dec 11 19:58:22 EST 2024,Wed Dec 11 19:58:22 EST 2024,GET,http://localhost:8000/static/rest_framework/js/default.js,200,OK,35,253,1268
+
+7049,Wed Dec 11 19:58:22 EST 2024,Wed Dec 11 19:58:22 EST 2024,GET,http://localhost:8000/static/rest_framework/js/load-ajax-form.js,200,OK,123,258,59
+
+7048,Wed Dec 11 19:58:22 EST 2024,Wed Dec 11 19:58:22 EST 2024,GET,http://localhost:8000/static/rest_framework/css/bootstrap.min.css,200,OK,70,248,121457
+
+7050,Wed Dec 11 19:58:22 EST 2024,Wed Dec 11 19:58:22 EST 2024,GET,http://localhost:8000/static/rest_framework/js/bootstrap.min.js,200,OK,53,260,39680
+
+7053,Wed Dec 11 19:58:22 EST 2024,Wed Dec 11 19:58:22 EST 2024,GET,http://localhost:8000/static/debug_toolbar/js/toolbar.js,200,OK,11,254,14601
+
+7054,Wed Dec 11 19:58:22 EST 2024,Wed Dec 11 19:58:22 EST 2024,GET,http://localhost:8000/static/rest_framework/css/default.css,200,OK,78,240,1152
+
+7052,Wed Dec 11 19:58:22 EST 2024,Wed Dec 11 19:58:22 EST 2024,GET,http://localhost:8000/static/rest_framework/js/ajax-form.js,200,OK,12,255,3796
+
+7057,Wed Dec 11 19:58:23 EST 2024,Wed Dec 11 19:58:23 EST 2024,GET,http://localhost:8000/static/rest_framework/img/grid.png,200,OK,213,238,1458
+
+7059,Wed Dec 11 19:58:23 EST 2024,Wed Dec 11 19:58:23 EST 2024,GET,http://localhost:8000/static/debug_toolbar/css/print.css,200,OK,170,236,43
+
+7060,Wed Dec 11 19:58:23 EST 2024,Wed Dec 11 19:58:23 EST 2024,GET,http://localhost:8000/static/debug_toolbar/js/utils.js,200,OK,224,251,4742
+
+7069,Wed Dec 11 19:58:23 EST 2024,Wed Dec 11 19:58:23 EST 2024,GET,http://localhost:8000/favicon.ico,404,Not Found,195,694,17829
+
+7302,Wed Dec 11 19:58:42 EST 2024,Wed Dec 11 19:58:42 EST 2024,GET,http://localhost:8000/__debug__/render_panel/?store_id=0de7f275620948e880d88413998eae12&panel_id=TemplatesPanel,200,OK,290,256,120
+
+7318,Wed Dec 11 19:58:43 EST 2024,Wed Dec 11 19:58:44 EST 2024,GET,http://localhost:8000/api-auth/login/?next=/api/,200,OK,206,919,16280
+
+7323,Wed Dec 11 19:58:44 EST 2024,Wed Dec 11 19:58:44 EST 2024,GET,http://localhost:8000/static/rest_framework/css/bootstrap.min.css,200,OK,18,248,121457
+
+7324,Wed Dec 11 19:58:44 EST 2024,Wed Dec 11 19:58:44 EST 2024,GET,http://localhost:8000/static/rest_framework/css/prettify.css,200,OK,20,240,817
+
+7325,Wed Dec 11 19:58:44 EST 2024,Wed Dec 11 19:58:44 EST 2024,GET,http://localhost:8000/static/rest_framework/css/bootstrap-tweaks.css,200,OK,31,249,3426
+
+7326,Wed Dec 11 19:58:44 EST 2024,Wed Dec 11 19:58:44 EST 2024,GET,http://localhost:8000/static/debug_toolbar/js/toolbar.js,200,OK,32,254,14601
+
+7329,Wed Dec 11 19:58:44 EST 2024,Wed Dec 11 19:58:44 EST 2024,GET,http://localhost:8000/static/rest_framework/css/default.css,200,OK,46,240,1152
+
+7330,Wed Dec 11 19:58:44 EST 2024,Wed Dec 11 19:58:44 EST 2024,GET,http://localhost:8000/static/debug_toolbar/css/toolbar.css,200,OK,96,241,16675
+
+7333,Wed Dec 11 19:58:44 EST 2024,Wed Dec 11 19:58:44 EST 2024,GET,http://localhost:8000/static/debug_toolbar/js/utils.js,200,OK,20,251,4742
+
+7334,Wed Dec 11 19:58:44 EST 2024,Wed Dec 11 19:58:44 EST 2024,GET,http://localhost:8000/static/debug_toolbar/css/print.css,200,OK,49,236,43
+
+7335,Wed Dec 11 19:58:44 EST 2024,Wed Dec 11 19:58:44 EST 2024,GET,http://localhost:8000/static/rest_framework/img/grid.png,200,OK,59,238,1458
+
+7336,Wed Dec 11 19:58:45 EST 2024,Wed Dec 11 19:58:45 EST 2024,GET,http://localhost:8000/favicon.ico,404,Not Found,97,692,17829
+
+7361,Wed Dec 11 19:58:48 EST 2024,Wed Dec 11 19:58:49 EST 2024,POST,http://localhost:8000/api-auth/login/,200,OK,1114,1043,16618
+
+7362,Wed Dec 11 19:58:50 EST 2024,Wed Dec 11 19:58:50 EST 2024,GET,http://localhost:8000/favicon.ico,404,Not Found,78,695,17829
+
+7366,Wed Dec 11 19:58:50 EST 2024,Wed Dec 11 19:58:50 EST 2024,GET,http://localhost:8000/api-auth/login/?next=/api/,200,OK,104,934,16279
+
+7418,Wed Dec 11 19:59:07 EST 2024,Wed Dec 11 19:59:07 EST 2024,GET,http://localhost:8000/__debug__/render_panel/?store_id=0443651fd3e84b0d9df09212cc1a4d44&panel_id=TemplatesPanel,200,OK,46,256,120
+
+7419,Wed Dec 11 19:59:08 EST 2024,Wed Dec 11 19:59:08 EST 2024,GET,http://localhost:8000/__debug__/render_panel/?store_id=0de7f275620948e880d88413998eae12&panel_id=StaticFilesPanel,200,OK,78,256,120
+
+7445,Wed Dec 11 19:59:13 EST 2024,Wed Dec 11 19:59:13 EST 2024,GET,http://localhost:8000/api/universities/?name=abc,401,Unauthorized,70,993,23970
+
+7446,Wed Dec 11 19:59:13 EST 2024,Wed Dec 11 19:59:13 EST 2024,GET,http://localhost:8000/static/rest_framework/js/csrf.js,200,OK,2,250,1793
+
+7447,Wed Dec 11 19:59:13 EST 2024,Wed Dec 11 19:59:13 EST 2024,GET,http://localhost:8000/static/rest_framework/js/jquery-3.7.1.min.js,200,OK,22,263,87533
+
+7448,Wed Dec 11 19:59:13 EST 2024,Wed Dec 11 19:59:13 EST 2024,GET,http://localhost:8000/static/rest_framework/js/bootstrap.min.js,200,OK,20,260,39680
+
+7449,Wed Dec 11 19:59:13 EST 2024,Wed Dec 11 19:59:13 EST 2024,GET,http://localhost:8000/static/debug_toolbar/js/toolbar.js,200,OK,5,254,14601
+
+7450,Wed Dec 11 19:59:13 EST 2024,Wed Dec 11 19:59:13 EST 2024,GET,http://localhost:8000/static/rest_framework/js/default.js,200,OK,55,253,1268
+
+7451,Wed Dec 11 19:59:13 EST 2024,Wed Dec 11 19:59:13 EST 2024,GET,http://localhost:8000/static/rest_framework/js/ajax-form.js,200,OK,39,255,3796
+
+7452,Wed Dec 11 19:59:13 EST 2024,Wed Dec 11 19:59:13 EST 2024,GET,http://localhost:8000/static/rest_framework/js/prettify-min.js,200,OK,44,259,13632
+
+7453,Wed Dec 11 19:59:13 EST 2024,Wed Dec 11 19:59:13 EST 2024,GET,http://localhost:8000/static/rest_framework/js/load-ajax-form.js,200,OK,68,258,59
+
+7454,Wed Dec 11 19:59:13 EST 2024,Wed Dec 11 19:59:13 EST 2024,GET,http://localhost:8000/static/debug_toolbar/js/utils.js,200,OK,37,251,4742
+
+7455,Wed Dec 11 19:59:13 EST 2024,Wed Dec 11 19:59:13 EST 2024,GET,http://localhost:8000/favicon.ico,404,Not Found,107,690,17829
+
+7510,Wed Dec 11 19:59:29 EST 2024,Wed Dec 11 19:59:29 EST 2024,GET,http://localhost:8000/__debug__/render_panel/?store_id=aa66dad2f1e34ac59cb286981ef5ff27&panel_id=StaticFilesPanel,200,OK,33,256,120
+
+7523,Wed Dec 11 19:59:32 EST 2024,Wed Dec 11 19:59:33 EST 2024,POST,http://localhost:8000/api-auth/login/,200,OK,812,992,16105
+
+7527,Wed Dec 11 19:59:33 EST 2024,Wed Dec 11 19:59:33 EST 2024,GET,http://localhost:8000/favicon.ico,404,Not Found,42,644,17418
+
+7528,Wed Dec 11 19:59:33 EST 2024,Wed Dec 11 19:59:33 EST 2024,GET,http://localhost:8000/api-auth/login/?next=/api/,200,OK,67,884,15852
+
+7561,Wed Dec 11 19:59:38 EST 2024,Wed Dec 11 19:59:38 EST 2024,GET,http://localhost:8000/api-auth/login/?next=/api/?name=abc,200,OK,423,884,15861
+
+7590,Wed Dec 11 19:59:41 EST 2024,Wed Dec 11 19:59:42 EST 2024,POST,http://localhost:8000/api-auth/login/,200,OK,889,991,16117
+
+7592,Wed Dec 11 19:59:42 EST 2024,Wed Dec 11 19:59:42 EST 2024,GET,http://localhost:8000/api-auth/login/?next=/api/?name=abc,200,OK,99,885,15863
+
+7762,Wed Dec 11 19:59:54 EST 2024,Wed Dec 11 19:59:54 EST 2024,GET,http://localhost:8000/__debug__/render_panel/?store_id=3564b240674f49dda872342610de4d0a&panel_id=StaticFilesPanel,200,OK,58,256,120
+
+7845,Wed Dec 11 19:59:59 EST 2024,Wed Dec 11 19:59:59 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,59,521,11581
+
+7848,Wed Dec 11 19:59:59 EST 2024,Wed Dec 11 19:59:59 EST 2024,GET,http://localhost:8000/favicon.ico,404,Not Found,189,273,13151
+
+7850,Wed Dec 11 19:59:59 EST 2024,Wed Dec 11 19:59:59 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,74,521,11581
+
+7853,Wed Dec 11 19:59:59 EST 2024,Wed Dec 11 19:59:59 EST 2024,GET,http://localhost:8000/favicon.ico,404,Not Found,42,273,13151
+
+7857,Wed Dec 11 19:59:59 EST 2024,Wed Dec 11 19:59:59 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,107,521,11581
+
+7869,Wed Dec 11 20:00:00 EST 2024,Wed Dec 11 20:00:00 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,55,521,11581
+
+7882,Wed Dec 11 20:00:01 EST 2024,Wed Dec 11 20:00:01 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,111,521,11581
+
+7883,Wed Dec 11 20:00:01 EST 2024,Wed Dec 11 20:00:01 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,51,521,11581
+
+7885,Wed Dec 11 20:00:02 EST 2024,Wed Dec 11 20:00:02 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,65,570,12035
+
+7887,Wed Dec 11 20:00:03 EST 2024,Wed Dec 11 20:00:03 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,80,570,12450
+
+7889,Wed Dec 11 20:00:04 EST 2024,Wed Dec 11 20:00:04 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,36,837,12859
+
+7891,Wed Dec 11 20:00:04 EST 2024,Wed Dec 11 20:00:05 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,71,838,13321
+
+7892,Wed Dec 11 20:00:05 EST 2024,Wed Dec 11 20:00:05 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,58,825,13701
+
+7894,Wed Dec 11 20:00:05 EST 2024,Wed Dec 11 20:00:06 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,128,839,14111
+
+7896,Wed Dec 11 20:00:06 EST 2024,Wed Dec 11 20:00:06 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,94,885,14565
+
+7897,Wed Dec 11 20:00:07 EST 2024,Wed Dec 11 20:00:07 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,56,884,15034
+
+7899,Wed Dec 11 20:00:07 EST 2024,Wed Dec 11 20:00:07 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,102,882,15492
+
+7901,Wed Dec 11 20:00:08 EST 2024,Wed Dec 11 20:00:08 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,72,883,15868
+
+7904,Wed Dec 11 20:00:09 EST 2024,Wed Dec 11 20:00:09 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,413,933,16320
+
+7908,Wed Dec 11 20:00:11 EST 2024,Wed Dec 11 20:00:11 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,40,921,16743
+
+7909,Wed Dec 11 20:00:11 EST 2024,Wed Dec 11 20:00:11 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,115,933,16728
+
+7911,Wed Dec 11 20:00:12 EST 2024,Wed Dec 11 20:00:12 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,119,933,16338
+
+7912,Wed Dec 11 20:00:12 EST 2024,Wed Dec 11 20:00:12 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,76,934,16338
+
+7913,Wed Dec 11 20:00:12 EST 2024,Wed Dec 11 20:00:12 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,44,933,16338
+
+7915,Wed Dec 11 20:00:13 EST 2024,Wed Dec 11 20:00:13 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,65,934,16340
+
+7916,Wed Dec 11 20:00:13 EST 2024,Wed Dec 11 20:00:13 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,53,918,16340
+
+7918,Wed Dec 11 20:00:13 EST 2024,Wed Dec 11 20:00:13 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,73,934,16340
+
+7921,Wed Dec 11 20:00:15 EST 2024,Wed Dec 11 20:00:15 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,33,918,16338
+
+7922,Wed Dec 11 20:00:15 EST 2024,Wed Dec 11 20:00:15 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,122,935,16340
+
+7924,Wed Dec 11 20:00:16 EST 2024,Wed Dec 11 20:00:16 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,152,932,16338
+
+7927,Wed Dec 11 20:00:17 EST 2024,Wed Dec 11 20:00:17 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,62,920,16339
+
+7928,Wed Dec 11 20:00:17 EST 2024,Wed Dec 11 20:00:18 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,208,933,16338
+
+7930,Wed Dec 11 20:00:18 EST 2024,Wed Dec 11 20:00:18 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,103,932,16338
+
+7932,Wed Dec 11 20:00:19 EST 2024,Wed Dec 11 20:00:19 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,398,933,16340
+
+7935,Wed Dec 11 20:00:20 EST 2024,Wed Dec 11 20:00:20 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,188,932,16338
+
+7937,Wed Dec 11 20:00:21 EST 2024,Wed Dec 11 20:00:21 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,119,918,16338
+
+7938,Wed Dec 11 20:00:21 EST 2024,Wed Dec 11 20:00:21 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,70,935,16339
+
+7940,Wed Dec 11 20:00:22 EST 2024,Wed Dec 11 20:00:22 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,70,920,16339
+
+7942,Wed Dec 11 20:00:22 EST 2024,Wed Dec 11 20:00:22 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,48,933,16338
+
+7943,Wed Dec 11 20:00:23 EST 2024,Wed Dec 11 20:00:23 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,77,918,16338
+
+7945,Wed Dec 11 20:00:23 EST 2024,Wed Dec 11 20:00:23 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,44,934,16340
+
+7947,Wed Dec 11 20:00:24 EST 2024,Wed Dec 11 20:00:24 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,46,933,16339
+
+7948,Wed Dec 11 20:00:24 EST 2024,Wed Dec 11 20:00:24 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,38,918,16338
+
+7951,Wed Dec 11 20:00:25 EST 2024,Wed Dec 11 20:00:25 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,57,921,16340
+
+7952,Wed Dec 11 20:00:26 EST 2024,Wed Dec 11 20:00:26 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,57,933,16338
+
+7954,Wed Dec 11 20:00:27 EST 2024,Wed Dec 11 20:00:27 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,96,935,16340
+
+7956,Wed Dec 11 20:00:27 EST 2024,Wed Dec 11 20:00:27 EST 2024,GET,http://localhost:8000/__debug__/render_panel/?store_id=6d53d6bb6eb04cce9022d5ed79e0c5fa&panel_id=TimerPanel,200,OK,35,257,1375
+
+7957,Wed Dec 11 20:00:27 EST 2024,Wed Dec 11 20:00:27 EST 2024,GET,http://localhost:8000/static/debug_toolbar/js/timer.js,200,OK,7,251,3686
+
+7958,Wed Dec 11 20:00:27 EST 2024,Wed Dec 11 20:00:27 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,50,932,16338
+
+7960,Wed Dec 11 20:00:28 EST 2024,Wed Dec 11 20:00:28 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,44,918,16338
+
+7961,Wed Dec 11 20:00:28 EST 2024,Wed Dec 11 20:00:28 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cscript%3Ealert(1)%3C/script%3E,200,OK,64,933,16338
+
+7975,Wed Dec 11 20:00:31 EST 2024,Wed Dec 11 20:00:31 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,75,921,16289
+
+7976,Wed Dec 11 20:00:31 EST 2024,Wed Dec 11 20:00:31 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,89,932,16288
+
+7980,Wed Dec 11 20:00:32 EST 2024,Wed Dec 11 20:00:32 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,109,932,16289
+
+7981,Wed Dec 11 20:00:33 EST 2024,Wed Dec 11 20:00:33 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,289,932,16287
+
+7988,Wed Dec 11 20:00:34 EST 2024,Wed Dec 11 20:00:34 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,76,935,16289
+
+7990,Wed Dec 11 20:00:35 EST 2024,Wed Dec 11 20:00:35 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,81,933,16287
+
+7993,Wed Dec 11 20:00:35 EST 2024,Wed Dec 11 20:00:35 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,52,884,15847
+
+7997,Wed Dec 11 20:00:36 EST 2024,Wed Dec 11 20:00:36 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,52,884,15432
+
+8001,Wed Dec 11 20:00:36 EST 2024,Wed Dec 11 20:00:36 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,86,632,15023
+
+8008,Wed Dec 11 20:00:38 EST 2024,Wed Dec 11 20:00:38 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,66,632,14563
+
+8012,Wed Dec 11 20:00:39 EST 2024,Wed Dec 11 20:00:39 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,60,632,14183
+
+8016,Wed Dec 11 20:00:40 EST 2024,Wed Dec 11 20:00:40 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,68,632,13775
+
+8017,Wed Dec 11 20:00:40 EST 2024,Wed Dec 11 20:00:40 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,49,586,13319
+
+8021,Wed Dec 11 20:00:41 EST 2024,Wed Dec 11 20:00:41 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,46,586,12850
+
+8025,Wed Dec 11 20:00:42 EST 2024,Wed Dec 11 20:00:42 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,53,586,12392
+
+8029,Wed Dec 11 20:00:43 EST 2024,Wed Dec 11 20:00:43 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,54,586,12016
+
+8040,Wed Dec 11 20:00:43 EST 2024,Wed Dec 11 20:00:43 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,39,521,11566
+
+8041,Wed Dec 11 20:00:44 EST 2024,Wed Dec 11 20:00:44 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,60,521,11141
+
+8045,Wed Dec 11 20:00:46 EST 2024,Wed Dec 11 20:00:46 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,48,521,11156
+
+8049,Wed Dec 11 20:00:47 EST 2024,Wed Dec 11 20:00:47 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,109,521,11544
+
+8053,Wed Dec 11 20:00:47 EST 2024,Wed Dec 11 20:00:47 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,65,521,11544
+
+8054,Wed Dec 11 20:00:48 EST 2024,Wed Dec 11 20:00:48 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,52,521,11544
+
+8058,Wed Dec 11 20:00:48 EST 2024,Wed Dec 11 20:00:48 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,78,521,11544
+
+8062,Wed Dec 11 20:00:49 EST 2024,Wed Dec 11 20:00:49 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,70,521,11544
+
+8063,Wed Dec 11 20:00:49 EST 2024,Wed Dec 11 20:00:50 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,64,521,11544
+
+8067,Wed Dec 11 20:00:50 EST 2024,Wed Dec 11 20:00:50 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,58,521,11544
+
+8068,Wed Dec 11 20:00:51 EST 2024,Wed Dec 11 20:00:51 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,93,521,11544
+
+8072,Wed Dec 11 20:00:52 EST 2024,Wed Dec 11 20:00:52 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,70,521,11544
+
+8076,Wed Dec 11 20:00:52 EST 2024,Wed Dec 11 20:00:52 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,67,521,11544
+
+8078,Wed Dec 11 20:00:53 EST 2024,Wed Dec 11 20:00:53 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,74,521,11544
+
+8081,Wed Dec 11 20:00:53 EST 2024,Wed Dec 11 20:00:53 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,65,521,11544
+
+8082,Wed Dec 11 20:00:54 EST 2024,Wed Dec 11 20:00:54 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,192,521,11544
+
+8086,Wed Dec 11 20:00:55 EST 2024,Wed Dec 11 20:00:55 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,89,521,11544
+
+8090,Wed Dec 11 20:00:56 EST 2024,Wed Dec 11 20:00:56 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,71,521,11544
+
+8091,Wed Dec 11 20:00:56 EST 2024,Wed Dec 11 20:00:56 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,106,521,11544
+
+8095,Wed Dec 11 20:00:57 EST 2024,Wed Dec 11 20:00:57 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,108,521,11544
+
+8099,Wed Dec 11 20:00:58 EST 2024,Wed Dec 11 20:00:58 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,43,521,11544
+
+8103,Wed Dec 11 20:00:59 EST 2024,Wed Dec 11 20:00:59 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,82,521,11544
+
+8107,Wed Dec 11 20:01:00 EST 2024,Wed Dec 11 20:01:00 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,150,521,11544
+
+8111,Wed Dec 11 20:01:01 EST 2024,Wed Dec 11 20:01:01 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,116,521,11544
+
+8115,Wed Dec 11 20:01:03 EST 2024,Wed Dec 11 20:01:03 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,449,521,11544
+
+8119,Wed Dec 11 20:01:04 EST 2024,Wed Dec 11 20:01:04 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,57,521,11544
+
+8120,Wed Dec 11 20:01:04 EST 2024,Wed Dec 11 20:01:04 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,35,521,11544
+
+8127,Wed Dec 11 20:01:05 EST 2024,Wed Dec 11 20:01:05 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,63,521,11544
+
+8128,Wed Dec 11 20:01:05 EST 2024,Wed Dec 11 20:01:06 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,125,521,11544
+
+8138,Wed Dec 11 20:01:07 EST 2024,Wed Dec 11 20:01:07 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,65,521,11544
+
+8139,Wed Dec 11 20:01:07 EST 2024,Wed Dec 11 20:01:07 EST 2024,GET,http://localhost:8000/api-auth/login/?next=javascript:alert(1),200,OK,78,521,11544
+
+8143,Wed Dec 11 20:01:08 EST 2024,Wed Dec 11 20:01:08 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,50,521,11599
+
+8147,Wed Dec 11 20:01:08 EST 2024,Wed Dec 11 20:01:08 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,59,521,11599
+
+8148,Wed Dec 11 20:01:08 EST 2024,Wed Dec 11 20:01:08 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,59,521,11599
+
+8152,Wed Dec 11 20:01:09 EST 2024,Wed Dec 11 20:01:09 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,53,521,11599
+
+8153,Wed Dec 11 20:01:09 EST 2024,Wed Dec 11 20:01:09 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,56,521,11599
+
+8163,Wed Dec 11 20:01:11 EST 2024,Wed Dec 11 20:01:11 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,80,521,11599
+
+8167,Wed Dec 11 20:01:12 EST 2024,Wed Dec 11 20:01:12 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,175,570,12071
+
+8171,Wed Dec 11 20:01:13 EST 2024,Wed Dec 11 20:01:13 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,84,570,12486
+
+8175,Wed Dec 11 20:01:14 EST 2024,Wed Dec 11 20:01:14 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,179,835,12895
+
+8179,Wed Dec 11 20:01:15 EST 2024,Wed Dec 11 20:01:15 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,144,839,13357
+
+8184,Wed Dec 11 20:01:16 EST 2024,Wed Dec 11 20:01:16 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,50,838,13737
+
+8188,Wed Dec 11 20:01:16 EST 2024,Wed Dec 11 20:01:17 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,103,837,14145
+
+8192,Wed Dec 11 20:01:17 EST 2024,Wed Dec 11 20:01:17 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,70,870,14601
+
+8196,Wed Dec 11 20:01:18 EST 2024,Wed Dec 11 20:01:18 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,67,884,15070
+
+8197,Wed Dec 11 20:01:18 EST 2024,Wed Dec 11 20:01:18 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,58,886,15528
+
+8201,Wed Dec 11 20:01:19 EST 2024,Wed Dec 11 20:01:19 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,78,886,15904
+
+8204,Wed Dec 11 20:01:20 EST 2024,Wed Dec 11 20:01:20 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,80,935,16354
+
+8216,Wed Dec 11 20:01:20 EST 2024,Wed Dec 11 20:01:20 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,122,932,16779
+
+8223,Wed Dec 11 20:01:21 EST 2024,Wed Dec 11 20:01:21 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,388,933,16765
+
+8227,Wed Dec 11 20:01:22 EST 2024,Wed Dec 11 20:01:22 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,59,935,16376
+
+8228,Wed Dec 11 20:01:22 EST 2024,Wed Dec 11 20:01:22 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,41,934,16374
+
+8229,Wed Dec 11 20:01:22 EST 2024,Wed Dec 11 20:01:22 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,45,933,16374
+
+8237,Wed Dec 11 20:01:23 EST 2024,Wed Dec 11 20:01:23 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,166,935,16376
+
+8247,Wed Dec 11 20:01:23 EST 2024,Wed Dec 11 20:01:23 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,129,920,16374
+
+8262,Wed Dec 11 20:01:24 EST 2024,Wed Dec 11 20:01:24 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,114,919,16375
+
+8269,Wed Dec 11 20:01:24 EST 2024,Wed Dec 11 20:01:24 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,73,935,16374
+
+8270,Wed Dec 11 20:01:25 EST 2024,Wed Dec 11 20:01:25 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,43,932,16374
+
+8271,Wed Dec 11 20:01:25 EST 2024,Wed Dec 11 20:01:25 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,50,933,16376
+
+8275,Wed Dec 11 20:01:25 EST 2024,Wed Dec 11 20:01:26 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,110,933,16375
+
+8276,Wed Dec 11 20:01:26 EST 2024,Wed Dec 11 20:01:26 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,255,934,16374
+
+8280,Wed Dec 11 20:01:27 EST 2024,Wed Dec 11 20:01:27 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,217,934,16374
+
+8281,Wed Dec 11 20:01:27 EST 2024,Wed Dec 11 20:01:27 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,60,931,16376
+
+8285,Wed Dec 11 20:01:28 EST 2024,Wed Dec 11 20:01:28 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,391,933,16374
+
+8287,Wed Dec 11 20:01:29 EST 2024,Wed Dec 11 20:01:29 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,44,918,16374
+
+8290,Wed Dec 11 20:01:29 EST 2024,Wed Dec 11 20:01:29 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,88,919,16375
+
+8294,Wed Dec 11 20:01:30 EST 2024,Wed Dec 11 20:01:30 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,97,935,16376
+
+8295,Wed Dec 11 20:01:30 EST 2024,Wed Dec 11 20:01:30 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,55,934,16374
+
+8297,Wed Dec 11 20:01:30 EST 2024,Wed Dec 11 20:01:30 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,50,918,16374
+
+8300,Wed Dec 11 20:01:31 EST 2024,Wed Dec 11 20:01:31 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,59,921,16376
+
+8304,Wed Dec 11 20:01:31 EST 2024,Wed Dec 11 20:01:32 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,66,918,16374
+
+8308,Wed Dec 11 20:01:32 EST 2024,Wed Dec 11 20:01:32 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,89,917,16376
+
+8309,Wed Dec 11 20:01:32 EST 2024,Wed Dec 11 20:01:33 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,70,918,16376
+
+8313,Wed Dec 11 20:01:33 EST 2024,Wed Dec 11 20:01:33 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,68,914,16376
+
+8314,Wed Dec 11 20:01:33 EST 2024,Wed Dec 11 20:01:33 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,63,933,16374
+
+8315,Wed Dec 11 20:01:34 EST 2024,Wed Dec 11 20:01:34 EST 2024,GET,http://localhost:8000/__debug__/render_panel/?store_id=329d42a5c2f044eaa6ae9f787e489455&panel_id=SettingsPanel,200,OK,60,258,34970
+
+8319,Wed Dec 11 20:01:34 EST 2024,Wed Dec 11 20:01:34 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,29,933,16374
+
+8323,Wed Dec 11 20:01:35 EST 2024,Wed Dec 11 20:01:35 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,68,919,16375
+
+8327,Wed Dec 11 20:01:37 EST 2024,Wed Dec 11 20:01:37 EST 2024,GET,http://localhost:8000/api-auth/login/?next=%3Cimg%20src=%22random.gif%22%20onerror=alert(1)%3E,200,OK,71,933,16374
+
