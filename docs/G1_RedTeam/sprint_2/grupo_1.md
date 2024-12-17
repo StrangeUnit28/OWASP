@@ -1,5 +1,23 @@
 # Sprint 2 - Broken Authentication
 
+## O que é Autenticação
+
+A autenticação, é o processo de verificar se uma pessoa, sistema ou recurso realmente possui certas características ou atributos que ele afirma ter. Ou seja, quando você faz login em um site, o sistema verifica se a sua senha corresponde ao que ele tem registrado, para garantir que você é quem diz ser. A autenticação é a primeira linha de defesa contra acessos não autorizados em sistemas e aplicativos web. Ela pode ser realizada por diferentes métodos, como baseados em conhecimento (como senhas e PINs), baseados em posse (como cartões de identificação e dispositivos de autenticação) e baseados em características pessoais (como biometria, incluindo impressões digitais e reconhecimento facial). Além disso, a autenticação pode ser única, quando utiliza apenas um método, ou multifatorial (MFA), quando combina dois ou mais métodos para aumentar a segurança, como é o caso da autenticação de dois fatores (2FA).
+
+## Ataques na Autenticação
+
+### Ataques à Autenticação Baseada em Conhecimento
+
+Esse método de autenticação depende de informações pessoais estáticas, que podem ser obtidas, adivinhadas ou forçadas.
+
+### Ataques à Autenticação Baseada em Posse
+
+Um benefício da autenticação baseada em posse é sua resistência a ameaças cibernéticas comuns. Métodos de autenticação que dependem de itens físicos, como tokens de hardware ou cartões inteligentes, são geralmente mais seguros, pois é mais difícil para os atacantes adquirir ou replicar objetos físicos do que obter informações por phishing ou vazamentos de dados.
+
+### Ataques à Autenticação Baseada em Herança
+
+A autenticação baseada em herança, como o uso de biometria, oferece conveniência e facilidade de uso, pois os usuários não precisam lembrar senhas complexas ou carregar tokens físicos. Os sistemas de autenticação baseados em herança devem lidar com preocupações sobre privacidade, segurança de dados e possíveis preconceitos nos algoritmos de reconhecimento biométrico para garantir a adoção e confiança generalizada.
+
 ## Relatório de Estudo - Módulo: Vulnerabilidades de Autenticação em Aplicações Web
 
 Neste módulo, o foco principal foi entender as vulnerabilidades e configurações incorretas relacionadas à autenticação em aplicativos web, que podem ser exploradas para obter acesso não autorizado. Durante o curso, foram abordados diversos métodos de autenticação, técnicas de ataque e falhas no gerenciamento de sessões. As principais áreas de estudo incluem:
@@ -43,11 +61,6 @@ O ataque de brute-force seria eficaz apenas se fosse possível determinar um usu
 
 A etapa de identificação do token de reset de senha depende do envio de um e-mail contendo o token necessário para validar a solicitação de recuperação de senha. No entanto, devido à impossibilidade de receber o e-mail, não foi possível acessar o token e, portanto, não foi viável realizar a análise ou aplicar o teste relacionado à validação do token.
 
-### Códigos 2FA de força bruta
-Sem o acesso ao e-mail com o token, não pude verificar como o sistema lida com o processo de recuperação de senha nem analisar seus padrões de criação ou de validade. Isso impediu a execução da etapa de teste, uma vez que o fluxo de reset de senha não pôde ser completamente analisado.
-Conclusão
-
-A realização do teste dependia do recebimento do e-mail com o token de reset de senha. Sem esse e-mail, não foi possível aplicar a análise ou as técnicas de interceptação, resultando na impossibilidade de testar o processo de recuperação de senha.
 
 ### Ataques a Tokens de Sessão 
 
