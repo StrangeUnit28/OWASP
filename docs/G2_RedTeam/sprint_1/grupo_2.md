@@ -5,16 +5,16 @@ Durante essa primeira sprint eu acessei os cursos do HTB (Hack the Box) como sol
 A seguir apresento o retorno de alguns desses testes.
 
 Figura 1.1 - Teste 1:  
-![][image1]
+![](./img_g2/image1.png)
 
 Figura 1.2 - Teste 2:  
-![][image2]
+![](./img_g2/image2.png)
 
 Figura 1.3 - Teste 3:  
-![][image3]
+![](./img_g2/image3.png)
 
 Figura 1.4 - Teste 4:  
-![][image4]
+![](./img_g2/image4.png)
 
 Depois de aplicar os testes e utilizar as flags sugeridas para tentar encontrar brechas pude concluir que não houveram falhas de segurança na rota /api/consumer-units/ Pretendo agora focar em toda a rota relacionada para chegar a mais resultados
 
