@@ -120,7 +120,7 @@ Foi verificado se o sistema permitia a sobrescrição de métodos HTTP, uma prá
 
 Após a execução dos testes de controle de acesso quebrado nas rotas da API, **não foram encontradas vulnerabilidades** até o momento. Todas as rotas testadas responderam conforme esperado, com os controles de acesso funcionando corretamente, evitando acessos não autorizados e operações inseguras. Não foram observadas falhas de IDOR, manipulação de URL ou exposição de dados sensíveis.
 
-## Relatório de Atque da Aplicação com Ffuf
+## Relatório de Ataque da Aplicação com Ffuf
 
 **Objetivo:**  
 O objetivo deste teste foi verificar a existência da possibilidade de se obter as credenciais de acesso nas rotas da API fornecida.
@@ -177,9 +177,84 @@ Figura 1.4 - Teste da rota /energy-bills/ da API.
 
 </center>
 
+## Relatório de Teste de Rate Limit com Ffuf
+
+**Objetivo:**  
+O objetivo deste teste foi verificar se existe algum controle de limite de requisições na aplicação que inviabilizaria um ataque brute-force.
+
+### **Teste das rotas**
+
+Essa etapa envolveu testar as rotas do frontend (mais especificamente tela de login) na tentativa de observar se existe algum mecanismo que inviabilizaria o brute-force.
+
+**Método:**
+
+- Foi enviada uma requisição para cada rota com o username *admin@admin.com* e senhas vindas de um arquivo customizado com as senhas mais utilizadas no ano de 2023.
+- A rota testada foi: _/api/auth/callback_.
+- Foi utilizado o seguinte comando: _ffuf -request req.txt -w custom.txt -fr "401 Unauthorized"_.
+
+  **Obs.: Para os testes a senha do usúario padrão foi alterada.**
+
+<center>
+
+Figura 2.1 - Teste da rota /api/auth do Frontend.
+
+![Teste da rota /api/auth](./img/g2/teste-rate-limit.png)
+
+</center>
+
+<center>
+
+Figura 2.2 - Resultado do teste da rota /api/auth do Frontend.
+
+![Resultado do teste da rota /api/auth](./img/g2/teste-rate-limit-res.png)
+
+</center>
+
+**Resultado Obtido:**
+
+- O resultado foi que a aplicação permitiu o brute-force e assim deixou serem realizadas 17048 requisições em um curto espaço de tempo.
+- Importante ressaltar que esse teste foi feito no ambiente de desenvolvimento, contudo analisando os arquivos de [infra](https://gitlab.com/lappis-unb/projetos-energia/mec-energia/mepa-infra) do MEPA no repositório verifiquei que os arquivos de configuração do NGINX não possuem parâmetros *limit_req* que configuram limites de requisições. Além disso a aplicação não utiliza de CAPTCHAs ou bibliotecas como _django-ratelimit_ que ajudam a impedir a automatização de requisições.
+
+## Relatório de Teste de Reset Password
+
+**Objetivo:**  
+O objetivo deste teste foi verificar se a funcionalidade de reset de senha possui alguma vulnerabilidade que possa ser explorada.
+
+### **Teste das rotas**
+
+Essa etapa envolveu testar rotas de esqueci e redefinir senha na tentativa de observar se existe alguma maneira de alterar variáveis da requisição a modo de mudar o comportamento ou verificar se o token utilizado é passível de brute-force.
+
+**Método:**
+
+- Foi configurado um contâiner docker de _mailcatcher_ no _compose.yml_ de desenvolvimento para auxiliar na visualização dos emails enviados pela aplicação via SMTP.
+- Com a ferramenta BurpSuite foi interceptada a requisição de redefinição de senha.
+- As rotas testadas foram: _/definir-senha_ e _/api/reset-password/confirm_.
+
+<center>
+
+Figura 3.1 - Mailcatcher configurado para interceptar emails da aplicação.
+
+![Mailcatcher](./img/g2/mailcatcher.png)
+
+</center>
+
+<center>
+
+Figura 3.2 - Requisição de reset de senha interceptada no BurpSuite.
+
+![Requisição de reset de senha](./img/g2/reset-pass-req.png)
+
+</center>
+
+**Resultado Obtido:**
+
+- A requisição não possui vulnerabilidades pois o único payload além da senha alterada é o próprio token que valida a requisição. Qualquer mínima alteração nesse token invalida a requisição e após seu uso o token é invalidado o que impede que algum usuário malicioso que interceptasse a requisição tentasse reutilizar o token.
+- O token é formado por hash HMAC através de uma biblioteca do próprio Django, o comprimento da hash junto do seu espaço de busca e curto tempo de vida impossibilita que os tokens sejam quebrados ou adivinhados.
+
 ## Histórico de Versões
 
 | Versão | Data       | Descrição                                  | Autor(es)                                        |
 | ------ | ---------- | ------------------------------------------ | ------------------------------------------------ |
 | `1.0`  | 10/12/2024 | Adiciona relatório inicial da sprint 2.    | [Gabriel Campello](https://github.com/G16C)      |
 | `2.0`  | 12/12/2024 | Adiciona relatório de Matheus da sprint 2. | [Matheus Henrique](https://github.com/mathonaut) |
+| `3.0`  | 16/12/2024 | Adiciona relatório do Gustavo da sprint 2. | [Gustavo Melo](https://github.com/gusrberto) |
