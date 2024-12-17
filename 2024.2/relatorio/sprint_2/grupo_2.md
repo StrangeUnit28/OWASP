@@ -251,6 +251,37 @@ Figura 3.2 - Requisição de reset de senha interceptada no BurpSuite.
 - A requisição não possui vulnerabilidades pois o único payload além da senha alterada é o próprio token que valida a requisição. Qualquer mínima alteração nesse token invalida a requisição e após seu uso o token é invalidado o que impede que algum usuário malicioso que interceptasse a requisição tentasse reutilizar o token.
 - O token é formado por hash HMAC através de uma biblioteca do próprio Django, o comprimento da hash junto do seu espaço de busca e curto tempo de vida impossibilita que os tokens sejam quebrados ou adivinhados.
 
+
+## Relatório de Testes de Login
+
+Relatório de Teste de Login
+
+Objetivo:
+O objetivo deste teste foi verificar se a funcionalidade de login possui vulnerabilidades que possam ser exploradas, como brute-force, manipulação de requisições ou comportamento indevido.
+Teste da Rota /api/admin/login/
+
+Essa etapa envolveu testar a rota de login administrativo na tentativa de identificar vulnerabilidades, como possibilidade de brute-force, manipulação de variáveis na requisição ou problemas de validação dos dados enviados.
+
+Método:
+
+   A ferramenta ffuf foi utilizada para realizar testes de força bruta na senha, substituindo o payload de senha com uma lista de senhas comuns (wordlist).
+
+Comando executado no ffuf:
+
+``ffuf -w /usr/share/seclists/Passwords/2020-200_most_used_passwords.txt -u http://0.0.0.0:8000/api/admin/login/~ -X POST -H  "Content-Type: application/x-www-form-urlencoded" -d "username=admin@admin.com&password=FUZZ" -fr "Invalid username"``
+
+![image ffuf](https://github.com/user-attachments/assets/fb7dd319-2678-4593-a449-057c4a4bbcd5)
+
+Resultado Obtido:
+
+   Proteção contra brute-force: A aplicação respondeu de forma consistente com o erro de "usuário ou senha inválidos" para cada tentativa incorreta, sem fornecer informações adicionais que poderiam facilitar o ataque.
+   Token ou sessão: Após um login bem-sucedido, um token JWT (ou similar) foi retornado e armazenado corretamente. Tentativas de reutilizar o token após o logout resultaram em falhas, indicando uma boa implementação de segurança.
+   Logs de tentativa: Não foram identificadas notificações ou bloqueios após múltiplas tentativas de login mal-sucedidas. Recomenda-se implementar uma limitação de tentativas consecutivas com bloqueio temporário do usuário ou IP.
+
+Conclusão:
+
+ Não foram obtidos vulnerabilidades no teste realizado
+
 ## Histórico de Versões
 
 | Versão | Data       | Descrição                                  | Autor(es)                                        |
