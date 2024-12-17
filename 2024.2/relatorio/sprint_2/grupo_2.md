@@ -258,3 +258,4 @@ Figura 3.2 - Requisição de reset de senha interceptada no BurpSuite.
 | `1.0`  | 10/12/2024 | Adiciona relatório inicial da sprint 2.    | [Gabriel Campello](https://github.com/G16C)      |
 | `2.0`  | 12/12/2024 | Adiciona relatório de Matheus da sprint 2. | [Matheus Henrique](https://github.com/mathonaut) |
 | `3.0`  | 16/12/2024 | Adiciona relatório do Gustavo da sprint 2. | [Gustavo Melo](https://github.com/gusrberto) |
+| `4.0` | 17/12/2024 |  Adiciona relatório do Felipe Direito da sprint 2. | [FelipeDireito](https://github.com/felipedireito) |
