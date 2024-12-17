@@ -61,12 +61,6 @@ O ataque de brute-force seria eficaz apenas se fosse possível determinar um usu
 
 A etapa de identificação do token de reset de senha depende do envio de um e-mail contendo o token necessário para validar a solicitação de recuperação de senha. No entanto, devido à impossibilidade de receber o e-mail, não foi possível acessar o token e, portanto, não foi viável realizar a análise ou aplicar o teste relacionado à validação do token.
 
-### Códigos 2FA de força bruta
-Sem o acesso ao e-mail com o token, não pude verificar como o sistema lida com o processo de recuperação de senha nem analisar seus padrões de criação ou de validade. Isso impediu a execução da etapa de teste, uma vez que o fluxo de reset de senha não pôde ser completamente analisado.
-Conclusão
-
-A realização do teste dependia do recebimento do e-mail com o token de reset de senha. Sem esse e-mail, não foi possível aplicar a análise ou as técnicas de interceptação, resultando na impossibilidade de testar o processo de recuperação de senha.
-
 ### Ataques a Tokens de Sessão 
 
 Os ataques a tokens de sessão descritos, como brute-force e a manipulação de tokens previsíveis, não são aplicáveis ao projeto, pois o sistema em questão utiliza tokens altamente aleatórios e seguros, gerados com o algoritmos criptográficos Devido à aleatoriedade desses tokens e à natureza do algoritmo utilizado, não é viável adivinhar ou manipular os tokens para obter acesso não autorizado.
