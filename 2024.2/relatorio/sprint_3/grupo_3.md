@@ -79,14 +79,17 @@ Após clicar no usuário sua ferramenta de network deve ficar preenchida mais ou
 ![Rede Preenchida](../imagens/rede.png)
 **Imagem 3** - Vendo requisições
 
+
 ![Requisicoes](../imagens/requisicoes.png)
+
 **Imagem 4** - Zoom nas requisições feitas
 
 Dentre as requisições feitas à API existe uma com o arquivo _*api/users/3*_, ou seja, a requisição foi feita com o seguinte endereço: https://energia.lappis.rocks/api/users/3/
 
 Detalhes da resposta dessa requisição na imagem abaixo.
 
-![Detalhes requisição](../imagens/detalhesRequisicao.png)
+![Detalhes requisição](../imagens/detalhesRequisição.png)
+
 **Imagem 5** - Resposta da requisição
 
 Seguindo a _*url*_ à qual a requisição foi feita e realizando login com o mesmo usuário, nos deparamos com a seguinte tela (Imagem 6).
@@ -133,7 +136,7 @@ Além disso, temos acesso a todos os usuários da plataforma, podendo ainda alte
 ![Usuários](../imagens/usuarios.png)
 **Imagem 12** - Listagem dos usuários
 
-Voltando para a API, a url que acessamos possuia o "id" do usuário no final (api/users/3). Ao alterarmos esse "id" podemos acessar dados de outros usuários, como por exemplo ao alterar o final de url por "api/users/1". Tudo isso ainda logado como o usuário operacional.
+Voltando para a API, a url que acessamos possuia o "id" do usuário no final (api/users/3). Ao alterarmos esse "id", podemos acessar dados de outros usuários, como por exemplo ao alterar o final da url por "api/users/1". Tudo isso ainda logado como o usuário operacional.
 
 ![API super](../imagens/apiSuper.png)
 **Imagem 13** - Dados do super usuário
