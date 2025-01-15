@@ -125,7 +125,7 @@ No painel abaixo vemos algumas informações que são passíveis de alteração.
 
 Ao alterar o type, se voltarmos no painel da plataforma vemos uma alteração na sidebar e no tipo de cargo do usuário. Agora o usuário possui cargo de "super" e não mais "operacional", além disso, ganhamos acesso a todas as instituições que utilizam a plataforma (Imagem 10), além de ser possível criar uma nova instituição.
 
-<img src="../imagens/superAdmin.png" width=700px>
+<img src="https://github.com/StrangeUnit28/OWASP/blob/develop/docs/G3_RedTeam/imagens/superAdmin.png" width=700px>
 
 **Imagem 9** - Novo painel de perfil
 
