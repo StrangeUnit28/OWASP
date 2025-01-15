@@ -65,6 +65,8 @@ No ambiente de homologação do [MEC Energia](https://energia.lappis.rocks/) ao 
 
 Faça login normalmente (qualquer usuário), como na imagem abaixo
 
+<img src="../imagens/telaLogin.png" width=400px>
+
 ![Tela Login](../imagens/telaLogin.png)
 **Imagem 1** - Tela de Login
 
