@@ -16,6 +16,7 @@
   - [Sub-Grupo 3](#)
     - [Sprint 1 - SQL Injection](./G3_RedTeam/sprint_1/grupo_3.md)
     - [Sprint 2 - Broken Authentication](./G3_RedTeam/sprint_2/grupo_3.md)
+    - [Sprint 3 - IDOR](./G3_RedTeam/sprint_3/grupo_3.md)
 - [Blue Team](blueTeam.md)
   - [Cainã Valença](#)
   - [Larissa Stéfane](#)
