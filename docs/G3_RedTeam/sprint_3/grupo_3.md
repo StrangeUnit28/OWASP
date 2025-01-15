@@ -65,24 +65,24 @@ No ambiente de homologação do [MEC Energia](https://energia.lappis.rocks/) ao 
 
 Faça login normalmente (qualquer usuário), como na imagem abaixo
 
-<img src="../imagens/telaLogin.png" width=700px>
+<img src="https://raw.githubusercontent.com/StrangeUnit28/OWASP/blob/develop/docs/G3_RedTeam/imagens/telaLogin.png" width=700px>
 
 **Imagem 1** - Tela de Login
 
 
 Em seguida, abra a ferramenta de networking de seu navegador padrão para observar as requisições que estão sendo feitas para API. Com a ferramenta aberta, clique no nome do usuário no canto inferior esquerdo. Nesse caso, o nome do usuário é "José".
 
-<img src="../imagens/painel.png" width=700px>
+<img src="https://raw.githubusercontent.com/StrangeUnit28/OWASP/blob/develop/docs/G3_RedTeam/imagens/painel.png" width=700px>
 
 **Imagem 2** - Painel
 
 Após clicar no usuário sua ferramenta de network deve ficar preenchida mais ou menos como a imagem abaixo.
 
-<img src="../imagens/rede.png" width=700px>
+<img src="https://raw.githubusercontent.com/StrangeUnit28/OWASP/blob/develop/docs/G3_RedTeam/imagens/rede.png" width=700px>
 
 **Imagem 3** - Vendo requisições
 
-<img src="../imagens/requisicoes.png" width=700px>
+<img src="https://raw.githubusercontent.com/StrangeUnit28/OWASP/blob/develop/docs/G3_RedTeam/imagens/requisicoes.png" width=700px>
 
 **Imagem 4** - Zoom nas requisições feitas
 
@@ -90,14 +90,14 @@ Dentre as requisições feitas à API existe uma com o arquivo _*api/users/3*_, 
 
 Detalhes da resposta dessa requisição na imagem abaixo.
 
-<img src="../imagens/detalhesRequisição.png" width=700px>
+<img src="https://raw.githubusercontent.com/StrangeUnit28/OWASP/blob/develop/docs/G3_RedTeam/imagens/detalhesRequisição.png" width=700px>
 
 **Imagem 5** - Resposta da requisição
 
 Seguindo a _*url*_ à qual a requisição foi feita e realizando login com o mesmo usuário, nos deparamos com a seguinte tela (Imagem 6).
 
 
-<img src="../imagens/apiUsuario.png" width=700px>
+<img src="https://raw.githubusercontent.com/StrangeUnit28/OWASP/blob/develop/docs/G3_RedTeam/imagens/apiUsuario.png" width=700px>
 
 **Imagem 6** - Painel do usuário na API
 
@@ -114,40 +114,40 @@ Isso significa que se conseguirmos acessar outros usuários apartir da API, pode
 
 No painel abaixo vemos algumas informações que são passíveis de alteração. Uma delas é um dropdown no atributo "Type". Nele temos 3 opções: "super_user", "university_admin" e "university_user". Nosso usuário possui o "Type: university_user", mas apatir daqui conseguimos colocar qualquer um dos valores disponíveis (Imagem 8). Optei por colocar o usuário como "super_user", pois possui a acesso total.
 
-<img src="../imagens/antesAlterandoType.png" width=700px>
+<img src="https://raw.githubusercontent.com/StrangeUnit28/OWASP/blob/develop/docs/G3_RedTeam/imagens/antesAlterandoType.png" width=700px>
 
 **Imagem 7** - Atributos do usuário
 
-<img src="../imagens/depoisAlterandoType.png" width=700px>
+<img src="https://raw.githubusercontent.com/StrangeUnit28/OWASP/blob/develop/docs/G3_RedTeam/imagens/depoisAlterandoType.png" width=700px>
 
 **Imagem 8** - Type do usuário alterado
 
 
 Ao alterar o type, se voltarmos no painel da plataforma vemos uma alteração na sidebar e no tipo de cargo do usuário. Agora o usuário possui cargo de "super" e não mais "operacional", além disso, ganhamos acesso a todas as instituições que utilizam a plataforma (Imagem 10), além de ser possível criar uma nova instituição.
 
-<img src="https://github.com/StrangeUnit28/OWASP/blob/develop/docs/G3_RedTeam/imagens/superAdmin.png" width=700px>
+<img src="https://raw.githubusercontent.com/StrangeUnit28/OWASP/blob/develop/docs/G3_RedTeam/imagens/superAdmin.png" width=700px>
 
 **Imagem 9** - Novo painel de perfil
 
-<img src="../imagens/instituicoes.png" width=700px>
+<img src="https://raw.githubusercontent.com/StrangeUnit28/OWASP/blob/develop/docs/G3_RedTeam/imagens/instituicoes.png" width=700px>
 
 **Imagem 10** - Listagem das intituições
 
 Ainda nos é possível editar os dados das instituições.
 
-<img src="../imagens/editandoInstituicao.png" width=700px>
+<img src="https://raw.githubusercontent.com/StrangeUnit28/OWASP/blob/develop/docs/G3_RedTeam/imagens/editandoInstituicao.png" width=700px>
 
 **Imagem 11** - Editando dados das instituições
 
 Além disso, temos acesso a todos os usuários da plataforma, podendo ainda alterar seus níveis de acesso e criar novos usuários.
 
-<img src="../imagens/usuarios.png" width=700px>
+<img src="https://raw.githubusercontent.com/StrangeUnit28/OWASP/blob/develop/docs/G3_RedTeam/imagens/usuarios.png" width=700px>
 
 **Imagem 12** - Listagem dos usuários
 
 Voltando para a API, a url que acessamos possuia o "id" do usuário no final (api/users/3). Ao alterarmos esse "id", podemos acessar dados de outros usuários, como por exemplo ao alterar o final da url por "api/users/1". Tudo isso ainda logado como o usuário operacional.
 
-<img src="../imagens/apiSuper.png" width=700px>
+<img src="https://raw.githubusercontent.com/StrangeUnit28/OWASP/blob/develop/docs/G3_RedTeam/imagens/apiSuper.png" width=700px>
 
 **Imagem 13** - Dados do super usuário
 
