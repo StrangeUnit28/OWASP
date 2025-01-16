@@ -129,7 +129,7 @@ A análise identificou os seguintes problemas de segurança:
   - **Descrição**: Um **buffer overflow** ocorre quando um programa tenta armazenar mais dados em um buffer do que ele foi projetado para conter. Isso geralmente resulta em corrupção de memória e pode levar a falhas de segurança. No caso do zlib, o **buffer overflow** é causado por um nome de arquivo longo, comentário ou campo extra. Atacantes podem explorar essa vulnerabilidade para **executar código malicioso**, **escalonar privilégios** ou causar uma **negação de serviço**.
 
 <p align="center">
-  <img src=../../Images/buffer_overflow.png width="500"/>
+  <img src=../Images/buffer_overflow.png width="500"/>
 </p>
 
 
@@ -144,7 +144,7 @@ A análise identificou os seguintes problemas de segurança:
   - **Descrição**: O escalonamento de privilégios ocorre quando um usuário comum obtém acesso a recursos ou privilégios que normalmente são restritos a usuários administrativos. No caso do bash, a variável PS4 pode ser manipulada para executar comandos sensíveis com privilégios elevados. Isso pode ser explorado por usuários maliciosos para **obter acesso não autorizado a sistemas ou informações confidenciais**.
 
 <p align="center">
-  <img src=../../Images/privilage_escalation.png width="500"/>
+  <img src=../Images/privilage_escalation.png width="500"/>
 </p>
 
 ### **CVE-2023-52425**
@@ -158,7 +158,7 @@ A análise identificou os seguintes problemas de segurança:
   - **Descrição**: Um ataque de negação de serviço (DoS) ocorre quando um sistema é sobrecarregado com solicitações maliciosas, resultando em uma interrupção do serviço. No caso da libexpat, um token grande pode causar várias reanálises completas, levando a um DoS. Ataques de negação de serviço distribuídos (DDoS) podem ser ainda mais prejudiciais, pois envolvem múltiplos dispositivos atacando simultaneamente.
 
 <p align="center">
-  <img src=../../Images/ddos.png width="500"/>
+  <img src=../Images/ddos.png width="500"/>
 </p>
 
 
@@ -173,7 +173,7 @@ A análise identificou os seguintes problemas de segurança:
   - **Descrição**: Um ataque de canal lateral baseado em temporização explora a variação no tempo de execução de um algoritmo criptográfico para inferir informações sobre os dados processados. No caso da libgcrypt, essa vulnerabilidade pode ser explorada para descriptografar textos cifrados RSA. Ataques do tipo Bleichenbacher são uma forma de ataque de canal lateral que visa decifrar mensagens criptografadas
 
 <p align="center">
-  <img src=../../Images/side_channel.png width="500"/>
+  <img src=../Images/side_channel.png width="500"/>
 </p>
 
 ## **Recomendações de Correção**
@@ -189,9 +189,9 @@ Na data atual as imagens com final `-slim-bookworm` estão na versão `3.14.0a4`
 
 
 
-[running]: ../../Images/trivy_running.png
-[results]: ../../Images/trivy_results.png
-[buffer_overflow]: ../../Images/buffer_overflow.png
-[privilage_escalation]: ../../Images/privilage_escalation.png
-[ddos]: ../../Images/ddos.png
-[side_channel]: ../../Images/side_channel.png
+[running]: ../Images/trivy_running.png
+[results]: ../Images/trivy_results.png
+[buffer_overflow]: ../Images/buffer_overflow.png
+[privilage_escalation]: ../Images/privilage_escalation.png
+[ddos]: ../Images/ddos.png
+[side_channel]: ../Images/side_channel.png
