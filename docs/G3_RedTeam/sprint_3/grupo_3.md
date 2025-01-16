@@ -222,8 +222,6 @@ Os testes revelaram que o sistema apresenta vulnerabilidades críticas. Foi poss
   - Substituir os IDs incrementais (ex.: /api/contracts/2/) por identificadores únicos (UUIDs).
   - Exemplo: /api/contracts/550e8400-e29b-41d4-a716-446655440000/
 
-## Dificuldades encontradas
-
 ## Referências
 
 - OWASP Foundation: Broken Access Control
