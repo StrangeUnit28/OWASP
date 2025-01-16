@@ -182,6 +182,8 @@ A análise identificou os seguintes problemas de segurança:
 
 - **Adicionar Trivy ao Pipeline**: Manter o Trivy integrado ao pipeline de CI/CD para garantir que novas vulnerabilidades sejam detectadas e corrigidas continuamente.
 
+- **Repensar a versão que a imagem usa de BASE**: A imagem base utilizada é a `python:3.11.9-slim-bookworm`, que possui vulnerabilidades críticas herdados da imagem `debian:12-slim`. Recomenda-se pesquisa e escolha de uma imagem base mais segura.
+
 
 
 [running]: ../../Images/trivy_running.png
