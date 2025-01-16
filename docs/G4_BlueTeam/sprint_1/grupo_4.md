@@ -63,7 +63,9 @@ Certifique-se de que o Python e o Bandit estão instalados no ambiente local:
 ```bandit -r . -f json -o sast-report.json --skip B101,B102```
 
 #### Teste do comando:  
-![][running]
+<p align="center">
+  <img src=imagens/bandit_running.png width="500"/>
+</p>
 
 ---
 
@@ -74,12 +76,14 @@ Certifique-se de que o Python e o Bandit estão instalados no ambiente local:
 - Execução simples: A ferramenta é leve e fácil de rodar, tanto na pipeline quanto localmente.
 
 #### Alguns dos resultados gerados:  
-![][results]
+<p align="center">
+  <img src=imagens/bandit_results.png width="500"/>
+</p>
 
 ### Recomendações Futuras
 
 - Expandir a análise adicionando outras ferramentas de SAST complementares, como o Semgrep.
 - Automatizar a correção de vulnerabilidades recorrentes usando pré-commits ou hooks.
 
-[running]: ../imagens/bandit_running.png
-[results]: ../imagens/bandit_results.png
+[running]: imagens/bandit_running.png
+[results]: imagens/bandit_running.png
