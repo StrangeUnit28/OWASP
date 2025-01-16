@@ -90,10 +90,14 @@ Certifique-se de que o Python e o Trivy estão instalados no ambiente local:
 ```trivy image mepa-api:latest-dev --ignore-status fixed,not_affected```
 
 #### Teste do comando:  
-![][running]
+<p align="center">
+  <img src=imagens/trivy_running.png width="500"/>
+</p>
 
 #### Exemplo de resultados:  
-![][results]
+<p align="center">
+  <img src=imagens/trivy_results.png width="500"/>
+</p>
 
 ---
 
@@ -128,7 +132,9 @@ A análise identificou os seguintes problemas de segurança:
 - **Buffer Overflow**
   - **Descrição**: Um **buffer overflow** ocorre quando um programa tenta armazenar mais dados em um buffer do que ele foi projetado para conter. Isso geralmente resulta em corrupção de memória e pode levar a falhas de segurança. No caso do zlib, o **buffer overflow** é causado por um nome de arquivo longo, comentário ou campo extra. Atacantes podem explorar essa vulnerabilidade para **executar código malicioso**, **escalonar privilégios** ou causar uma **negação de serviço**.
 
-![][buffer_overflow]
+<p align="center">
+  <img src=imagens/buffer_overflow.png width="500"/>
+</p>
 
 ### **TEMP-0841856-B18BAF**
 - **Biblioteca**: **bash**
@@ -141,7 +147,7 @@ A análise identificou os seguintes problemas de segurança:
   - **Descrição**: O escalonamento de privilégios ocorre quando um usuário comum obtém acesso a recursos ou privilégios que normalmente são restritos a usuários administrativos. No caso do bash, a variável PS4 pode ser manipulada para executar comandos sensíveis com privilégios elevados. Isso pode ser explorado por usuários maliciosos para **obter acesso não autorizado a sistemas ou informações confidenciais**.
 
 <p align="center">
-  <img src=imagens/side_channel.png width="500"/>
+  <img src=imagens/privilage_escalation.png width="500"/>
 </p>
 
 ### **CVE-2023-52425**
@@ -154,7 +160,9 @@ A análise identificou os seguintes problemas de segurança:
 - **DoS e DDoS**
   - **Descrição**: Um ataque de negação de serviço (DoS) ocorre quando um sistema é sobrecarregado com solicitações maliciosas, resultando em uma interrupção do serviço. No caso da libexpat, um token grande pode causar várias reanálises completas, levando a um DoS. Ataques de negação de serviço distribuídos (DDoS) podem ser ainda mais prejudiciais, pois envolvem múltiplos dispositivos atacando simultaneamente.
 
-![][ddos]
+<p align="center">
+  <img src=imagens/ddos.png width="500"/>
+</p>
 
 
 ### **CVE-2024-2236**
@@ -167,7 +175,9 @@ A análise identificou os seguintes problemas de segurança:
 - **Canal Lateral e Ataques Bleichenbacher**
   - **Descrição**: Um ataque de canal lateral baseado em temporização explora a variação no tempo de execução de um algoritmo criptográfico para inferir informações sobre os dados processados. No caso da libgcrypt, essa vulnerabilidade pode ser explorada para descriptografar textos cifrados RSA. Ataques do tipo Bleichenbacher são uma forma de ataque de canal lateral que visa decifrar mensagens criptografadas
 
-![][side_channel]
+<p align="center">
+  <img src=imagens/side_channel.png width="500"/>
+</p>
 
 ## **Recomendações de Correção**
 
