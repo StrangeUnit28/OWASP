@@ -182,7 +182,10 @@ A análise identificou os seguintes problemas de segurança:
 
 - **Adicionar Trivy ao Pipeline**: Manter o Trivy integrado ao pipeline de CI/CD para garantir que novas vulnerabilidades sejam detectadas e corrigidas continuamente.
 
-- **Repensar a versão que a imagem usa de BASE**: A imagem base utilizada é a `python:3.11.9-slim-bookworm`, que possui vulnerabilidades críticas herdados da imagem `debian:12-slim`. Recomenda-se pesquisa e escolha de uma imagem base mais segura.
+- **Repensar a versão que a imagem usa de Base pelo Docker**: A imagem base utilizada é a `python:3.11.9-slim-bookworm`, que possui vulnerabilidades críticas herdados da imagem `debian:12-slim`. Recomenda-se pesquisa e escolha de uma imagem base mais segura.
+Na data atual as imagens com final `-slim-bookworm` estão na versão `3.14.0a4` e `3.14.0a5`, 3 updates minors a frente da versão utilizada e com correções de segurança para várias das vulnerabilidades encontradas.
+
+- **Realizar um DAST**: Realizar um **teste de segurança dinâmico (DAST)** utilizando as vulnerabilidades encontradas pelas rodadas de SAST implementadas nas sprints anteriores. Isso permitirá identificar possíveis falhas de segurança que podem ser exploradas por atacantes.
 
 
 
