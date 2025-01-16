@@ -14,7 +14,7 @@
     - [Sprint 3 - IDOR](#)
       - [Arthur Viana](./G1_RedTeam/sprint_3/211029147_ArthurViana.md)
       - [Arthur Grandão](./G1_RedTeam/sprint_3/211039250_Arthur_Grandao.md)
-      - [Grupo 1](./../2024.2/relatorio/sprint_3/Grupo_1.md)
+      - [Grupo 1](../2024.2/relatorio/sprint_3/Grupo_1.md)
   - [Sub-Grupo 2](#)
     - [Sprint 1 - SQL Injection](#)
       - [Gabriel Marques](./G2_RedTeam/sprint_1/211039439_Gabriel_Marques.md)
