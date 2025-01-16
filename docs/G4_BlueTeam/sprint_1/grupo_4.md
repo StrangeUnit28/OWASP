@@ -64,7 +64,7 @@ Certifique-se de que o Python e o Bandit estão instalados no ambiente local:
 
 #### Teste do comando:  
 <p align="center">
-  <img src=imagens/bandit_running.png width="500"/>
+  <img src=./G4_BlueTeam/sprint_1/imagens/bandit_running.png width="500"/>
 </p>
 
 ---
@@ -77,13 +77,10 @@ Certifique-se de que o Python e o Bandit estão instalados no ambiente local:
 
 #### Alguns dos resultados gerados:  
 <p align="center">
-  <img src=imagens/bandit_results.png width="500"/>
+  <img src=./G4_BlueTeam/sprint_1/imagens/bandit_results.png width="500"/>
 </p>
 
 ### Recomendações Futuras
 
 - Expandir a análise adicionando outras ferramentas de SAST complementares, como o Semgrep.
 - Automatizar a correção de vulnerabilidades recorrentes usando pré-commits ou hooks.
-
-[running]: imagens/bandit_running.png
-[results]: imagens/bandit_running.png
