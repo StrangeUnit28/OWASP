@@ -1,5 +1,10 @@
 # Relatório da Sprint 2 - Verificação de Informações Sensíveis usando SAST
 
+## Membros
+|                        Nome                        | Matrícula |
+| :------------------------------------------------: | :-------: |
+| [Cainã Freitas](https://github.com/freitasc)       | 180014412 |
+
 ## **Introdução**
 Dando continuidade ao trabalho iniciado na Sprint 1, este relatório detalha a análise focada na detecção de informações sensíveis no código da API **mec-energia-api**. Utilizamos os resultados da ferramenta **Bandit** para identificar a presença de informações como APIs, usuários e senhas hardcoded, além de outros dados sensíveis que possam comprometer a segurança do projeto.
 

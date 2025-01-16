@@ -1,5 +1,10 @@
 # Relatório da Sprint 3 - Análise do Container Docker com Trivy
 
+## Membros
+|                        Nome                        | Matrícula |
+| :------------------------------------------------: | :-------: |
+| [Cainã Freitas](https://github.com/freitasc)       | 180014412 |
+
 ## **Introdução**
 Neste relatório, detalhamos a experiência ao configurar e utilizar o **Trivy** como ferramenta de análise de segurança para detectar vulnerabilidades e informações sensíveis na imagem Docker utilizada pelo projeto **mec-energia-api**. O Trivy foi integrado ao pipeline `.gitlab-ci.yml` e também configurado para rodar manualmente, facilitando a identificação de problemas relacionados a dependências desatualizadas, configurações inseguras e segredos expostos.
 
@@ -77,17 +82,27 @@ Para rodar o Trivy manualmente, siga os passos abaixo:
 ### Pré-requisitos
 Certifique-se de que o Python e o Trivy estão instalados no ambiente local:
 
-```pip install bandit```
+```
+sudo apt-get install wget gnupg
+wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | gpg --dearmor | sudo tee /usr/share/keyrings/trivy.gpg > /dev/null
+echo "deb [signed-by=/usr/share/keyrings/trivy.gpg] https://aquasecurity.github.io/trivy-repo/deb generic main" | sudo tee -a /etc/apt/sources.list.d/trivy.list
+sudo apt-get update
+sudo apt-get install trivy
+```
 
 ### Comando para análise
 
 - Para gerar um relatório em JSON:
 
-```trivy image mepa-api:latest-dev```
+```
+trivy image mepa-api:latest-dev
+```
 
 - Para filtrar corrigidos e não afetados:
 
-```trivy image mepa-api:latest-dev --ignore-status fixed,not_affected```
+```
+trivy image mepa-api:latest-dev --ignore-status fixed,not_affected
+```
 
 #### Teste do comando:  
 <p align="center">
@@ -102,13 +117,6 @@ Certifique-se de que o Python e o Trivy estão instalados no ambiente local:
 ---
 
 ## **Resultados Obtidos**
-
-### **Relatório de Vulnerabilidades**
-A análise identificou os seguintes problemas de segurança:
-
-- **1 Senha hardcoded** detectada, que comprometeria a assinatura criptográfica da aplicação.
-- **0 Chaves de API expostas** identificadas.
-- **0 Credenciais de usuário expostas** encontradas.
 
 #### Resumo dos Achados:
 | Nível de Criticalidade | Ocorrências | Biblioteca |
@@ -161,7 +169,7 @@ A análise identificou os seguintes problemas de segurança:
   - **Descrição**: Um ataque de negação de serviço (DoS) ocorre quando um sistema é sobrecarregado com solicitações maliciosas, resultando em uma interrupção do serviço. No caso da libexpat, um token grande pode causar várias reanálises completas, levando a um DoS. Ataques de negação de serviço distribuídos (DDoS) podem ser ainda mais prejudiciais, pois envolvem múltiplos dispositivos atacando simultaneamente.
 
 <p align="center">
-  <img src=./G4_BlueTeam/sprint_3/ddos.png width="500"/>
+  <img src=./G4_BlueTeam/sprint_3/imagens/ddos.png width="500"/>
 </p>
 
 

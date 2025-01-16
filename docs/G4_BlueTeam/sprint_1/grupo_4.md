@@ -1,5 +1,10 @@
 # Relatório da Sprint 1 - SAST usando Bandit
 
+## Membros
+|                        Nome                        | Matrícula |
+| :------------------------------------------------: | :-------: |
+| [Cainã Freitas](https://github.com/freitasc)       | 180014412 |
+
 ## **Introdução**
 Neste relatório, detalhamos a experiência ao configurar e utilizar o **Bandit** como ferramenta de **SAST (Static Application Security Testing)** para identificar vulnerabilidades na API **mec-energia-api**. O Bandit foi integrado ao pipeline `.gitlab-ci.yml` e também configurado para rodar manualmente, facilitando a identificação de problemas de segurança no código Python.
 
