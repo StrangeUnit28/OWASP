@@ -25,6 +25,7 @@
     - [Sprint 2 - Broken Authentication](./G3_RedTeam/sprint_2/grupo_3.md)
     - [Sprint 3 - IDOR](./G3_RedTeam/sprint_3/grupo_3.md)
 - [Blue Team](blueTeam.md)
-  - [Cainã Valença](#)
-  - [Larissa Stéfane](#)
-
+  - [Sub-Grupo 4](#)
+    - [Sprint 1 - SAST usando Bandit](./G4_BlueTeam/sprint_1/grupo_4.md)
+    - [Sprint 2 - Verificação de Informações Sensíveis usando SAST](./G4_BlueTeam/sprint_2/grupo_4.md)
+    - [Sprint 3 - Verificação Imagem Docker usando Trivy](./G4_BlueTeam/sprint_3/grupo_4.md)
