@@ -11,7 +11,7 @@
 
 ---
 
-## 1. Teste de IDOR no Front-End do MEPA
+## 1. Teste de IDOR para alteração de dados de outro usuário
 
 ### Objetivos
 
