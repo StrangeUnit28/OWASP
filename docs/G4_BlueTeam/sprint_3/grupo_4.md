@@ -140,7 +140,9 @@ A análise identificou os seguintes problemas de segurança:
 - **Escalonamento de Privilégios**
   - **Descrição**: O escalonamento de privilégios ocorre quando um usuário comum obtém acesso a recursos ou privilégios que normalmente são restritos a usuários administrativos. No caso do bash, a variável PS4 pode ser manipulada para executar comandos sensíveis com privilégios elevados. Isso pode ser explorado por usuários maliciosos para **obter acesso não autorizado a sistemas ou informações confidenciais**.
 
-![][privilage_escalation]
+<p align="center">
+  <img src=imagens/side_channel.png width="500"/>
+</p>
 
 ### **CVE-2023-52425**
 - **Biblioteca**: **libexpat1**
