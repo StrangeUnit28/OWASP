@@ -18,28 +18,26 @@ Nestas rotas, mesmo logado com um usuário padrão (university-user), é possív
 
 Podemos alterar nosso tipo de permissão no sistema, o que nos dá acesso irrestrito ao mesmo.
 
-<p align="left">
-    <img src="img/escalar_comando.png" alt="Escalar Comando" width="49%" height="%49">
-    <img src="img/escalar_comando_resultado.png" alt="Escalar Comando Resultado" width="49%">
-</p>
+![Escalar Comando](./img/escalar_comando.png)
+
+![Escalar Comando Resultado](./img/escalar_comando_resultado.png)
 
 * **Deletar outro usuário**
 
 Podemos deletar outro usuário.
 
-<p align="left">
-    <img src="img/deletar_usuario.png" alt="Deletar Usuário" width="49%">
-    <img src="img/deletar_usuario_resultado.png" alt="Deletar Usuário Resultado" width="49%">
-</p>
+![Deletar Usuario](./img/deletar_usuario.png)
+
+
+![Deletar Usuario Resultado](./img/deletar_usuario_resultado.png)
 
 * **Alterar senha de outros usuários**
 
 Podemos remover o acesso de outra pessoa do sistema, ao menos temporariamente.
 
-<p align="left">
-    <img src="img/trocar_senha.png" alt="Trocar Senha" width="49%" height="%49">
-    <img src="img/trocar_senha_resultado.png" alt="Trocar Senha Resultado" width="49%" height="49%">
-</p>
+![Trocar Senha](./img/trocar_senha.png)
+
+![Trocar Senha Resultado](./img/trocar_senha_resultado.png)
 
 # Outras rotas testadas
 
