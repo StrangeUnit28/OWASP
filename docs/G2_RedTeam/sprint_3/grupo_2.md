@@ -2,12 +2,12 @@
 
 ## Membros
 
-| Nome | Matrícula |
-| :--: | :-------: |
+|                        Nome                        | Matrícula |
+| :------------------------------------------------: | :-------: |
 | [Felipe Direito](https://github.com/felipedireito) | 190086971 |
-| [Gabriel Campello](https://github.com/G16C) | 211039439 |
-| [Gustavo Melo](https://github.com/gusrberto) | 211039457 |
-| [Matheus Henrique](https://github.com/mathonaut) | 211029666 |
+|    [Gabriel Campello](https://github.com/G16C)     | 211039439 |
+|    [Gustavo Melo](https://github.com/gusrberto)    | 211039457 |
+|  [Matheus Henrique](https://github.com/mathonaut)  | 211029666 |
 
 ---
 
@@ -127,8 +127,129 @@ Também recomendaria a utilização de IDs mais aleatórios e não-previsíveis 
 
 ---
 
+## Relatório de Testes de Insecure Direct Object References (IDOR) - Matheus
+
+**Objetivo:**
+
+O objetivo deste teste foi verificar a existência de vulnerabilidades nas rotas da API fornecida, analisando possíveis falhas de Insecure Direct Object References (IDOR).
+
+### 1. **Teste de Injeção de Código Malicioso**
+
+A primeira etapa envolveu testar algumas rotas da API para verificar se seria possível a injeção de códigos que exporiam diretórios da aplicação.
+
+**Método:**
+
+- Foi enviada uma requisição para cada rota testada com um token de autenticação e as flags contendo os códigos maliciosos.
+- As rotas testadas foram: `/api/consumer-units/` e `/api/tariffs/`, e outras sub-rotas.
+
+**Resultado Esperado:**
+
+- A resposta esperada era um código de status indicando que a injeção não estava sendo permitida.
+
+**Resultado Obtido:**
+
+- A aplicação gerou o código `412` e não permitiu a alteração na página. Os resultados podem ser vistos nas figuras 2.1 a 2.3.
+
+<center>
+
+Figura 2.1 - Resposta da requisição na rota `consumer-units`.
+
+![Resposta da requisição na rota consumer-units](./img/math-idor-1.png)
+
+</center>
+
+<center>
+
+Figura 2.2 - Resposta da requisição na rota `tariffs`.
+
+![Resposta da requisição na rota tariffs](./img/math-idor-2.png)
+
+</center>
+
+<center>
+
+Figura 2.3 - Resposta da segunda tentativa de requisição na rota `consumer-units`.
+
+![Resposta da requisição na rota consumer-units](./img/math-idor-3.png)
+
+</center>
+
+### 2. **Teste de Acesso a diretorios**
+
+Essa etapa envolveu testar algumas rotas da API para verificar se seria possível o acesso através da mudança dos parâmetros de acesso na rota.
+
+**Método:**
+
+- Foi enviada uma requisição para cada rota testada com um token de autenticação e o código para o caminho desejado.
+- As rotas testadas foram as proposta para o [sub-grupo 2](../../../2024.2/url_mec_energia.txt).
+
+**Resultado Esperado:**
+
+- A resposta esperada era acesso aos diretórios que contém informações sobre usuários ou como ele são manipulados pela aplicação.
+
+**Resultado Obtido:**
+
+- A aplicação gerou os códigos `301` e `404` não permitindo o acesso às páginas. O resultado para a rota consumer-units pode ser visto na figura 2.4.
+
+<center>
+
+Figura 2.4 - Resposta da tentativa de requisição na rota `consumer-units`.
+
+![Resposta da tentativa de requisição na rota consumer-units](./img/math-idor-4.png)
+
+</center>
+
+- Foi realizado o teste com a codificação da url. A aplicação retornou o código `404`. A resultado para o teste da rota `api/consumer-units/edit_consumer_unit_and_contract` pode ser vista na figura 2.5.
+
+<center>
+
+Figura 2.5 - Resposta da tentativa de requisição na rota `api/consumer-units/edit_consumer_unit_and_contract`.
+
+![Resposta da tentativa de requisição na rota api/consumer-units/edit_consumer_unit_and_contract](./img/math-idor-5.png)
+
+</center>
+
+### 3. **Teste de inclusao de arquivos malicionsos**
+
+Essa etapa envolveu testar a rota de upload da API para verificar se seria possível o enviar arquivos maliciosos ou fora do padrão esperado.
+
+**Método:**
+
+- Foi realizado o envio através do front com um arquivo de formato diferente do esperado.
+- Foi enviada uma requisição para cada rota testada com um token de autenticação e do arquivo malicioso.
+- A rota testada foi a `api/energy-bills/upload/`.
+
+**Resultado Esperado:**
+
+- A resposta esperada era o envio do arquivo com sucesso.
+
+**Resultado Obtido:**
+
+- Primeiramente, foi realizada a tentativa mal-sucedida pelo front. O resultado pode ser visto na figura 2.6.
+
+<center>
+
+Figura 2.6 - Resposta da tentativa de envio do arquivo malicioso.
+
+![Resposta da tentativa de envio do arquivo malicioso.](./img/math-idor-6.png)
+
+</center>
+
+- Após, foi feita a tentativa com cURL. A aplicação gerou o código `412`. O resultado pode ser visto na figura 2.7.
+
+<center>
+
+Figura 2.7 - Resposta da tentativa de envio do arquivo malicioso com cURL.
+
+![Resposta da tentativa de envio do arquivo malicioso com cURL](./img/math-idor-7.png)
+
+</center>
+
+---
+
 ## Histórico de Versões
 
-| Versão | Data       | Descrição                                  | Autor(es)                                        |
-| ------ | ---------- | ------------------------------------------ | ------------------------------------------------ |
-| `1.0`  | 16/01/2025 | Adiciona relatório inicial da sprint 3.    | [Gustavo Melo](https://github.com/gusrberto)      |
+| Versão | Data       | Descrição                               | Autor(es)                                        |
+| ------ | ---------- | --------------------------------------- | ------------------------------------------------ |
+| `1.0`  | 16/01/2025 | Adiciona relatório inicial da sprint 3. | [Gustavo Melo](https://github.com/gusrberto)     |
+| `1.1`  | 16/01/2025 | Adiciona relatório da sprint 3.         | [Matheus Henrique](https://github.com/mathonaut) |
