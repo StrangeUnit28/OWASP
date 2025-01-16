@@ -58,7 +58,6 @@ Prevenção:
 - Verificar a propriedade do recurso antes de aplicar qualquer modificação.
 - Implementar logs detalhados para monitorar alterações suspeitas.
 
-
 ## Teste de IDOR na API do MEC Energia
 
 No ambiente de homologação do [MEC Energia](https://energia.lappis.rocks/) ao logar como qualquer usuário é possível acessar e modificar várias informações, o que não deveria ser possível. Isso occorre por meio de IDOR na API do sistema. Apartir dessas informações, aqui estão alguns exemplos do que é possível realizar dentro da plataforma e como fazer isso.
@@ -122,7 +121,6 @@ No painel abaixo vemos algumas informações que são passíveis de alteração.
 
 **Imagem 8** - Type do usuário alterado
 
-
 Ao alterar o type, se voltarmos no painel da plataforma vemos uma alteração na sidebar e no tipo de cargo do usuário. Agora o usuário possui cargo de "super" e não mais "operacional", além disso, ganhamos acesso a todas as instituições que utilizam a plataforma (Imagem 10), além de ser possível criar uma nova instituição.
 
 ![Novo painel de perfil](../imagens/superAdmin.png)
@@ -153,10 +151,78 @@ Voltando para a API, a url que acessamos possuia o "id" do usuário no final (ap
 
 Existem várias coisas preocupantes nesse acontecimento, primeiro que acessamos essa página apenas alterando o "id" na url, segundo que aqui conseguimos ter acesso a diversas informações do super usuário, como por exemplo seu email, mas de longe o mais importante, é possível deletar esse usuário.
 
+## Teste IDOR deletando contas
 
+### Introdução
+
+Os testes realizados nesta seção focaram na identificação de vulnerabilidades do tipo IDOR (Insecure Direct Object Reference). Foram utilizadas as seguintes URLs para análise:
+
+    - http://localhost:8000/api/energy-bills/14/
+    - http://localhost:8000/api/consumer-units/2/
+    - http://localhost:8000/api/contracts/2/
+
+O objetivo principal foi verificar se diferentes tipos de requisições, como GET, POST, PUT e DELETE, possuem tratamento adequado para impedir o acesso não autorizado a recursos do sistema.
+
+### Descrição
+
+#### 1° passo
+
+No exemplo apresentado, o usuário  `usuario@unb.br` com a senha `unb` não possui permissão para acessar a unidade consumidora com o ID  `2`, nem o contrato associado de ID `2`. No entanto, ele ainda consegue acessar a conta de energia vinculada a essa unidade consumidora e contrato, evidenciando uma falha no controle de acesso.
+
+![Login](../imagens/loginDjango.jpg)
+
+**Imagem 14** - Realizando login
+
+![Conta de energia](../imagens/energyBill.png)
+
+**Imagem 15** - Vendo conta de energia de uma unidade consumidora e contrato
+
+![Unidade consumidora](../imagens/consumerUnit.png)
+
+**Imagem 16** - Sem acesso à unidade consumidora
+
+![Contrato](../imagens/contractInstance.jpg)
+
+**Imagem 17** - Sem acesso ao contrato
+
+#### 2° passo
+
+Após confirmar que o usuário não possui acesso à unidade consumidora nem ao contrato associados à conta de energia, observa-se que é possível alterar o contrato e a unidade consumidora da conta de energia para qualquer outro contrato ou unidade consumidora. Além disso, o usuário também consegue excluir a conta de energia de qualquer unidade consumidora ou contrato, evidenciando uma grave falha no controle de permissões do sistema.
+
+![Muda contrato](../imagens/trocaUnidadeConsumidora.jpg)
+
+**Imagem 18** - Mudando contrato de uma conta de energia
+
+![Muda unidade](../imagens/mudandoUnidadeConsumidora.jpg)
+
+**Imagem 19** - Mudando unidade consumidora de uma conta de energia
+
+![Deletando](../imagens/deletado.png)
+
+**Imagem 20** - Opção de deletar uma conta de energia de outra instituição
+
+![Deletado](../imagens/confirmacaoDeletado.jpg)
+
+**Imagem 21** - Conta de energia deletada
+
+### Resultado
+
+Os testes revelaram que o sistema apresenta vulnerabilidades críticas. Foi possível acessar, editar e excluir dados de contas de energia pertencentes a outras instituições, o que representa uma grave falha de segurança. Essas vulnerabilidades ocorrem devido à falta de validações adequadas nos endpoints, permitindo que um usuário não autorizado realize operações em recursos que deveriam estar restritos.
+
+### Sugestão de melhoria
+
+- Implementar Controle de Acesso Baseado em Recursos (RBAC ou ABAC):
+  - Utilizar controles de acesso no backend para validar se o usuário autenticado tem permissão para acessar, editar ou excluir o recurso solicitado.
+  - Exemplo: Comparar o user_id da sessão com o owner_id do recurso antes de permitir qualquer operação.
+
+- Verificação de Autorização nos Endpoints:
+  - Para cada requisição (GET, POST, PUT, DELETE), implementar uma verificação no backend para assegurar que o recurso pertence ao usuário que está realizando a solicitação.
+
+- Utilizar Identificadores Não Previsíveis (UUIDs):
+  - Substituir os IDs incrementais (ex.: /api/contracts/2/) por identificadores únicos (UUIDs).
+  - Exemplo: /api/contracts/550e8400-e29b-41d4-a716-446655440000/
 
 ## Dificuldades encontradas
-
 
 ## Referências
 
