@@ -128,10 +128,7 @@ A análise identificou os seguintes problemas de segurança:
 - **Buffer Overflow**
   - **Descrição**: Um **buffer overflow** ocorre quando um programa tenta armazenar mais dados em um buffer do que ele foi projetado para conter. Isso geralmente resulta em corrupção de memória e pode levar a falhas de segurança. No caso do zlib, o **buffer overflow** é causado por um nome de arquivo longo, comentário ou campo extra. Atacantes podem explorar essa vulnerabilidade para **executar código malicioso**, **escalonar privilégios** ou causar uma **negação de serviço**.
 
-<p align="center">
-  <img src=../imagens/buffer_overflow.png width="500"/>
-</p>
-
+![][buffer_overflow]
 
 ### **TEMP-0841856-B18BAF**
 - **Biblioteca**: **bash**
@@ -143,9 +140,7 @@ A análise identificou os seguintes problemas de segurança:
 - **Escalonamento de Privilégios**
   - **Descrição**: O escalonamento de privilégios ocorre quando um usuário comum obtém acesso a recursos ou privilégios que normalmente são restritos a usuários administrativos. No caso do bash, a variável PS4 pode ser manipulada para executar comandos sensíveis com privilégios elevados. Isso pode ser explorado por usuários maliciosos para **obter acesso não autorizado a sistemas ou informações confidenciais**.
 
-<p align="center">
-  <img src=../imagens/privilage_escalation.png width="500"/>
-</p>
+![][privilage_escalation]
 
 ### **CVE-2023-52425**
 - **Biblioteca**: **libexpat1**
@@ -157,9 +152,7 @@ A análise identificou os seguintes problemas de segurança:
 - **DoS e DDoS**
   - **Descrição**: Um ataque de negação de serviço (DoS) ocorre quando um sistema é sobrecarregado com solicitações maliciosas, resultando em uma interrupção do serviço. No caso da libexpat, um token grande pode causar várias reanálises completas, levando a um DoS. Ataques de negação de serviço distribuídos (DDoS) podem ser ainda mais prejudiciais, pois envolvem múltiplos dispositivos atacando simultaneamente.
 
-<p align="center">
-  <img src=../imagens/ddos.png width="500"/>
-</p>
+![][ddos]
 
 
 ### **CVE-2024-2236**
@@ -172,9 +165,7 @@ A análise identificou os seguintes problemas de segurança:
 - **Canal Lateral e Ataques Bleichenbacher**
   - **Descrição**: Um ataque de canal lateral baseado em temporização explora a variação no tempo de execução de um algoritmo criptográfico para inferir informações sobre os dados processados. No caso da libgcrypt, essa vulnerabilidade pode ser explorada para descriptografar textos cifrados RSA. Ataques do tipo Bleichenbacher são uma forma de ataque de canal lateral que visa decifrar mensagens criptografadas
 
-<p align="center">
-  <img src=../imagens/side_channel.png width="500"/>
-</p>
+![][side_channel]
 
 ## **Recomendações de Correção**
 
@@ -186,6 +177,24 @@ A análise identificou os seguintes problemas de segurança:
 Na data atual as imagens com final `-slim-bookworm` estão na versão `3.14.0a4` e `3.14.0a5`, 3 updates minors a frente da versão utilizada e com correções de segurança para várias das vulnerabilidades encontradas.
 
 - **Realizar um DAST**: Realizar um **teste de segurança dinâmico (DAST)** utilizando as vulnerabilidades encontradas pelas rodadas de SAST implementadas nas sprints anteriores. Isso permitirá identificar possíveis falhas de segurança que podem ser exploradas por atacantes.
+
+## **Referências**
+
+1. Trivy Documentation. *Aqua Security - Trivy Documentation*. Disponível em: [https://trivy.dev](https://trivy.dev). Acesso em: 16 jan. 2025.
+
+2. National Vulnerability Database (NVD). *CVE-2023-45853: MiniZip Vulnerability in zlib*. Disponível em: [https://nvd.nist.gov/vuln/detail/CVE-2023-45853](https://nvd.nist.gov/vuln/detail/CVE-2023-45853). Acesso em: 16 jan. 2025.
+
+3. Debian Security Tracker. *Vulnerabilities in debian:12-slim*. Disponível em: [https://security-tracker.debian.org/](https://security-tracker.debian.org/). Acesso em: 16 jan. 2025.
+
+4. GitLab CI/CD. *Container Scanning with Trivy*. Disponível em: [https://docs.gitlab.com/ee/user/application_security/container_scanning/](https://docs.gitlab.com/ee/user/application_security/container_scanning/). Acesso em: 16 jan. 2025.
+
+5. OWASP. *Dynamic Application Security Testing (DAST)*. Disponível em: [https://owasp.org/www-project-dast/](https://owasp.org/www-project-dast/). Acesso em: 16 jan. 2025.
+
+6. CVE Details. *CVE-2023-52425: libexpat Denial of Service Vulnerability*. Disponível em: [https://www.cvedetails.com/cve/CVE-2023-52425/](https://www.cvedetails.com/cve/CVE-2023-52425/). Acesso em: 16 jan. 2025.
+
+7. GitHub. *Trivy GitLab Integration Examples*. Disponível em: [https://github.com/aquasecurity/trivy](https://github.com/aquasecurity/trivy). Acesso em: 16 jan. 2025.
+
+8. Python Docker Images. *Supported Tags and Variants for python:3.11-slim*. Disponível em: [https://hub.docker.com/_/python](https://hub.docker.com/_/python). Acesso em: 16 jan. 2025.
 
 
 
