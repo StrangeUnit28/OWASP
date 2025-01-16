@@ -1,0 +1,15 @@
+Dados para users/1:
+{'id': 1, 'url': 'http://localhost:8000/api/users/1/', 'firstName': 'Admin', 'lastName': '', 'universityName': None, 'email': 'admin@admin.com', 'type': 'super_user', 'accountPasswordStatus': 'OK', 'haveResetPasswordTokenEnable': False, 'createdOn': '2024-11-27T10:08:37.093650'}
+
+Dados para users/2:
+{'id': 2, 'url': 'http://localhost:8000/api/users/2/', 'firstName': 'João', 'lastName': 'da Silva', 'universityName': 'UFMG - Universidade Federal de Minas Gerais', 'email': 'admin@ufmg.br', 'type': 'university_admin', 'accountPasswordStatus': 'OK', 'haveResetPasswordTokenEnable': False, 'createdOn': '2024-11-27T10:08:38.435661'}
+
+Dados para users/3:
+{'id': 3, 'url': 'http://localhost:8000/api/users/3/', 'firstName': 'José', 'lastName': 'Santos', 'universityName': 'UFMG - Universidade Federal de Minas Gerais', 'email': 'usuario@ufmg.br', 'type': 'university_user', 'accountPasswordStatus': 'OK', 'haveResetPasswordTokenEnable': False, 'createdOn': '2024-11-27T10:08:39.048148'}
+
+Dados para users/4:
+{'id': 4, 'url': 'http://localhost:8000/api/users/4/', 'firstName': 'João', 'lastName': 'da Silva', 'universityName': 'UnB - Universidade de Brasília', 'email': 'admin@unb.br', 'type': 'university_admin', 'accountPasswordStatus': 'OK', 'haveResetPasswordTokenEnable': False, 'createdOn': '2024-11-27T10:08:42.094525'}
+
+Dados para users/5:
+{'id': 5, 'url': 'http://localhost:8000/api/users/5/', 'firstName': 'José', 'lastName': 'Santos', 'universityName': 'UnB - Universidade de Brasília', 'email': 'usuario@unb.br', 'type': 'university_user', 'accountPasswordStatus': 'OK', 'haveResetPasswordTokenEnable': False, 'createdOn': '2025-11-27T10:08:42.705183'}
+
