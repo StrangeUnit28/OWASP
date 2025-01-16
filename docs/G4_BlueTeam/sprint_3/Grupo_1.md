@@ -48,7 +48,7 @@ As vulnearabilidades IDOR podem causar impactos severos, como:
 **Conclusão**: o endpoint de user está vulneravel IDOR
 
 execução no postman:  
-![imagem](../imagens/teste1_idor.jpg)
+![imagem](./imagens/teste1_idor.jpg)
 
 ## Aproveitando da vulnerabilidade encontrada no endpoint de user
 ## Teste 1.1
@@ -58,7 +58,7 @@ execução no postman:
 **conclusão**: o endpoint de user está vulneravel IDOR http PUT
 
 Execução no postman: 
-![imagem](../imagens/teste11_idor.jpg)
+![imagem](./imagens/teste11_idor.jpg)
 
 ## Teste 1.2
 **Objetivo**:Excluir outros usuários  
@@ -67,7 +67,7 @@ Execução no postman:
 conclusão: o endpoint de user está vulneravel IDOR http PUT
 
 Execução no postman: 
-![imagem](../imagens/teste12_idor.jpg)
+![imagem](./imagens/teste12_idor.jpg)
 
 # Teste 2
 **Objetivo**: Acessar informação de conta de unidades consumidoras de outros usuarios, por meio da url: http://localhost:8000/api/energy-bills?consumer_unit_id=X  
@@ -76,7 +76,7 @@ Execução no postman:
 **Conclusão**: Não está vulneravel a IDOR
 
 execução no postman: 
-![imagem](../imagens/teste2_idor.jpg)
+![imagem](./imagens/teste2_idor.jpg)
 
 # Teste 3
 
@@ -86,7 +86,7 @@ execução no postman:
 **Conclusão**: Não está vulneravel a IDOR
 
 Execução no postman: 
-![imagem](../imagens/teste3_idor.jpg)
+![imagem](./imagens/teste3_idor.jpg)
 
 # Conclusão
 
