@@ -25,6 +25,7 @@
     - [Sprint 1 - SQL Injection](./G3_RedTeam/sprint_1/grupo_3.md)
     - [Sprint 2 - Broken Authentication](./G3_RedTeam/sprint_2/grupo_3.md)
     - [Sprint 3 - IDOR](./G3_RedTeam/sprint_3/grupo_3.md)
+    - [Sprint 4 - XSS](./G3_RedTeam/sprint_4/grupo_3.md)
 - [Blue Team](blueTeam.md)
   - [Sub-Grupo 4](#)
     - [Sprint 1 - SAST usando Bandit](./G4_BlueTeam/sprint_1/grupo_4.md)
