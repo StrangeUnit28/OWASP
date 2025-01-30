@@ -92,8 +92,6 @@ Por fim, realizamos um teste utilizando a ferramenta OWASP ZAP na tentativa de i
 
 A vulnerabilidade de risco apresentou uma possível brecha na versão 12.3.0 da lib Next.js.
 
-### Resultados
-
 ## Referências
 
 - OWASP. "Cross Site Scripting (XSS)." Disponível em: https://owasp.org/www-community/attacks/xss/
