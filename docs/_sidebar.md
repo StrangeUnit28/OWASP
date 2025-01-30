@@ -31,3 +31,4 @@
     - [Sprint 1 - SAST usando Bandit](./G4_BlueTeam/sprint_1/grupo_4.md)
     - [Sprint 2 - Verificação de Informações Sensíveis usando SAST](./G4_BlueTeam/sprint_2/grupo_4.md)
     - [Sprint 3 - Verificação Imagem Docker usando Trivy](./G4_BlueTeam/sprint_3/grupo_4.md)
+    - [Sprint 4 - Análise do Container Docker com Dockle](./G4_BlueTeam/sprint_4/grupo_4.md)
