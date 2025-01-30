@@ -71,7 +71,9 @@ dockle -i mepa-api:latest-dev
 
 ### **CIS-DI-0010: Do not store credentials in environment variables/files**
 - **Descrição**: Foi identificado que múltiplos arquivos de configuração `settings.py` em diversos pacotes Python dentro do ambiente Docker contêm informações sensíveis, o que representa um risco de segurança, pois credenciais podem ser facilmente expostas.
-- **Arquivos Suspeitos**:
+
+Na verdade, a inspeção provavelmente aponta um falso positivo, por serem arquivos de configuração de bibliotecas conhecidas. Isso fica bem explicito pelo subdiretorio do primeiro arquivo.
+ **Arquivos Suspeitos**:
   - `usr/local/lib/python3.11/site-packages/tutorial/settings.py`
   - `usr/local/lib/python3.11/site-packages/scipy/_lib/cobyqa/settings.py`
   - `usr/local/lib/python3.11/site-packages/djangorestframework_camel_case/settings.py`
@@ -88,6 +90,9 @@ dockle -i mepa-api:latest-dev
 
 ### **CIS-DI-0001: Create a user for the container**
 - **Descrição**: A configuração do container Docker está utilizando o usuário root, o que representa um risco de segurança.
+
+**Isso pode ser uma vunerabilidade imensa, considerando que os ultimos testes apontavam CVEs de execução de codigo remoto e escalamento de privilegios.**
+
 - **Recomendação**: Criar um usuário não privilegiado para o container e configurar a execução dos processos com ele, reduzindo o risco de comprometimento da imagem.
 
 ---
