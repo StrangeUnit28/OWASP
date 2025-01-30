@@ -42,11 +42,55 @@ Se a aplicação não sanitizar corretamente a entrada do usuário, o código Ja
 
 Para avaliar a segurança da API do MEC Energia, realizamos testes utilizando diferentes vetores de ataque XSS, incluindo:
 
-- Envio de payloads maliciosos em campos de entrada
+- Envio de payloads maliciosos em campos de entrada.
+- Análise da resposta do servidor para identificar vulnerabilidades.
+- Testes de execução de scripts armazenados e refletidos.
 
-- Análise da resposta do servidor para identificar vulnerabilidades
+### Testes de XSS - Pablo e Rafael Bosi
 
-- Testes de execução de scripts armazenados e refletidos
+Todos os testes de XSS foram realizados no ambiente de homologação **<https://energia.lappis.rocks>**.
+
+#### Testes Stored XSS
+
+Realizamos tentativas de Stored XSS, que consistem na inserção de um código malicioso via campos de envio de respostas, como campos de edição de informações, conforme demonstrado a seguir:
+
+![alt text](/docs/G3_RedTeam/sprint_4/imagesSprint4/TesteStoredEditarUnidade.png)
+
+Ao realizar o envio desse e de outros códigos de teste para XSS, não obtivemos sucesso em alcançar essa vulnerabilidade. A aplicação funcionou normalmente, apenas editando o campo como deveria ser.
+
+#### Testes Diretamente pela URL
+
+Realizamos também testes diretamente por URLs, focando em URLs que aceitavam parâmetros, como esta: <https://energia.lappis.rocks/api/auth/signin?csrf=true>
+
+Nesta URL, por exemplo, modificamos o parâmetro `csrf=true` para verificar se a aplicação refletia o valor do parâmetro na página ou no DOM.
+
+Alguns dos Payloads XSS utilizados:
+
+```markdown
+> `https://energia.lappis.rocks/api/auth/signin?csrf=<script>alert('XSS')</script>`  
+
+> `https://energia.lappis.rocks/api/auth/signin?csrf=%3Cscript%3Ealert('XSS')%3C%2Fscript%3E`
+
+> `https://energia.lappis.rocks/api/auth/signin?csrf=%3Cimg%20src%3D%22x%22%20onerror%3D%22alert('XSS')%22%3E`
+```
+
+Após os envios, verificamos o código-fonte da página pela ferramenta de inspecionar elemento, mas o payload não foi refletido e nem processado.
+
+#### Testes de XSS diretamente pelo inspecionar elementos
+
+Foram realizados também testes dentro do inspecionar elementos. Na tentativa, buscamos por elementos que exibem conteúdo dinâmico, como por exemplo na imagem a seguir:
+
+![alt text](/docs/G3_RedTeam/sprint_4/imagesSprint4/TesteXSSInspecionarElemento.png)
+
+Mas, novamente, após testar em diversos locais, não obtivemos sucesso.
+
+#### Teste com OWASP ZAP
+
+Por fim, realizamos um teste utilizando a ferramenta OWASP ZAP na tentativa de identificar alguma vulnerabilidade de XSS. Porém, não encontramos. Em contrapartida, ao rodarmos uma análise completa no MEPA, encontramos o seguinte alerta:
+
+![alt text](/docs/G3_RedTeam/sprint_4/imagesSprint4/vulnerabilidadeCritica.png)
+
+A vulnerabilidade de risco apresentou uma possível brecha na versão 12.3.0 da lib Next.js.
 
 ### Resultados
 
