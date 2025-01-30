@@ -1,7 +1,7 @@
 <!-- docs/_sidebar.md -->
 
 - [Sobre o projeto](home.md)
-- [Red Team](redTeam.md)  
+- [Red Team](redTeam.md)
   - [Sub-Grupo 1](#)
     - [Sprint 1 - SQL Injection](#)
       - [Arthur Viana](./G1_RedTeam/sprint_1/211029147_Arthur_Viana.md)
@@ -15,6 +15,8 @@
       - [Arthur Viana](./G1_RedTeam/sprint_3/211029147_ArthurViana.md)
       - [Arthur Grandão](./G1_RedTeam/sprint_3/211039250_Arthur_Grandao.md)
       - [Alex/Taynara](./G1_RedTeam/sprint_3/Grupo_1.md)
+    - [Sprint 4 - XSS](#)
+      - [Arthur Viana e Arthur Grandão](./G1_RedTeam/sprint_4/grupo_1.md)
   - [Sub-Grupo 2](#)
     - [Sprint 1 - SQL Injection](#)
       - [Gabriel Marques](./G2_RedTeam/sprint_1/211039439_Gabriel_Marques.md)
