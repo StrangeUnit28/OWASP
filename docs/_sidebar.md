@@ -17,6 +17,8 @@
       - [Alex/Taynara](./G1_RedTeam/sprint_3/Grupo_1.md)
     - [Sprint 4 - XSS](#)
       - [Arthur Viana e Arthur Grandão](./G1_RedTeam/sprint_4/grupo_1.md)
+    - [Sprint 5](#)
+      - [Alex](./G1_RedTeam/sprint_5/alex-sprint-5.md)
   - [Sub-Grupo 2](#)
     - [Sprint 1 - SQL Injection](#)
       - [Gabriel Marques](./G2_RedTeam/sprint_1/211039439_Gabriel_Marques.md)
