@@ -1,4 +1,4 @@
-# Relatório Sprint 5 - Teste de Sessção e Estresse
+# Relatório Sprint 5 - Teste de Sessão e Estresse
 
 ## Membros
 
