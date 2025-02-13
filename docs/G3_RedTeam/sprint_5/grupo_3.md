@@ -64,6 +64,174 @@ Com base nas informações fornecidas e nas verificações realizadas, o site pa
 
 No entanto, é sempre recomendável realizar auditorias de segurança regulares e testes de penetração para garantir que todas as possíveis vulnerabilidades sejam identificadas e corrigidas. Seguindo as práticas recomendadas e realizando verificações adicionais conforme mencionado, o site estará em uma boa posição para garantir a segurança das sessões dos usuários.
 
+## Relatório de Validação de Senhas
+
+#### Introdução
+Este relatório documenta como o código lidava com senhas antes das mudanças sugeridas. Não havia nenhuma validação específica para as senhas, permitindo que qualquer senha fosse criada, independentemente do comprimento ou da presença de caracteres especiais, dígitos, letras maiúsculas ou minúsculas. As senhas poderiam ser muito curtas ou não conter nenhum desses elementos, o que poderia comprometer a segurança.
+
+#### Arquivo: `authentication.py`
+
+**Atualmente:**
+- O arquivo não continha nenhuma função para validar senhas.
+- As senhas poderiam ser criadas sem qualquer restrição de comprimento ou complexidade.
+
+```python
+
+
+import random
+import string
+
+from django.conf import settings
+
+def generate_random_password():
+    return "".join(random.choice(string.ascii_lowercase + string.digits) for _ in range(20))
+
+# ...existing code...
+```
+
+#### Arquivo: `serializers.py`
+
+**Atualmente:**
+- Os serializers não validavam as senhas.
+- As senhas poderiam ser definidas sem qualquer verificação de comprimento mínimo ou presença de caracteres especiais, dígitos, letras maiúsculas ou minúsculas.
+
+```python
+
+
+from rest_framework import serializers
+from rest_framework.serializers import HyperlinkedModelSerializer, ModelSerializer, Serializer
+
+from universities.serializers import ConsumerUnitSerializer
+
+from .models import CustomUser, University, UniversityUser
+
+class CustomUserSerializer(HyperlinkedModelSerializer):
+    university_name = serializers.SerializerMethodField(read_only=True)
+
+    def get_university_name(self, obj):
+        try:
+            university_user = UniversityUser.objects.get(pk=obj.pk)
+            return (
+                f"{university_user.university.acronym} - {university_user.university.name}"
+                if university_user.university
+                else None
+            )
+        except UniversityUser.DoesNotExist:
+            return None
+
+    class Meta:
+        model = CustomUser
+        fields = [
+            "id",
+            "url",
+            "first_name",
+            "last_name",
+            "university_name",
+            "password",
+            "email",
+            "type",
+            "account_password_status",
+            "have_reset_password_token_enable",
+            "created_on",
+        ]
+        extra_kwargs = {"password": {"write_only": True, "required": False}}
+
+class UniversityUserSerializer(HyperlinkedModelSerializer):
+    id = serializers.IntegerField(read_only=True)
+    university = serializers.PrimaryKeyRelatedField(queryset=University.objects.all())
+
+    class Meta:
+        model = UniversityUser
+        fields = [
+            "id",
+            "url",
+            "first_name",
+            "last_name",
+            "password",
+            "email",
+            "type",
+            "created_on",
+            "university",
+        ]
+        extra_kwargs = {"password": {"write_only": True, "required": False}}
+
+class ConfirmPasswordBodySerializer(Serializer):
+    user_email = serializers.CharField()
+    user_new_password = serializers.CharField()
+    user_reset_password_token = serializers.CharField()
+```
+
+#### Arquivo: `managers.py`
+
+**Atualmente:**
+- O método `create` da classe `CustomUserManager` não validava as senhas.
+- As senhas poderiam ser definidas sem qualquer verificação de comprimento mínimo ou presença de caracteres especiais, dígitos, letras maiúsculas ou minúsculas.
+
+```python
+
+
+Made changes.
+
+from django.conf import settings
+from django.contrib.auth.base_user import BaseUserManager
+from django.utils.translation import gettext_lazy as _
+
+from utils.user.authentication import generate_random_password
+from utils.user.user_type_util import UserType
+
+from . import models
+
+class CustomUserManager(BaseUserManager):
+    def create(self, email, password=None, **extra_fields):
+        from .authentications import Password
+
+        try:
+            if not email:
+                raise ValueError(_("Email is required"))
+
+            is_seed_user = extra_fields.pop("is_seed_user", False)
+            email = self.normalize_email(email)
+            user = self.model(email=email, **extra_fields)
+
+            if not user.type:
+                user.type = UserType.get_user_type_by_model(self.model)
+
+            UserType.is_valid_user_type(user.type, self.model)
+
+            if settings.ENVIRONMENT in ["production", "development"]:
+                if user.type in models.CustomUser.university_user_types and not is_seed_user:
+                    user.set_password(generate_random_password())
+                    user.save()
+
+                    Password.send_email_first_access_password(user)
+                else:
+                    user.set_password(password)
+                    user.save()
+            else:
+                user.set_password(password)
+                user.save()
+
+            return user
+        except Exception as error:
+            raise Exception(f"Error Create User: {str(error)}")
+
+    def create_superuser(self, email, password, **extra_fields):
+        extra_fields.setdefault("is_staff", True)
+        extra_fields.setdefault("is_active", True)
+        extra_fields.setdefault("is_superuser", True)
+        extra_fields.setdefault("type", models.CustomUser.super_user_type)
+
+        if extra_fields.get("is_staff") is not True:
+            raise ValueError(_("Superuser must have is_staff=True"))
+        if extra_fields.get("is_superuser") is not True:
+            raise ValueError(_("Superuser must have is_superuser=True"))
+
+        return self.create(email, password, **extra_fields)
+```
+
+#### Conclusão
+O código permite a criação de senhas fracas, sem qualquer validação de comprimento ou complexidade. As senhas poderiam ser muito curtas ou não conter caracteres especiais, dígitos, letras maiúsculas ou minúsculas, o que poderia comprometer a segurança do sistema.
+
 ## Teste rodando DOOM na tela de login do MEPA
 
 Um teste realizado pela equipe foi a tentativa de rodar doom nos campos de inserir texto da aplicação mas não obtivemos sucesso porem pensamos na alternativa e se desse pra rodar doom por cima da logo do mepa e seguimos com esta ideia
