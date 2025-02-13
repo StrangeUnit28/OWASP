@@ -373,11 +373,12 @@ Diante do impacto gerado pelo ataque, foram implementadas medidas para proteger 
 1. Rate Limiting no Django
 
 Foi introduzido um controle de taxa diretamente no backend Django, utilizando a seguinte configuração:
-
+```yml
 'DEFAULT_THROTTLE_RATES': {
     'anon': '100/hour',  # Limita usuários não autenticados a 100 requisições por hora
     'user': '1000/hour',  # Limita usuários autenticados a 1000 requisições por hora
 },
+```
 
 No entanto, esse método não foi eficaz para mitigar um ataque massivo, sobrecarregando o servidor antes mesmo que o Django pudesse aplicar as restrições.
 
