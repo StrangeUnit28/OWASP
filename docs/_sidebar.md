@@ -25,6 +25,7 @@
       - [Grupo 2](./G2_RedTeam/sprint_1/grupo_2.md)
     - [Sprint 2 - Broken Authentication](./G2_RedTeam/sprint_2/grupo_2.md)
     - [Sprint 3 - IDOR](./G2_RedTeam/sprint_3/grupo_2.md)
+    - [Sprint 5 - Information Gathering](./G2_RedTeam/sprint_5/grupo_2.md)
   - [Sub-Grupo 3](#)
     - [Sprint 1 - SQL Injection](./G3_RedTeam/sprint_1/grupo_3.md)
     - [Sprint 2 - Broken Authentication](./G3_RedTeam/sprint_2/grupo_3.md)
