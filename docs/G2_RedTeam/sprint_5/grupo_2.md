@@ -57,9 +57,56 @@ O que indica que a depender da requisição feita para autenticação de login p
 ### Conclusão
 Com o Web Crawling fui capaz de identificar um erro que anteriormente não tinha sido capaz de confirmar, e usando as ferramentas adequadas consegui, isso indica que algém com mior treinamento na parte de invasões poderia acabar toamndo controle de uma requisição feita por um usuário sem que api notasse. 
 
+# Fingerprinting
+
+É uma técnica utilizada na identificação de sistemas, aplicações ou dispositivos, buscando características únicas do sistema que podem ser exploradas. Como cabeçalhos HTTP, respostas a tipos específicos de pacotes e até assinatura digitais. É usado principalmente para **auditoria de segurança**, realizando um mapeamento do sistema, identificando potenciais vulnerabilidades.
+
+## Banner Grabbing
+
+```c
+$ curl -I https://homolog.mepaenergia.org/
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 12 Feb 2025 23:49:37 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 37596
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Powered-By: Next.js
+ETag: "mvz808uaf2t0c"
+Vary: Accept-Encoding
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+```
+
+A requisição acima mostrou a pilha tecnológica da aplicação (Nginx e Next.js) o que poderia auxiliar a ataques direcionados por parte de usuários maliciosos, mas que no caso do MEPA não é uma grande problema já que o projeto é Open-Source.
+Quanto aos cabeçalhos de segurança é possível ver que a aplicação já protege contra diversos tipos de ataques, como possível melhoria só daria a sugestão de mais dois cabeçalhos:
+* `Content-Security-Police (CSP)`: Auxilia mais ainda na proteção contra XSS e outros ataques colocando restrições no carregamento de scripts.
+* `Referrer-Policy: no-referrer` ou `strict-origin-when-cross-origin`: Controlam o envio de informações de referenciador para evitar o vazamento de dados sensíveis.
+
+## Wafw00f (Identificação de WAF)
+
+![Teste Wafw00f](https://github.com/user-attachments/assets/4499c82d-e26d-41cc-bd82-23f8cf93a37a)
+
+O teste mostrou nenhum Web Application Firewall (WAF) foi detectado, o que pode deixar a aplicação vulnerável a alguns tipos de ataques entre eles:
+
+* Cross-Site Scripting (XSS)
+* Remote Code Execution (RCE)
+* Directory Traversal
+* Ataques de Força Bruta
+
+Um WAF adiciona uma camada extra de defesa que pode detectar e bloquear automaticamente várias dessas ameaças antes delas sequer chegarem ao sistema.
+
+### Conclusão
+
+A análise realizada mostrou que a aplicação já conta com boas práticas de segurança, mas pode ser fortalecida com a adição de cabeçalhos como CSP e Referrer-Policy. Além disso, a ausência de um Web Application Firewall (WAF) pode expor o sistema a ataques como XSS e RCE. Implementar um WAF ajudaria a mitigar essas ameaças, adicionando uma camada extra de proteção.
 
 ## Histórico de Versões
 
 | Versão | Data       | Descrição                               | Autor(es)                                        |
 | ------ | ---------- | --------------------------------------- | ------------------------------------------------ |
 | `1.0`  | 10/02/2025 | Criação do documento.  | [Gabriel Campello](https://github.com/G16C)      |
+| `1.1`  | 13/02/2025 | Adição de testes de Fingerpriting.  | [Gustavo Melo](https://github.com/gusrberto)      |
