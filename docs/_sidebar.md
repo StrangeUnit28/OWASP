@@ -20,6 +20,7 @@
     - [Sprint 5](#)
       - [Alex](./G1_RedTeam/sprint_5/alex-sprint-5.md)
       - [Arthur Viana e Arthur Grandão](./G1_RedTeam/sprint_5/ArthurViana_ArthurGrandao.md)
+      - [Taynara Cristina](./G1_RedTeam/sprint_5/211031833_TaynaraMarcellos.md)
   - [Sub-Grupo 2](#)
     - [Sprint 1 - SQL Injection](#)
       - [Gabriel Marques](./G2_RedTeam/sprint_1/211039439_Gabriel_Marques.md)
